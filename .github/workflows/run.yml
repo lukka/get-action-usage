@@ -1,0 +1,77 @@
+name: 'update graph.html'
+
+on:
+  pull_request:
+  schedule:
+    - cron: '0 * * * *'
+    - cron: '1 2 3 4 5'
+  workflow_dispatch:
+
+jobs:
+  build_and_test:
+    name: '${{ matrix.os }}: run'
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.PAT_WORKSPACES }}
+    
+    - uses: actions/checkout@v2
+      name: Fetch the web site repo to update.
+      with:
+        token: ${{ secrets.PAT_WORKSPACES }}
+        repository: lukka/lukka.github.io
+        path: lukkagithubio
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    #- run: |
+    #    npm install
+    #    npm run build/pack
+    - uses: ./
+      name: validation test by running this action
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_WORKSPACES }}
+    - uses: actions/upload-artifact@v3
+      with:
+        name: results
+        path: ${{ github.workspace }}/action-usage-db.json
+    
+    - name: Check for modified files
+      id: git-check
+      run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
+
+    - name: Commit DB content and update CRON job
+      if: steps.git-check.outputs.modified == 'true'
+      run: |
+        git config --global user.name 'Luca'
+        git config --global user.email '681992+lukka@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.PAT_WORKSPACES }}@github.com/${{ github.repository }}
+        git add -A
+        git add -f ./graph/action-usage-db.json
+        git status
+        git commit -m "Automated commit for DB JSON file and updated CRON job"
+        git push
+
+    - name: Publish updated network graph
+      if: steps.git-check.outputs.modified == 'true'
+      shell: bash
+      run: |
+        cd lukkagithubio
+        git config --global user.name 'Luca'
+        git config --global user.email '681992+lukka@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.PAT_WORKSPACES }}@github.com/lukka/lukka.github.io
+        mkdir -pv ./graph/ 
+        cp ../graph/action-usage-db.json ./graph
+        cp ../graph/graph.html ./graph
+        git add -f graph/action-usage-db.json
+        git add -f graph/graph.html
+        git status
+        git commit -m "Automated commit for publishing updated graph web page"
+        git push
