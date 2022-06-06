@@ -1,0 +1,30 @@
+import * as ok from '@octokit/rest';
+import { IRepositoriesProviderFactory, IReporter } from './interfaces';
+export declare class GHActionUsage {
+    private readonly octokit;
+    private readonly reposProviderFactory;
+    private readonly reporter;
+    private static readonly LastStartTimeName;
+    private static readonly UsageDbFileName;
+    private static readonly WorkflowFileName;
+    private static readonly InternalTimeoutMinutes;
+    private static getWorkspacePath;
+    private static delay;
+    private readonly db;
+    private readonly progressBars;
+    private readonly timeRange;
+    private readonly startingDate;
+    private readonly executionStopDate;
+    private totalRepositoryChecked;
+    constructor(octokit: ok.Octokit, reposProviderFactory: IRepositoriesProviderFactory, reporter: IReporter);
+    run(): Promise<void>;
+    setRemainingCalls(restApi?: number, searchApi?: number): void;
+    private isAlreadyRunning;
+    private openDb;
+    private setupCron;
+    private getRepoList;
+    private iterateTimeSegment;
+    private getRestCurrentLimits;
+    private getStartingDate;
+    private checkRepository;
+}

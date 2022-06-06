@@ -1,0 +1,16 @@
+# Copyright (c) 2022 Luca Cappa
+# Released under the term specified in file LICENSE
+# SPDX short identifier: CC-BY-SA-4.0
+
+name: 'get-action-usage'
+description: Query GitHub for usage of GitHub actions and build a graph.'
+author: 'Luca Cappa https://github.com/lukka'
+# inputs:
+# no inputs, no outputs!
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'terminal'
+  color: 'green'

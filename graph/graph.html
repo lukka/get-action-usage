@@ -1,0 +1,1022 @@
+<!-- Copyright © 2022 by Luca Cappa lcappa at gmail dot com -- http://creativecommons.org/licenses/by-sa/4.0/" This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <style>
+        img,
+        a {
+            vertical-align: bottom;
+        }
+
+        div,
+        span {
+            margin: auto 10pt auto;
+        }
+
+        span {
+            font-family: monospace;
+            font-size: 10pt;
+        }
+
+        circle {
+            fill: cadetblue;
+        }
+
+        line {
+            stroke: #ccc;
+        }
+
+        .links line {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+
+        .nodes circle {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+
+        text {
+            font-family: helvetica;
+            font-size: 14px;
+            stroke-width: 0;
+        }
+
+        svg {
+            display: block;
+            margin: auto;
+        }
+
+        a.disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+
+        .no_link,
+        g.no_link>text {
+            pointer-events: none;
+        }
+
+        a:hover text {
+            fill: red;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v7.js"></script>
+
+<body>
+    <!-- Create a div where the graph will take place -->
+    <div id="content"></div>
+
+    <script>
+        var width = 1800, height = 1080;
+        const descriptionSize = { x: 500, y: 100 };
+        var svg = d3.select("#content")
+            .append("svg")
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("width", "100%")
+            .attr(`viewBox`, [0, 0, width, height]);
+
+        svg.append("g")
+            .classed("background", true);
+        svg.append("g")
+            .classed("links", true);
+        svg.append("g")
+            .classed("repos", true);
+        svg.append("g")
+            .classed("actions", true);
+        svg.append("g")
+            .classed("versions", true);
+        svg.append("g")
+            .classed("raisedLinks", true);
+        svg.append("g")
+            .classed("description", true);
+
+        const highlightRepoColor = 'orange';
+        const downlightRepoColor = 'grey';
+        document.styleSheets[0].insertRule('circle.active {stroke-width: 3px !important}');
+        document.styleSheets[0].insertRule('circle.disactive {fill:' + downlightRepoColor + ' !important}');
+        document.styleSheets[0].insertRule('text.disactive { display: none !important}');
+        document.styleSheets[0].insertRule('.versionHovering { stroke-width:3 !important }');
+        document.styleSheets[0].insertRule('text.versionName {  }');
+
+        let triangleAngles = [0, 0, 0];
+        const centerX = width / 2.;
+        const centerY = (height / 2.) * 0.7;
+        const ACTION_RADIUS = 70;
+        actionPositions = [
+            { x: width / 5. * 1, y: height / 8. },   // left
+            { x: width / 2., y: height / 10. * 8 },   // bottom
+            { x: width / 5. * 4, y: height / 8. }]; // right
+        var actions = [{
+            name: "get-cmake",
+            url: "https://github.com/lukka/get-cmake",
+            color: "mistyrose"
+        }, {
+            name: "run-cmake",
+            url: "https://github.com/lukka/run-cmake",
+            color: "lavender"
+        }, {
+            name: "run-vcpkg",
+            url: "https://github.com/lukka/run-vcpkg",
+            color: "aquamarine"
+        }];
+        actions.forEach((action, index) => {
+            action.radius = ACTION_RADIUS;
+            action.id = index;
+            action.fx = actionPositions[index].x;
+            action.fy = actionPositions[index].y;
+        });
+        var trianglePositions = JSON.parse(JSON.stringify(actionPositions));
+
+        const actionsCount = actions.length;
+        const MINIMUM_RADIUS = 21;
+        var links = [];
+        var repos = [];
+        var actionsDict = actions.reduce((dict, action) => ({ ...dict, [action.name]: 0 }), {});
+        var versionsDict = {};
+        var versions = [];
+        var getNodeColor = d3.scaleOrdinal(d3.schemeSet3).domain(repos);
+        var versionsCount = 0;
+        const dataFileName = "action-usage-db.json";
+        var simulation;
+        var offset;
+        const allNodes = [];
+        var trianglePolygon;
+        var showDescription = true;
+        var dGL = null, dGR = null, dGButton = null;
+
+        createGraph();
+        createTriangle();
+        animateTriangle();
+        createDescription();
+        updateDescription();
+
+        function createGraph() {
+            svg.select(".actions")
+                .selectAll("actions")
+                .data(actions)
+                .join(enter => {
+                    const g = enter.append('g');
+                    g.insert('circle')
+                        .attr("fx", d => 50)
+                        .attr("fy", d => 50)
+                        .attr("r", d => d.radius)
+                        .style("fill", "black")
+                        .attr("stroke", d => d.color)
+                        .attr("stroke-width", 15)
+                        .classed("action", true);
+                    g.append('circle')
+                        .attr("fx", d => 50)
+                        .attr("fy", d => 50)
+                        .attr("cx", (d, i) => setPos(d, i).x)
+                        .attr("cy", (d, i) => setPos(d, i).y)
+                        .attr("r", d => d.radius + 5)
+                        .style("fill", "none")
+                        .attr("stroke", d => "grey")
+                        .attr("stroke-width", 1);
+
+                    const a = g.append("svg:a")
+                        .attr("xlink:href", d => d.url)
+                        .attr("target", "_blank");
+
+                    const g2 = a.append("g");
+                    g2.append('text')
+                        .attr("fx", d => d.x)
+                        .attr("fy", d => d.y)
+                        .attr("text-anchor", "middle")
+                        .attr("fill", "white")
+                        .attr("stroke", "none")
+                        .attr("alignment-baseline", "middle")
+                        .style("font-family", "helvetica")
+                        .style("font-size", "16pt")
+                        .text(d => d.name)
+                        .classed("actionName", true);
+
+                    const searchA = g.append("svg:a")
+                        .attr("xlink:href", d =>
+                            `https://cs.github.com/?scopeName=All+repos&scope=&q=%22lukka%2F${d.name}%22+%28path%3A*.yml+OR+path%3A*.yaml%29`)
+                        .attr("target", "_blank");
+
+                    searchA.append('text')
+                        .attr("fx", d => d.x)
+                        .attr("fy", d => d.y)
+                        .attr("text-anchor", "middle")
+                        .attr("fill", "white")
+                        .attr("stroke", "none")
+                        .attr("alignment-baseline", "middle")
+                        .style("font-family", "helvetica")
+                        .style("font-size", "16pt")
+                        .text("0")
+                        .classed("actionUsage", true);
+
+                    return g;
+                });
+
+            updateActionNodes();
+        }
+
+        function updateActionNodes() {
+            svg.select(".actions")
+                .selectAll("circle.action")
+                .data(actions)
+                .join("circle")
+                .attr("cx", (d, i) => setPos(d, i).x)
+                .attr("cy", (d, i) => setPos(d, i).y);
+
+            svg.select(".actions")
+                .selectAll("text.actionName")
+                .data(actions)
+                .join("text")
+                .attr("x", (d, i) => setPos(d, i).x)
+                .attr("y", (d, i) => setPos(d, i).y)
+                .style("text-anchor", "middle");
+
+            svg.select(".actions")
+                .selectAll('text.actionUsage')
+                .attr("x", (d, i) => setPos(d, i).x)
+                .attr("y", (d, i) => setPos(d, i).y)
+                .attr("dy", "1.5em")
+                .text(d => actionsDict[d.name]);
+        }
+
+        function loadGraph() {
+            getData().then(function (l) {
+                Object.keys(l).forEach(item => {
+                    Object.getOwnPropertyNames(l[item]).forEach(repo => {
+                        try {
+                            // Grab usages (i.e. the object with actionName property.).
+                            var usages = l[item][repo].filter(obj =>
+                                'actionName' in obj);
+                            // Last element in the array is the 'repository' object.
+                            var repoData = l[item][repo][l[item][repo].length - 1];
+
+                            const name = `${item}/${repo}`;
+                            const radius = Math.sqrt(repoData.stars) / 1.8;
+                            const repoObj = {
+                                name,
+                                orgName: item,
+                                repoName: repo,
+                                stars: repoData.stars,
+                                usages,
+                                radius: radius < MINIMUM_RADIUS ? MINIMUM_RADIUS : radius,
+                                gravityCenter: { x: centerX, y: centerY },
+                                url_top: repoData.repo_orig.owner.html_url,
+                                url_bottom: repoData.repo_orig.html_url,
+                                url_search: `https://cs.github.com/${item}/${repo}?q=`,
+                                selected: undefined, /* 'undefined' means to use the intrinsic diameter size for the circle */
+                            };
+                            const length = repos.push(repoObj);
+                            const index = length - 1;
+                            repoObj.id = index;
+                            repoObj.displayOrgName = centerText(repoObj.orgName.slice(0, 11), 10);
+                            repoObj.displayRepoName = centerText(repoObj.repoName.slice(0, 11), 10);
+
+                            usages.forEach(use => {
+                                // Track action usage.
+                                actionsDict[use.actionName] += 1;
+
+                                const uniqueName = `${use.actionName}@${use.version}`;
+                                if (!versionsDict[uniqueName])
+                                    versionsDict[uniqueName] = [];
+                                const actionIndex = getActionIndex(use.actionName);
+                                versionsDict[uniqueName].push({
+                                    id: uniqueName,
+                                    version: use.version,
+                                    // action, [0..2]
+                                    targetAction: actionIndex,
+                                    // project: index in 'repos' array.
+                                    targetProject: index
+                                });
+                            });
+                        }
+                        catch (err) {
+                            console.warn(err);
+                        }
+                    });
+                });
+
+                Object.keys(versionsDict).forEach(keyName => {
+                    const actionName = keyName.slice(0, keyName.indexOf('@'));
+                    const v = {
+                        id: keyName,
+                        name: keyName.slice(keyName.indexOf('@') + 1),
+                        displayName: '',
+                        radius: MINIMUM_RADIUS,
+                        index: -1,
+                        color: actions[getActionIndex(actionName)].color,
+                        occurrences: 0
+                    };
+                    const newLen = versions.push(v);
+                    v.index = newLen - 1;
+                    const action = getAction(actionName);
+                    v.gravityCenter = { x: action.fx, y: action.fy };
+                    v.displayName = shortenVersion(v.name);
+                });
+                versionsCount = versions.length;
+                // //?? console.log('versions:');
+                // //?? console.log(versions);
+
+                // For each repo instance, set the index of itself in the big allNodes array.
+                repos.forEach((repo, index) => repo.id = index + actionsCount + versionsCount);
+
+                offset = actionsCount + versionsCount;
+                for (const [key, values] of Object.entries(versionsDict)) {
+                    values.forEach(item => {
+                        const versionIndex = getVersionIndex(item.id);
+                        const version = getVersion(item.id);
+                        const firstMet = (++version.occurrences) === 1;
+
+                        const allNodesVersionIndex = versionIndex + actionsCount;
+
+                        if (firstMet === true) {
+                            const link = {
+                                target: item.targetAction,
+                                source: allNodesVersionIndex,
+                                distance: 0,
+                                strength: .1
+                            };
+                            // Target is the action, indices are for allNodes array.
+                            const len = links.push(link);
+                            const index = len - 1;
+                            link.id = `id${index}`;
+                            // //?? console.log(`${item.targetAction}, ${allNodesIndex}`);
+                        }
+
+                        // Target is the repository, indices are for allNodes array.
+                        const link = {
+                            target: item.targetProject + offset,
+                            source: allNodesVersionIndex,
+                            distance: 0,
+                            strength: .01
+                        };
+                        const len = links.push(link);
+                        const index = len - 1;
+                        link.id = `id${index}`;
+                    });
+                };
+                versions.forEach(version => version.radius = version.radius + 3 * Math.sqrt(version.occurrences));
+
+                console.log(links);//??
+
+                // Aggregate actions, versions and nodes altogether.
+                actions.forEach(a => allNodes.push(a));
+                versions.forEach(v => allNodes.push(v));
+                repos.forEach(r => allNodes.push(r));
+                simulation = d3.forceSimulation(allNodes)
+                    //.force('charge', d3.forceManyBody().strength(1).distanceMin(0.01).distanceMax(1))
+                    .force('center', d3.forceCenter(centerX, centerY))
+                    .force('link', d3.forceLink().links(links).strength(
+                        (d) => (d.target < 3 ? 1 : .0001)
+                    ))
+                    .force('collision', d3.forceCollide().iterations(30).radius(d =>
+                        getRadius(d)))
+                    .force('x', d3.forceX((d, i) => {
+                        const g = d?.gravityCenter;
+                        return g ? g.x : 10000000;
+                    }))
+                    .force('y', d3.forceY((d, i) => {
+                        const g = d?.gravityCenter;
+                        return g ? g.y : 10000000;
+                    }))
+                    .on('tick', ticked);
+                let lastClickedVersion = undefined;
+
+                svg.select(".versions")
+                    .selectAll("versions")
+                    .data(versions)
+                    .join(enter => {
+                        const g = enter.append("g");
+                        const versionNodes = g.append('circle')
+                            .attr("cx", d => d.x)
+                            .attr("cy", d => d.y)
+                            .attr("r", d => d.radius)
+                            .attr("id", (d, i) => `id${i + actionsCount}`)
+                            .style("fill", d => d.color)
+                            .attr("stroke", "black");
+                        versionNodes.on("click", function (event, obj) {
+                            if (lastClickedVersion)
+                                disableSelection(lastClickedVersion);
+                            if (!lastClickedVersion ||
+                                (lastClickedVersion && lastClickedVersion.attr('id') !== d3.select(this).attr('id'))) {
+                                enableSelection(d3.select(this));
+                                lastClickedVersion = d3.select(this);
+                            } else {
+                                lastClickedVersion = undefined;
+                            }
+                        });
+
+                        const searchA = g.append("svg:a")
+                            .attr("xlink:href", d => `https://cs.github.com/?scopeName=All+repos&scope=&q=%22lukka%2F${encodeURIComponent(d.id)}%22+%28path%3A*.yml+OR+path%3A*.yaml%29`)
+                            .attr("target", "_blank");
+                        searchA.append('text')
+                            .attr("x", d => d.x)
+                            .attr("y", d => d.y)
+                            // Hack: move a breeze down the text to align to the outer circle.
+                            .attr("dy", "0.6em")
+                            .attr("text-anchor", "middle")
+                            .attr("alignment-baseline", "middle")
+                            .text(d => centerText(`${d.occurrences}`, 8))
+                            .classed("versionCount", true);
+
+                        g.append('text')
+                            .attr("x", d => d.x)
+                            .attr("y", d => d.y)
+                            // Hack: move a breeze down the text to align to the outer circle.
+                            .attr("dy", "-0.3em")
+                            .attr("text-anchor", "middle")
+                            .attr("alignment-baseline", "middle")
+                            .text(d => centerText(d.displayName, 8))
+                            .classed("versionName", true)
+                            .classed("no_link", true);
+                    });
+            });
+        }
+
+        function createDescription() {
+            svg.select('.description')
+                .attr("text-anchor", "middle");
+
+            const xyL = getPointOnCircle(width, height);
+            dGL = svg.select('.description').append("g");
+            const xyR = getPointOnCircle(width, height);
+            dGR = svg.select('.description').append("g");
+            const xyB = getPointOnCircle(width, height);
+            dGButton = svg.select('.description').append("g");
+
+            dGL.attr("transform", `translate(${xyL.x}, ${xyL.y})`);
+            dGR.attr("transform", `translate(${xyR.x}, ${xyR.y})`)
+            dGButton.attr("transform", `translate(${xyB.x}, ${xyB.y})`);
+
+            dGL.transition()
+                .duration(1000)
+                .attr("transform", (d) => {
+                    return `translate(${width / 2. - descriptionSize.x},
+                        ${/*height / 4. -*/ descriptionSize.y + 50}) scale(2, 2) `;
+                });
+            dGR.transition()
+                .duration(1000)
+                .attr("transform", (d) => {
+                    return `translate(${width / 2. - descriptionSize.x},
+                        ${/*height / 4. -*/ descriptionSize.y + 50}) scale(2, 2) `;
+                });
+            dGButton.transition()
+                .duration(1000)
+                .attr("transform", (d) => {
+                    return `translate(${width / 2. - descriptionSize.x},
+                        ${/*height / 4. -*/ descriptionSize.y + 50}) scale(2, 2) `;
+                });
+
+            let yOff = 0;
+            let ySpacing = 16;
+
+            dGL.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("This graph shows the occurrences of GitHub Actions in public repositories:");
+
+            for (const [key, values] of Object.entries(actionsDict)) {
+                dGL.append("svg:a")
+                    .attr("xlink:href", `https://github.com/lukka/${key}`)
+                    .attr("target", "_blank")
+                    .insert("text")
+                    .attr("font-weight", 700)
+                    .text(`${key} [link 🔗]`)
+                    .attr("x", descriptionSize.x / 2.)
+                    .attr("y", yOff += ySpacing)
+            };
+
+            dGL.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("Each action is represented by a node located at a vertex of the triangle.")
+            dGL.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("Nodes for versions and repositories are loaded upon start.");
+            dGL.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("Edges between nodes from version to repo express <<uses>> relationship.");
+            dGL.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("Only public GitHub repositories with more than 25☆ are accounted.");
+
+            dGR.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("Gestures:");
+
+            dGR.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("- Click/Tap on the occurrence numbers to list them on the GitHub search page.");
+
+            dGR.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("- Click/Tap on the repository to list actions the GitHub search page.");
+
+            dGR.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("- Click/Tap on the version's node to highlight the repositories using that version.");
+
+            dGR.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("- Hover on a repository to highlight what action(s) it uses.");
+
+            dGR.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing)
+                .text("- Repo nodes can be rearranged by dragging them.");
+
+            const sillyButtonSize = { x: 300, y: ySpacing * 3 };
+            const sillyButton =
+                dGButton.append("rect")
+                    .attr("x", descriptionSize.x / 2. - sillyButtonSize.x / 2.)
+                    .attr("y", yOff += ySpacing)
+                    .attr("width", sillyButtonSize.x)
+                    .attr("height", sillyButtonSize.y)
+                    .style("stroke", "#112233")
+                    .style("fill", "#DDD")
+                    .style("stroke-width", 2)
+                    .attr("fill", "grey")
+                    .style("opacity", showDescription ? 1 : 0);
+            sillyButton.on("click",
+                (ev, obj) => {
+                    showDescription = false;
+                    loadGraph();
+                });
+            const g = dGButton.append("g")
+                .classed("no_link", true);
+            g.append("text")
+                .attr("x", descriptionSize.x / 2.)
+                .attr("y", yOff += ySpacing * 2)
+                .text("Click here to Start")
+                .attr("opacity", showDescription ? 1 : 0)
+                .style("font-size", "24pt");
+        };
+
+        let descriptionDismissed = false;
+        function updateDescription() {
+            dGButton.style("opacity", showDescription ? 1 : 0);
+
+            if (!showDescription && !descriptionDismissed) {
+                descriptionDismissed = true;
+
+                // Put the button off screen.
+                dGButton.attr("transform", "translate(4000, 0)");
+
+                //
+                dGL.transition()
+                    .duration(1000)
+                    .attr("transform", d =>
+                        `translate(${width * 0.00}, ${height / 1.5}) scale(1.2, 1.2)`);
+
+                dGR.transition()
+                    .duration(1000)
+                    .attr("transform", d =>
+                        `translate(${width * 0.65}, ${height / 1.9}) scale(1.2, 1.2)`);
+
+                const destPos = getPointOnCircle(width / 3, height / 3);
+                svg.select("polygon")
+                    .transition()
+                    .duration(3000)
+                    .ease(d3.easeLinear)
+                    .attr("transform", `translate(${destPos.x},${destPos.y})scale(.05)rotate(150)`)
+                    .transition()
+                    .duration(2000)
+                    .ease(d3.easeLinear)
+                    .attr("transform", `translate(${destPos.x},${destPos.y})scale(0)rotate(140)`);
+            }
+        }
+
+        let updatedLinks;
+        function removeForegroundLinks() {
+            updatedLinks
+                .attr('stroke', 'black')
+                .attr('stroke-width', '1');
+
+            // Remove foreground edges.
+            d3.select(".raisedLinks")
+                .selectAll("line")
+                .remove();
+            repoCircles.classed("disactive", false);
+        }
+
+        let repoCircles;
+        function updateNodes() {
+            updatedLinks =
+                svg.select('.links')
+                    .selectAll("line")
+                    .data(links)
+                    .join('line')
+                    .attr("style", "stroke:black")
+                    .attr("x1", (o, idx) => o.source.x)
+                    .attr("y1", (o, idx) => o.source.y)
+                    .attr("x2", (o, idx) => o.target.x)
+                    .attr("y2", (o, idx) => o.target.y)
+                    .attr("id", (o, idx) => o.id);
+
+            svg.select(".repos")
+                .selectAll(".repo")
+                .data(repos)
+                .join(
+                    enter => {
+                        const g = enter.append("g")
+                        const a = g.append("svg:a")
+                            .attr("xlink:href", d => d.url_search + actions.map(a => a.name).join("+OR+"))
+                            .attr("target", "_blank");
+                        repoCircles = a.insert("circle")
+                            .style("fill", d => getNodeColor(d))
+                            .attr("stroke", "black")
+                            .attr("r", obj => getRadius(obj))
+                            .attr("id", (d, i) => `id${i + versionsCount + actionsCount}`)
+                            .call(d3.drag().on("start", dragstarted)
+                                .on("drag", dragged)
+                                .on("end", dragended));
+
+                        a.classed("repo", true)
+                            .append("text")
+                            .attr("stroke", "black")
+                            .attr("x", d => d.x)
+                            .attr("y", d => d.y)
+                            .attr("dy", "-0.7em")
+                            .text(d => d.displayOrgName)
+                            .attr("alignment-baseline", "middle")
+                            .style("text-anchor", "middle")
+                            .style("font-weight", "lighter")
+                            .style("font-size", "1px")
+                            .each(getTextSize)
+                            .style("font-size", d => `${d.scale}px`)
+                            .classed("no_link", true);
+                        ;
+
+                        a.append("text")
+                            .attr("stroke", "black")
+                            .attr("x", d => d.x)
+                            .attr("y", d => d.y)
+                            .attr("dy", "0.5em")
+                            .text(d => d.displayRepoName)
+                            .attr("alignment-baseline", "middle")
+                            .style("text-anchor", "middle")
+                            .style("font-weight", "lighter")
+                            .style("font-size", "1px")
+                            .each(getTextSize)
+                            .style("font-size", d => `${d.scale}px`)
+                            .classed("no_link", true);
+
+                        a.append("text")
+                            .attr("stroke", "black")
+                            .attr("x", d => d.x)
+                            .attr("y", d => d.y)
+                            .attr("dy", "1.7em")
+                            .text(d => centerText(`${d.stars}☆`, 15)) //⭐
+                            .attr("alignment-baseline", "middle")
+                            .style("text-anchor", "middle")
+                            .style("font-weight", "lighter")
+                            .style("font-size", "1px")
+                            .each(getTextSize)
+                            .style("font-size", d => `${d.scale}px`)
+                            .classed("no_link", true);
+
+                        repoCircles.on('mouseover', function (d, obj) {
+                            // Do not react while running.
+                            if (dragging)
+                                return;
+
+                            // Do not react if not selected.
+                            if (typeof (obj.selected) !== 'undefined' && obj.selected === false)
+                                return;
+
+                            if (showDescription) {
+                                return;
+                            }
+
+                            const res = repoCircles.filter(repo => obj.id !== repo.id)
+                                .classed('disactive', true);
+
+                            links.forEach(link => {
+                                if (link.source.index === obj.id || link.target.index === obj.id) {
+                                    tgtRadius = getRadius(link.target);
+                                    srcRadius = getRadius(link.source);
+                                    const vs = { x: link.source.x, y: link.source.y };
+                                    const vt = { x: link.target.x, y: link.target.y };
+                                    // Compute versor from target to source.
+                                    let vX = vs.x - vt.x;
+                                    let vY = vs.y - vt.y;
+                                    const mag = Math.sqrt(vX * vX + vY * vY);
+                                    vX /= mag;
+                                    vY /= mag;
+
+                                    d3.select(".raisedLinks")
+                                        .append("line")
+                                        .style("stroke", "red")
+                                        .style("stroke-width", 6)
+                                        .style("stroke-linecap", "round")
+                                        .attr("x1", link.source.x + (-vX * srcRadius * .8))
+                                        .attr("y1", link.source.y + (-vY * srcRadius * .8))
+                                        .attr("x2", link.target.x + (vX * tgtRadius * .8))
+                                        .attr("y2", link.target.y + (vY * tgtRadius * .8))
+                                }
+                            });
+                        });
+                        repoCircles.on('mouseout', function (d, obj) {
+                            removeForegroundLinks();
+                        });
+                    },
+                    update => {
+                        update.selectAll("text")
+                            .attr("x", d => d.x)
+                            .attr("y", d => d.y)
+                            .style("font-size", "1px")
+                            .each(getTextSize)
+                            .style("font-size", d => `${d.scale}px`);
+
+                        update.selectAll("circle")
+                            .attr("cx", d => d.x)
+                            .attr("cy", d => d.y)
+                            .attr("r", obj => getRadius(obj));
+                    });
+
+            updateActionNodes();
+
+            svg.select(".versions")
+                .selectAll("circle")
+                .data(versions)
+                .join("circle")
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y);
+
+            svg.select(".versions")
+                .selectAll("text.versionName")
+                .data(versions)
+                .join("text")
+                .attr("x", d => d.x)
+                .style("font-size", "1px")
+                .each(getTextSize)
+                .style("font-size", d => `${d.scale}px`)
+                .attr("y", d => d.y);
+
+            svg.select(".versions")
+                .selectAll("text.versionCount")
+                .data(versions)
+                .join("text")
+                .attr("x", d => d.x)
+                .style("font-size", "1px")
+                .each(getTextSize)
+                .style("font-size", d => `${d.scale}px`)
+                .attr("opacity", 0.8)
+                .attr("y", d => d.y);
+
+            updateDescription();
+        };
+
+        function createTriangle() {
+            svg.select(".background")
+                .selectAll("polygon")
+                .data([trianglePositions])
+                .join(enter => {
+                    trianglePolygon =
+                        enter.append("polygon")
+                            .attr("fill", "#EEEEEE")
+                            .attr("stroke", "#333333")
+                            .attr("transform", function (d, i) {
+                                return `translate(120,25) scale(.87)`//${d[0].x}, ${d[0].y})`
+                            })
+                            .lower();
+                });
+        }
+
+        function animateTriangle() {
+            if (!showDescription)
+                return;
+
+            var trianglePositionsCopy = JSON.parse(JSON.stringify(trianglePositions));
+
+            trianglePositionsCopy.forEach((o, i) => {
+                let dxy = [0, 0];
+                const r = Math.trunc(Math.random() / 0.25);
+                const f = [[1, 0], [0, 1], [-1, 0], [0, -1]]
+                triangleAngles[i] += 0.1;// + (Math.random() * .5);
+                if (triangleAngles[i] > 3.14)
+                    triangleAngles[i] = -3.140;
+                o.x += (f[r][0] * (+Math.sin(triangleAngles[i] + i * Math.PI / 2.) * 20));
+                o.y += (f[r][1] * (+Math.cos(triangleAngles[i] + i * Math.PI / 2.) * 20));
+            });
+            svg.select(".background")
+                .selectAll("polygon")
+                .data([trianglePositionsCopy])
+                .join("polygon")
+                .transition()
+                .duration(500)
+                .ease(d3.easeLinear)
+                .attr("points", function (d) {
+                    return d.map(function (d) {
+                        return [d.x, d.y].join(",");
+                    }).join(" ");
+                }).on('end', animateTriangle);
+        }
+
+        function disableSelection(versionNode) {
+            const versionData = versionNode.datum();
+            // Do not highlight the version node.
+            versionNode.classed("versionHovering", false);
+            versionNode.style("fill", d3.color(versionData.color));
+
+            d3.select(".repos").selectAll("circle").classed("active", false);
+            d3.select(".repos").selectAll("circle").classed("disactive", false);
+            d3.select(".links").selectAll("line").attr("opacity", "1");
+            repos.forEach(repo => repo.selected = undefined);
+            allNodes.forEach(o => o.selected = undefined);
+            simulation.nodes(allNodes);
+            simulation.alpha(.3).restart();
+        }
+
+        function enableSelection(versionNode,) {
+            if (showDescription)
+                return;
+
+            const versionData = versionNode.datum();
+
+            // Highlight the version node.
+            versionNode.classed("versionHovering", true);
+            versionNode.style("fill", d3.color(versionData.color).brighter());
+
+            d3.select(".repos").selectAll("circle").classed("disactive", true);
+
+            d3.select(".links").
+                selectAll("line").
+                attr("opacity", "0.01");
+            const selectedItems = {}; // Keep track of selected item and never unselect what is selected already.
+            links.forEach((link, linkIndex) => {
+                const idString = versionNode.attr("id");
+                if (idString.startsWith("id")) {
+                    const idNum = parseInt(idString.substr(2), 10);
+                    // A version node is always the source of the link.
+                    versionIndexInAllNodes = link.source.index;
+                    actionOrRepoIndexAllNodes = link.target.index;
+                    if (versionIndexInAllNodes === idNum) {
+                        // Skip links to action nodes.
+                        if (actionOrRepoIndexAllNodes > actionsCount) {
+                            d3.select(".repos").select(`#id${actionOrRepoIndexAllNodes} `)
+                                .classed("disactive", false)
+                                .classed("active", true);
+                            repos[actionOrRepoIndexAllNodes - offset].selected = true;
+                            allNodes[actionOrRepoIndexAllNodes].selected = true;
+                            d3.select(".links")
+                                .select(`#id${linkIndex} `)
+                                .attr("opacity", "1.0")
+                                .attr("stroke-width", "1.5px");
+                            selectedItems[actionOrRepoIndexAllNodes] = true;
+                        }
+                    } else {
+                        if (!selectedItems[actionOrRepoIndexAllNodes]) {
+                            const repoIndex = actionOrRepoIndexAllNodes - offset;
+                            if (repoIndex >= 0 && repos[repoIndex]) {
+                                repos[repoIndex].selected = false;
+                                allNodes[actionOrRepoIndexAllNodes].selected = false;
+                            }
+                        }
+                    }
+                }
+                simulation.nodes(allNodes);
+                simulation.alpha(.3).restart();
+            });
+        }
+
+        function getActionIndex(actionName) {
+            return actions.findIndex((action) => action.name === actionName);
+        }
+
+        function getAction(actionName) {
+            return actions[getActionIndex(actionName)];
+        }
+
+        function getVersionIndex(id) {
+            return versions.findIndex((version) => version.id === id);
+        }
+
+        function getVersion(id) {
+            const versionIndex = getVersionIndex(id);
+            return versions[versionIndex];
+        }
+
+        function ticked() {
+            updateNodes();
+        }
+
+        function setPos(obj, idx) {
+            return idx < 3 ? actionPositions[idx] : obj;
+        }
+
+        function getTextSize(d, i) {
+            // Hack: assume the <circle> containing the text is always the first element
+            // of the <text>'s container or of the container's container.
+            var circleObj = this.parentNode.children[0];
+            if (circleObj.nodeName !== "circle") {
+                circleObj = this.parentNode.parentNode.children[0];
+            }
+            var bbox = this.getBBox(),
+                cbbox = circleObj.getBBox(),
+                scale = Math.min(cbbox.width / bbox.width, cbbox.height / bbox.height);
+            // Reduce the scale to not overlap text and container's borders.
+            scale = scale * (i < (actionsCount + versionsCount) ? .99 : 1);
+            d.scale = scale < 6 ? 6 : scale;
+        }
+
+        function shortenVersion(versionName) {
+            // Treat 'latest' and 'vX' differently than Git commit id.
+            if (versionName.startsWith('l') || versionName.startsWith('v'))
+                return versionName.slice(0, 6);
+            else
+                return versionName.slice(0, 5);
+        }
+
+        // Center the text in a given length by putting before and after
+        // non-breakable spaces.
+        function centerText(text, desiredLength) {
+            const blanksToFill = Math.max(desiredLength - text.length, 0);
+            return text.padStart(text.length + (blanksToFill / 2.), ' ').padEnd(desiredLength, ' ');
+        }
+
+        const maxradius = 100;
+        function dragstarted(ev, d) {
+            if (!ev.active) {
+                simulation.alphaTarget(0.6).restart();
+            }
+            removeForegroundLinks();
+
+            dragging = true;
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        let dragging = false;
+        function dragged(ev, d) {
+            d.fx = Math.max(maxradius, Math.min(width - maxradius, ev.x));
+            d.fy = Math.max(maxradius, Math.min(height - maxradius, ev.y));
+        }
+
+        function dragended(ev, d) {
+            if (!ev.active) {
+                simulation.alphaTarget(0);
+            }
+            dragging = false;
+            d.fx = null;
+            d.fy = null;
+        }
+
+        function getRadius(obj) {
+            if (typeof (obj.selected) === 'undefined')
+                return obj.radius;
+            else if (obj.selected === true) {
+                return obj.radius + 20;
+            } else if (obj.selected === false) {
+                return Math.max(5, obj.radius - 100);
+            }
+        }
+
+        async function getData() {
+            return d3.json(`https://lukka.github.io/graph/${dataFileName}`)
+                .catch((err) => {
+                    return d3.json(`http://localhost:8080/graph/${dataFileName}`)
+                }).catch((err) => {
+                    throw err;
+                });
+        }
+
+        function getPointOnCircle(width, height) {
+            const radius = Math.max(width, height) * Math.sqrt(Math.random());
+            const angle = Math.random() * 2 * Math.PI;
+            const x = centerX + radius * Math.cos(angle);
+            const y = centerY + radius * Math.sin(angle);
+            return { x, y };
+        }
+    </script>
+    <div style="text-align:center;">
+        <span>Copyright © 2022 by Luca Cappa
+            <a href="https://github.com/lukka"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/luca_cpp"><i class="fa fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/lucacappa"><i class="fa fa-linkedin"></i></a>
+        </span>
+        <span style="text-align:center;">
+            <a style="text-align:center;" href="https://github.com/lukka/get-action-usage">Source files</a>
+        </span>
+        <span>This work is licensed under the
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+                BY-SA 4.0 International License</a>
+        </span>
+        <span>
+            <a style="margin: auto;" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                <img alt="Creative Commons License" style="text-align: center; border-width:0; margin:auto;"
+                    src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+        </span>
+    </div>
+</body>

@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "import": false,
+    "ordered-imports": false,
+    "variable-name": false,
+    "no-submodule-imports": false
+  }
+}
