@@ -10,9 +10,7 @@
 
 ## **What is this?**
 
-
-![Quick peek animation preview](https://raw.githubusercontent.com/lukka/lukka.github.io/main/images/get-action-usage-preview.gif)
-
+[![Quick peek animation preview](https://raw.githubusercontent.com/lukka/lukka.github.io/main/images/get-action-usage-preview.gif)](https://lukka.github.io/graph/graph.html)
 
 This repository contains the sources of the get-action-usage [GitHub Action](https://github.com/features/actions) that regularly builds and updates the [interactive graph](https://lukka.github.io/graph/graph.html) which visualizes the consumers of the following three other actions:
  * [run-cmake](https://github.com/lukka/run-cmake)
