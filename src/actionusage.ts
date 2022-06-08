@@ -167,7 +167,7 @@ export class GHActionUsage {
 
       this.progressBars.stop();
       // tslint:disable-next-line:no-console
-      console.timeLog('run():');
+      console.timeLog('run()');
       this.reporter.debug(`run()>>`);
     }
   }
