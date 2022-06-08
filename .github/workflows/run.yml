@@ -35,7 +35,7 @@ jobs:
     #    npm install
     #    npm run build/pack
     - uses: ./
-      name: validation test by running this action
+      name: Scan GitHub public repositories
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_WORKSPACES }}
     - uses: actions/upload-artifact@v3
