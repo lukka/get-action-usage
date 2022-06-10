@@ -30,7 +30,11 @@ import { Stopwatch } from 'ts-stopwatch';
 export class GHActionUsage {
   private static readonly LastStartTimeName: string = '/LastStartTimeName/';
   private static readonly UsageDbFileName = 'action-usage-db.json';
-  private static readonly WorkflowFileName = 'run.yml';
+  private static readonly WorkflowFilePath: string[] = [
+    '.github',
+    'workflows',
+    'run.yml',
+  ];
   // Terminate the execution after this timeout to prevent forced cancellation
   // on the runner (six hours)
   private static readonly InternalTimeoutMinutes = 5 * 60;
@@ -55,12 +59,16 @@ export class GHActionUsage {
   private readonly startingDate: Date;
   private readonly executionStopDate: Date;
   private totalRepositoryChecked: number = 0;
+  private readonly actionRootPath: string;
 
   public constructor(
     private readonly octokit: ok.Octokit,
     private readonly reposProviderFactory: IRepositoriesProviderFactory,
     private readonly reporter: IReporter
   ) {
+    // Identify action directory
+    this.actionRootPath = this.getActionPath();
+
     this.executionStopDate = DateHelper.addMinutes(
       new Date(),
       GHActionUsage.InternalTimeoutMinutes
@@ -68,7 +76,7 @@ export class GHActionUsage {
     reporter.info(
       `Executing until ${this.executionStopDate.toUTCString()} or until API rate limit reached.`
     );
-    this.db = this.openDb();
+    this.db = this.openDb(this.actionRootPath);
     this.startingDate = this.getStartingDate() ?? new Date('2010-01-01');
     reporter.info(`Starting date: ${this.startingDate.toUTCString()}'.`);
 
@@ -163,7 +171,7 @@ export class GHActionUsage {
       );
       this.db.save(true);
 
-      await this.setupCron(limits.reset);
+      await this.setupCron(this.actionRootPath, limits.reset);
 
       this.progressBars.stop();
       // tslint:disable-next-line:no-console
@@ -174,6 +182,30 @@ export class GHActionUsage {
 
   public setRemainingCalls(restApi?: number, searchApi?: number): void {
     this.progressBars.updateApiQuota(restApi, searchApi);
+  }
+
+  // Identify the location where the action is checked out by seeking for the run.yml file.
+  private getActionPath(): string {
+    let actionPath = null;
+    this.reporter.debug(`getActionPath()<<`);
+    const ds = [
+      process.cwd() ?? '',
+      GHActionUsage.getWorkspacePath() ?? '',
+      `${__dirname + path.sep}..`,
+    ];
+    for (const d of ds) {
+      const wffp = path.join(d, ...GHActionUsage.WorkflowFilePath);
+      this.reporter.debug(`checking for '${d}'...`);
+      if (fs.existsSync(wffp)) {
+        actionPath = d;
+        break;
+      }
+    }
+    if (!actionPath) {
+      throw new Error(`Cannot identify the action root directory.`);
+    }
+    this.reporter.debug(`getActionPath()>>'${actionPath}'`);
+    return actionPath;
   }
 
   // Check whether any workflow is already running for this repository.
@@ -220,15 +252,10 @@ export class GHActionUsage {
     }
   }
 
-  private openDb(): JsonDB {
+  private openDb(rootPath: string): JsonDB {
     let db: JsonDB;
-    let dbPath = path.join('graph', GHActionUsage.UsageDbFileName);
+    const dbPath = path.join(rootPath, 'graph', GHActionUsage.UsageDbFileName);
     try {
-      const workDir = GHActionUsage.getWorkspacePath();
-      if (workDir) {
-        dbPath = path.join(workDir, dbPath);
-      }
-
       this.reporter.debug(`Opening DB at '${dbPath}'....`);
       db = new JsonDB(new Config(dbPath, true, true, '/'));
       db.getData(GHActionUsage.LastStartTimeName);
@@ -243,14 +270,10 @@ export class GHActionUsage {
     return db;
   }
 
-  private async setupCron(date: Date): Promise<void> {
+  private async setupCron(rootPath: string, date: Date): Promise<void> {
     try {
       // Read content of workflow file.
-      const filePath = path.join(
-        GHActionUsage.getWorkspacePath() ?? '',
-        '.github/workflows',
-        GHActionUsage.WorkflowFileName
-      );
+      const filePath = path.join(rootPath, ...GHActionUsage.WorkflowFilePath);
       const content = fs.readFileSync(filePath, {
         encoding: 'utf8',
         flag: 'r',

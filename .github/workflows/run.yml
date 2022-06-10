@@ -4,7 +4,7 @@ on:
   pull_request:
   schedule:
     - cron: '0 * * * *'
-    - cron: '49 7 9 6 4'
+    - cron: '16 0 10 6 5'
   workflow_dispatch:
 
 jobs:
@@ -20,7 +20,8 @@ jobs:
     - uses: actions/checkout@v2
       with:
         token: ${{ secrets.PAT_WORKSPACES }}
-    
+        path: getactionusage
+
     - uses: actions/checkout@v2
       name: Fetch the web site repo to update.
       with:
@@ -35,7 +36,7 @@ jobs:
     #- run: |
     #    npm install
     #    npm run build/pack
-    - uses: ./
+    - uses: ./getactionusage
       name: Scan GitHub public repositories
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_WORKSPACES }}
@@ -51,6 +52,7 @@ jobs:
     - name: Commit DB content and update CRON job
       if: steps.git-check.outputs.modified == 'true'
       run: |
+        cd getactionusage
         git config --global user.name 'Luca'
         git config --global user.email '681992+lukka@users.noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.PAT_WORKSPACES }}@github.com/${{ github.repository }}
@@ -68,11 +70,11 @@ jobs:
         git config --global user.name 'Luca'
         git config --global user.email '681992+lukka@users.noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.PAT_WORKSPACES }}@github.com/lukka/lukka.github.io
-        mkdir -pv ./graph/ 
-        cp ../graph/action-usage-db.json ./graph
-        cp ../graph/graph.html ./graph
-        git add -f graph/action-usage-db.json
-        git add -f graph/graph.html
+        mkdir -pv ./graph/
+        cp ../getactionusage/graph/action-usage-db.json ./graph
+        cp ../getactionusage/graph/graph.html ./graph
+        git add -f ./graph/action-usage-db.json
+        git add -f ./graph/graph.html
         git status
         git commit -m "Automated commit for publishing updated graph web page"
         git push

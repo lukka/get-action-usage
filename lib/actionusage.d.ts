@@ -6,7 +6,7 @@ export declare class GHActionUsage {
     private readonly reporter;
     private static readonly LastStartTimeName;
     private static readonly UsageDbFileName;
-    private static readonly WorkflowFileName;
+    private static readonly WorkflowFilePath;
     private static readonly InternalTimeoutMinutes;
     private static getWorkspacePath;
     private static delay;
@@ -16,9 +16,11 @@ export declare class GHActionUsage {
     private readonly startingDate;
     private readonly executionStopDate;
     private totalRepositoryChecked;
+    private readonly actionRootPath;
     constructor(octokit: ok.Octokit, reposProviderFactory: IRepositoriesProviderFactory, reporter: IReporter);
     run(): Promise<void>;
     setRemainingCalls(restApi?: number, searchApi?: number): void;
+    private getActionPath;
     private isAlreadyRunning;
     private openDb;
     private setupCron;
