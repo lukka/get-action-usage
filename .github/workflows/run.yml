@@ -43,7 +43,7 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: results
-        path: ${{ github.workspace }}/getactionusage/action-usage-db.json
+        path: ${{ github.workspace }}/getactionusage/graph/action-usage-db.json
     
     - name: Check for modified files
       id: git-check
