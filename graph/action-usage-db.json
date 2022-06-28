@@ -635,7 +635,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Thu, 21 Sep 2017 00:00:00 GMT",
+    "LastStartTimeName": "Mon, 18 Jun 2018 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -8012,6 +8012,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "cpp17",
                         "direct3d11",
@@ -12878,6 +12879,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "cpp11",
                         "cpp14",
@@ -13020,6 +13022,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [],
                     "visibility": "public",
                     "forks": 22,
@@ -13155,6 +13158,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "big-data",
                         "cpp",
@@ -13385,7 +13389,7 @@
                     "has_downloads": true,
                     "has_wiki": false,
                     "has_pages": true,
-                    "forks_count": 149,
+                    "forks_count": 150,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
@@ -13399,6 +13403,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "cpp",
                         "header-only",
@@ -13406,7 +13411,7 @@
                         "jwt"
                     ],
                     "visibility": "public",
-                    "forks": 149,
+                    "forks": 150,
                     "open_issues": 18,
                     "watchers": 450,
                     "default_branch": "master",
@@ -13533,6 +13538,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "7zip",
                         "compress",
@@ -13681,6 +13687,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "appimage",
                         "automation",
@@ -14011,6 +14018,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "blackandwhite",
                         "c-plus-plus",
@@ -14123,7 +14131,7 @@
                     "releases_url": "https://api.github.com/repos/ArthurSonzogni/Diagon/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/ArthurSonzogni/Diagon/deployments",
                     "created_at": "2018-01-22T19:39:32Z",
-                    "updated_at": "2022-06-27T16:00:25Z",
+                    "updated_at": "2022-06-27T19:05:22Z",
                     "pushed_at": "2022-06-25T22:06:01Z",
                     "git_url": "git://github.com/ArthurSonzogni/Diagon.git",
                     "ssh_url": "git@github.com:ArthurSonzogni/Diagon.git",
@@ -14131,8 +14139,8 @@
                     "svn_url": "https://github.com/ArthurSonzogni/Diagon",
                     "homepage": "https://arthursonzogni.com/Diagon/",
                     "size": 436,
-                    "stargazers_count": 921,
-                    "watchers_count": 921,
+                    "stargazers_count": 922,
+                    "watchers_count": 922,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -14153,6 +14161,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "antlr",
                         "arthursonzogni",
@@ -14175,7 +14184,7 @@
                     "visibility": "public",
                     "forks": 31,
                     "open_issues": 8,
-                    "watchers": 921,
+                    "watchers": 922,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -14186,9 +14195,9 @@
                     },
                     "score": 1
                 },
-                "stars": 921,
+                "stars": 922,
                 "url": "https://api.github.com/repos/ArthurSonzogni/Diagon",
-                "watchers": 921
+                "watchers": 922
             }
         ],
         "smk": [
@@ -15026,6 +15035,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "bing",
                         "google",
@@ -15173,6 +15183,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "bing",
                         "dbus-api",
@@ -15320,6 +15331,7 @@
                     "license": null,
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "anonymity",
                         "bitcoin",
@@ -15467,6 +15479,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [],
                     "visibility": "public",
                     "forks": 60,
@@ -26480,6 +26493,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "abb",
                         "ros-industrial",
@@ -26611,6 +26625,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "abb",
                         "egm",
@@ -26744,6 +26759,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "build-tool",
                         "buildcache",
@@ -26886,6 +26902,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "game-development",
                         "networking",
@@ -27007,11 +27024,11 @@
                     "has_downloads": true,
                     "has_wiki": true,
                     "has_pages": false,
-                    "forks_count": 846,
+                    "forks_count": 845,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 126,
+                    "open_issues_count": 124,
                     "license": {
                         "key": "apache-2.0",
                         "name": "Apache License 2.0",
@@ -27021,6 +27038,7 @@
                     },
                     "allow_forking": true,
                     "is_template": false,
+                    "web_commit_signoff_required": false,
                     "topics": [
                         "aarch64",
                         "arm",
@@ -27042,8 +27060,8 @@
                         "x64"
                     ],
                     "visibility": "public",
-                    "forks": 846,
-                    "open_issues": 126,
+                    "forks": 845,
+                    "open_issues": 124,
                     "watchers": 15773,
                     "default_branch": "master",
                     "permissions": {
