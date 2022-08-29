@@ -638,7 +638,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Sun, 05 Apr 2015 00:00:00 GMT",
+    "LastStartTimeName": "Sat, 30 Jan 2016 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -7948,8 +7948,20 @@
             },
             {
                 "actionName": "run-vcpkg",
-                "line": 43,
-                "url": "https://github.com/DragonJoker/Castor3D/blob/development/.github/workflows/dependencies.yml#L43",
+                "line": 40,
+                "url": "https://github.com/DragonJoker/Castor3D/blob/development/.github/workflows/dependencies.yml#L40",
+                "version": "v4"
+            },
+            {
+                "actionName": "run-vcpkg",
+                "line": 65,
+                "url": "https://github.com/DragonJoker/Castor3D/blob/development/.github/workflows/dependencies.yml#L65",
+                "version": "v4"
+            },
+            {
+                "actionName": "run-vcpkg",
+                "line": 103,
+                "url": "https://github.com/DragonJoker/Castor3D/blob/development/.github/workflows/dependencies.yml#L103",
                 "version": "v4"
             },
             {
@@ -8023,7 +8035,7 @@
                     "deployments_url": "https://api.github.com/repos/DragonJoker/Castor3D/deployments",
                     "created_at": "2015-04-30T09:53:00Z",
                     "updated_at": "2022-08-26T02:24:53Z",
-                    "pushed_at": "2022-08-27T10:13:07Z",
+                    "pushed_at": "2022-08-29T09:47:08Z",
                     "git_url": "git://github.com/DragonJoker/Castor3D.git",
                     "ssh_url": "git@github.com:DragonJoker/Castor3D.git",
                     "clone_url": "https://github.com/DragonJoker/Castor3D.git",
@@ -8735,13 +8747,13 @@
                     "deployments_url": "https://api.github.com/repos/trillek-team/tec/deployments",
                     "created_at": "2015-05-06T14:48:31Z",
                     "updated_at": "2022-08-23T13:07:56Z",
-                    "pushed_at": "2022-08-27T22:13:52Z",
+                    "pushed_at": "2022-08-28T18:57:33Z",
                     "git_url": "git://github.com/trillek-team/tec.git",
                     "ssh_url": "git@github.com:trillek-team/tec.git",
                     "clone_url": "https://github.com/trillek-team/tec.git",
                     "svn_url": "https://github.com/trillek-team/tec",
                     "homepage": "http://trillek.space",
-                    "size": 2155,
+                    "size": 2226,
                     "stargazers_count": 131,
                     "watchers_count": 131,
                     "language": "C++",
@@ -9146,7 +9158,7 @@
                     "releases_url": "https://api.github.com/repos/Framstag/libosmscout/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/Framstag/libosmscout/deployments",
                     "created_at": "2015-08-31T20:20:43Z",
-                    "updated_at": "2022-08-16T15:42:44Z",
+                    "updated_at": "2022-08-29T08:58:46Z",
                     "pushed_at": "2022-08-18T06:06:50Z",
                     "git_url": "git://github.com/Framstag/libosmscout.git",
                     "ssh_url": "git@github.com:Framstag/libosmscout.git",
@@ -9154,8 +9166,8 @@
                     "svn_url": "https://github.com/Framstag/libosmscout",
                     "homepage": "",
                     "size": 79736,
-                    "stargazers_count": 192,
-                    "watchers_count": 192,
+                    "stargazers_count": 193,
+                    "watchers_count": 193,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -9202,7 +9214,7 @@
                     "visibility": "public",
                     "forks": 66,
                     "open_issues": 39,
-                    "watchers": 192,
+                    "watchers": 193,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -9213,9 +9225,9 @@
                     },
                     "score": 1
                 },
-                "stars": 192,
+                "stars": 193,
                 "url": "https://api.github.com/repos/Framstag/libosmscout",
-                "watchers": 192
+                "watchers": 193
             }
         ]
     },
@@ -26300,7 +26312,7 @@
                     "releases_url": "https://api.github.com/repos/CE-Programming/CEmu/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/CE-Programming/CEmu/deployments",
                     "created_at": "2015-11-13T05:35:39Z",
-                    "updated_at": "2022-08-24T08:34:46Z",
+                    "updated_at": "2022-08-28T04:05:37Z",
                     "pushed_at": "2022-08-16T20:21:46Z",
                     "git_url": "git://github.com/CE-Programming/CEmu.git",
                     "ssh_url": "git@github.com:CE-Programming/CEmu.git",
@@ -26308,8 +26320,8 @@
                     "svn_url": "https://github.com/CE-Programming/CEmu",
                     "homepage": "https://ce-programming.github.io/CEmu",
                     "size": 10668,
-                    "stargazers_count": 757,
-                    "watchers_count": 757,
+                    "stargazers_count": 759,
+                    "watchers_count": 759,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": false,
@@ -26342,7 +26354,7 @@
                     "visibility": "public",
                     "forks": 65,
                     "open_issues": 66,
-                    "watchers": 757,
+                    "watchers": 759,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -26353,9 +26365,9 @@
                     },
                     "score": 1
                 },
-                "stars": 757,
+                "stars": 759,
                 "url": "https://api.github.com/repos/CE-Programming/CEmu",
-                "watchers": 757
+                "watchers": 759
             }
         ]
     },
