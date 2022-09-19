@@ -638,7 +638,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Sun, 05 Apr 2015 00:00:00 GMT",
+    "LastStartTimeName": "Sat, 30 Jan 2016 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -7955,20 +7955,20 @@
             },
             {
                 "actionName": "run-vcpkg",
-                "line": 115,
-                "url": "https://github.com/DragonJoker/Castor3D/blob/development/.github/workflows/cmake.yml#L115",
+                "line": 107,
+                "url": "https://github.com/DragonJoker/Castor3D/blob/development/.github/workflows/cmake.yml#L107",
                 "version": "v4"
             },
             {
                 "actionName": "run-vcpkg",
-                "line": 181,
-                "url": "https://github.com/DragonJoker/Castor3D/blob/development/.github/workflows/cmake.yml#L181",
+                "line": 173,
+                "url": "https://github.com/DragonJoker/Castor3D/blob/development/.github/workflows/cmake.yml#L173",
                 "version": "v4"
             },
             {
                 "actionName": "run-vcpkg",
-                "line": 273,
-                "url": "https://github.com/DragonJoker/Castor3D/blob/development/.github/workflows/cmake.yml#L273",
+                "line": 265,
+                "url": "https://github.com/DragonJoker/Castor3D/blob/development/.github/workflows/cmake.yml#L265",
                 "version": "v4"
             },
             {
@@ -8066,13 +8066,13 @@
                     "deployments_url": "https://api.github.com/repos/DragonJoker/Castor3D/deployments",
                     "created_at": "2015-04-30T09:53:00Z",
                     "updated_at": "2022-09-12T23:50:08Z",
-                    "pushed_at": "2022-09-18T23:00:57Z",
+                    "pushed_at": "2022-09-19T11:30:19Z",
                     "git_url": "git://github.com/DragonJoker/Castor3D.git",
                     "ssh_url": "git@github.com:DragonJoker/Castor3D.git",
                     "clone_url": "https://github.com/DragonJoker/Castor3D.git",
                     "svn_url": "https://github.com/DragonJoker/Castor3D",
                     "homepage": "https://dragonjoker.github.io/Castor3D",
-                    "size": 869365,
+                    "size": 869388,
                     "stargazers_count": 292,
                     "watchers_count": 292,
                     "language": "C++",
@@ -8085,7 +8085,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 20,
+                    "open_issues_count": 18,
                     "license": {
                         "key": "mit",
                         "name": "MIT License",
@@ -8103,7 +8103,7 @@
                     ],
                     "visibility": "public",
                     "forks": 12,
-                    "open_issues": 20,
+                    "open_issues": 18,
                     "watchers": 292,
                     "default_branch": "development",
                     "permissions": {
@@ -9052,7 +9052,7 @@
                     "releases_url": "https://api.github.com/repos/stohrendorf/CroftEngine/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/stohrendorf/CroftEngine/deployments",
                     "created_at": "2015-08-29T10:51:11Z",
-                    "updated_at": "2022-09-17T19:08:36Z",
+                    "updated_at": "2022-09-19T12:02:45Z",
                     "pushed_at": "2022-09-18T18:09:02Z",
                     "git_url": "git://github.com/stohrendorf/CroftEngine.git",
                     "ssh_url": "git@github.com:stohrendorf/CroftEngine.git",
@@ -9060,8 +9060,8 @@
                     "svn_url": "https://github.com/stohrendorf/CroftEngine",
                     "homepage": "",
                     "size": 169265,
-                    "stargazers_count": 52,
-                    "watchers_count": 52,
+                    "stargazers_count": 53,
+                    "watchers_count": 53,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": false,
@@ -9094,7 +9094,7 @@
                     "visibility": "public",
                     "forks": 11,
                     "open_issues": 4,
-                    "watchers": 52,
+                    "watchers": 53,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -9105,9 +9105,9 @@
                     },
                     "score": 1
                 },
-                "stars": 52,
+                "stars": 53,
                 "url": "https://api.github.com/repos/stohrendorf/CroftEngine",
-                "watchers": 52
+                "watchers": 53
             }
         ]
     },
@@ -9190,13 +9190,13 @@
                     "deployments_url": "https://api.github.com/repos/Framstag/libosmscout/deployments",
                     "created_at": "2015-08-31T20:20:43Z",
                     "updated_at": "2022-09-18T09:50:13Z",
-                    "pushed_at": "2022-09-18T22:22:22Z",
+                    "pushed_at": "2022-09-19T11:34:02Z",
                     "git_url": "git://github.com/Framstag/libosmscout.git",
                     "ssh_url": "git@github.com:Framstag/libosmscout.git",
                     "clone_url": "https://github.com/Framstag/libosmscout.git",
                     "svn_url": "https://github.com/Framstag/libosmscout",
                     "homepage": "",
-                    "size": 80019,
+                    "size": 80101,
                     "stargazers_count": 194,
                     "watchers_count": 194,
                     "language": "C++",
@@ -9205,11 +9205,11 @@
                     "has_downloads": true,
                     "has_wiki": true,
                     "has_pages": false,
-                    "forks_count": 66,
+                    "forks_count": 67,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 42,
+                    "open_issues_count": 41,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -9243,8 +9243,8 @@
                         "windows"
                     ],
                     "visibility": "public",
-                    "forks": 66,
-                    "open_issues": 42,
+                    "forks": 67,
+                    "open_issues": 41,
                     "watchers": 194,
                     "default_branch": "master",
                     "permissions": {
