@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Fri, 06 Mar 2015 00:00:00 GMT",
+    "LastStartTimeName": "Tue, 01 Dec 2015 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -7875,8 +7875,8 @@
         "simc": [
             {
                 "actionName": "get-cmake",
-                "line": 251,
-                "url": "https://github.com/simulationcraft/simc/blob/dragonflight/.github/workflows/main.yml#L251",
+                "line": 252,
+                "url": "https://github.com/simulationcraft/simc/blob/dragonflight/.github/workflows/main.yml#L252",
                 "version": "latest"
             },
             {
@@ -7949,16 +7949,16 @@
                     "releases_url": "https://api.github.com/repos/simulationcraft/simc/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/simulationcraft/simc/deployments",
                     "created_at": "2015-03-15T19:03:52Z",
-                    "updated_at": "2022-11-04T05:43:43Z",
-                    "pushed_at": "2022-11-20T04:51:26Z",
+                    "updated_at": "2022-11-20T22:46:27Z",
+                    "pushed_at": "2022-11-20T21:36:01Z",
                     "git_url": "git://github.com/simulationcraft/simc.git",
                     "ssh_url": "git@github.com:simulationcraft/simc.git",
                     "clone_url": "https://github.com/simulationcraft/simc.git",
                     "svn_url": "https://github.com/simulationcraft/simc",
                     "homepage": null,
-                    "size": 2026632,
-                    "stargazers_count": 1170,
-                    "watchers_count": 1170,
+                    "size": 2018930,
+                    "stargazers_count": 1171,
+                    "watchers_count": 1171,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -7970,7 +7970,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 71,
+                    "open_issues_count": 69,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -7984,8 +7984,8 @@
                     "topics": [],
                     "visibility": "public",
                     "forks": 594,
-                    "open_issues": 71,
-                    "watchers": 1170,
+                    "open_issues": 69,
+                    "watchers": 1171,
                     "default_branch": "dragonflight",
                     "permissions": {
                         "admin": false,
@@ -7996,9 +7996,9 @@
                     },
                     "score": 1
                 },
-                "stars": 1170,
+                "stars": 1171,
                 "url": "https://api.github.com/repos/simulationcraft/simc",
-                "watchers": 1170
+                "watchers": 1171
             }
         ]
     },
@@ -8123,13 +8123,13 @@
                     "deployments_url": "https://api.github.com/repos/DragonJoker/Castor3D/deployments",
                     "created_at": "2015-04-30T09:53:00Z",
                     "updated_at": "2022-11-19T12:37:11Z",
-                    "pushed_at": "2022-11-19T22:04:23Z",
+                    "pushed_at": "2022-11-20T10:51:06Z",
                     "git_url": "git://github.com/DragonJoker/Castor3D.git",
                     "ssh_url": "git@github.com:DragonJoker/Castor3D.git",
                     "clone_url": "https://github.com/DragonJoker/Castor3D.git",
                     "svn_url": "https://github.com/DragonJoker/Castor3D",
                     "homepage": "https://dragonjoker.github.io/Castor3D",
-                    "size": 870798,
+                    "size": 870799,
                     "stargazers_count": 307,
                     "watchers_count": 307,
                     "language": "C++",
@@ -8143,7 +8143,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 22,
+                    "open_issues_count": 21,
                     "license": {
                         "key": "mit",
                         "name": "MIT License",
@@ -8161,7 +8161,7 @@
                     ],
                     "visibility": "public",
                     "forks": 14,
-                    "open_issues": 22,
+                    "open_issues": 21,
                     "watchers": 307,
                     "default_branch": "development",
                     "permissions": {
@@ -9254,7 +9254,7 @@
                     "deployments_url": "https://api.github.com/repos/Framstag/libosmscout/deployments",
                     "created_at": "2015-08-31T20:20:43Z",
                     "updated_at": "2022-11-10T22:30:33Z",
-                    "pushed_at": "2022-11-19T09:03:46Z",
+                    "pushed_at": "2022-11-20T21:31:20Z",
                     "git_url": "git://github.com/Framstag/libosmscout.git",
                     "ssh_url": "git@github.com:Framstag/libosmscout.git",
                     "clone_url": "https://github.com/Framstag/libosmscout.git",
@@ -9274,7 +9274,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 40,
+                    "open_issues_count": 41,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -9309,7 +9309,7 @@
                     ],
                     "visibility": "public",
                     "forks": 69,
-                    "open_issues": 40,
+                    "open_issues": 41,
                     "watchers": 196,
                     "default_branch": "master",
                     "permissions": {
