@@ -107,16 +107,16 @@
                     "releases_url": "https://api.github.com/repos/assimp/assimp/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/assimp/assimp/deployments",
                     "created_at": "2010-05-05T12:53:45Z",
-                    "updated_at": "2022-11-20T18:26:25Z",
-                    "pushed_at": "2022-11-19T15:40:24Z",
+                    "updated_at": "2022-11-21T09:25:10Z",
+                    "pushed_at": "2022-11-21T10:27:48Z",
                     "git_url": "git://github.com/assimp/assimp.git",
                     "ssh_url": "git@github.com:assimp/assimp.git",
                     "clone_url": "https://github.com/assimp/assimp.git",
                     "svn_url": "https://github.com/assimp/assimp",
                     "homepage": "https://www.assimp.org",
-                    "size": 195877,
-                    "stargazers_count": 8413,
-                    "watchers_count": 8413,
+                    "size": 195882,
+                    "stargazers_count": 8418,
+                    "watchers_count": 8418,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -128,7 +128,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 639,
+                    "open_issues_count": 640,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -161,8 +161,8 @@
                     ],
                     "visibility": "public",
                     "forks": 2431,
-                    "open_issues": 639,
-                    "watchers": 8413,
+                    "open_issues": 640,
+                    "watchers": 8418,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -173,9 +173,9 @@
                     },
                     "score": 1
                 },
-                "stars": 8413,
+                "stars": 8418,
                 "url": "https://api.github.com/repos/assimp/assimp",
-                "watchers": 8413
+                "watchers": 8418
             }
         ]
     },
@@ -185,18 +185,18 @@
                 "actionName": "get-cmake",
                 "line": 53,
                 "url": "https://github.com/SimonRit/RTK/blob/master/.github/workflows/build-test-package.yml#L53",
+                "version": "v3.22.2"
+            },
+            {
+                "actionName": "get-cmake",
+                "line": 257,
+                "url": "https://github.com/SimonRit/RTK/blob/master/.github/workflows/build-test-package.yml#L257",
                 "version": "v3.18.3"
             },
             {
                 "actionName": "get-cmake",
-                "line": 253,
-                "url": "https://github.com/SimonRit/RTK/blob/master/.github/workflows/build-test-package.yml#L253",
-                "version": "v3.18.3"
-            },
-            {
-                "actionName": "get-cmake",
-                "line": 281,
-                "url": "https://github.com/SimonRit/RTK/blob/master/.github/workflows/build-test-package.yml#L281",
+                "line": 285,
+                "url": "https://github.com/SimonRit/RTK/blob/master/.github/workflows/build-test-package.yml#L285",
                 "version": "v3.18.3"
             },
             {
@@ -270,7 +270,7 @@
                     "deployments_url": "https://api.github.com/repos/SimonRit/RTK/deployments",
                     "created_at": "2010-07-09T15:21:42Z",
                     "updated_at": "2022-11-02T06:32:21Z",
-                    "pushed_at": "2022-11-20T19:10:32Z",
+                    "pushed_at": "2022-11-21T07:21:06Z",
                     "git_url": "git://github.com/SimonRit/RTK.git",
                     "ssh_url": "git@github.com:SimonRit/RTK.git",
                     "clone_url": "https://github.com/SimonRit/RTK.git",
@@ -290,7 +290,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 41,
+                    "open_issues_count": 40,
                     "license": {
                         "key": "apache-2.0",
                         "name": "Apache License 2.0",
@@ -304,7 +304,7 @@
                     "topics": [],
                     "visibility": "public",
                     "forks": 122,
-                    "open_issues": 41,
+                    "open_issues": 40,
                     "watchers": 193,
                     "default_branch": "master",
                     "permissions": {
@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Thu, 24 Nov 2022 00:00:00 GMT",
+    "LastStartTimeName": "Tue, 28 Sep 2010 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
