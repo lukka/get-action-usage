@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Sat, 30 Jan 2016 00:00:00 GMT",
+    "LastStartTimeName": "Wed, 26 Oct 2016 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -9901,7 +9901,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 103,
+                    "open_issues_count": 104,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -9921,7 +9921,7 @@
                     ],
                     "visibility": "public",
                     "forks": 118,
-                    "open_issues": 103,
+                    "open_issues": 104,
                     "watchers": 200,
                     "default_branch": "master",
                     "permissions": {
@@ -10094,7 +10094,7 @@
                 "actionName": "run-vcpkg",
                 "line": 71,
                 "url": "https://github.com/MapWindow/MapWinGIS/blob/develop/.github/workflows/msbuild.yml#L71",
-                "version": "v10.1"
+                "version": "v10"
             },
             {
                 "name": "MapWinGIS",
@@ -10166,21 +10166,21 @@
                     "releases_url": "https://api.github.com/repos/MapWindow/MapWinGIS/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/MapWindow/MapWinGIS/deployments",
                     "created_at": "2016-06-09T19:19:44Z",
-                    "updated_at": "2022-12-04T08:23:44Z",
-                    "pushed_at": "2022-12-16T23:50:53Z",
+                    "updated_at": "2022-12-19T14:11:11Z",
+                    "pushed_at": "2022-12-19T12:53:40Z",
                     "git_url": "git://github.com/MapWindow/MapWinGIS.git",
                     "ssh_url": "git@github.com:MapWindow/MapWinGIS.git",
                     "clone_url": "https://github.com/MapWindow/MapWinGIS.git",
                     "svn_url": "https://github.com/MapWindow/MapWinGIS",
                     "homepage": "https://mapwindow.discourse.group/",
-                    "size": 347118,
+                    "size": 347551,
                     "stargazers_count": 231,
                     "watchers_count": 231,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
                     "has_downloads": true,
-                    "has_wiki": true,
+                    "has_wiki": false,
                     "has_pages": false,
                     "has_discussions": false,
                     "forks_count": 129,
@@ -10596,7 +10596,7 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": false,
-                    "forks_count": 457,
+                    "forks_count": 458,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
@@ -10622,7 +10622,7 @@
                         "timer"
                     ],
                     "visibility": "public",
-                    "forks": 457,
+                    "forks": 458,
                     "open_issues": 4,
                     "watchers": 1373,
                     "default_branch": "master",
@@ -27479,7 +27479,7 @@
                     "releases_url": "https://api.github.com/repos/OpenVPN/openvpn3/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/OpenVPN/openvpn3/deployments",
                     "created_at": "2016-09-16T01:12:39Z",
-                    "updated_at": "2022-12-16T01:24:11Z",
+                    "updated_at": "2022-12-19T07:35:25Z",
                     "pushed_at": "2022-12-14T23:37:48Z",
                     "git_url": "git://github.com/OpenVPN/openvpn3.git",
                     "ssh_url": "git@github.com:OpenVPN/openvpn3.git",
@@ -27487,8 +27487,8 @@
                     "svn_url": "https://github.com/OpenVPN/openvpn3",
                     "homepage": "https://openvpn.net",
                     "size": 7617,
-                    "stargazers_count": 730,
-                    "watchers_count": 730,
+                    "stargazers_count": 731,
+                    "watchers_count": 731,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -27519,7 +27519,7 @@
                     "visibility": "public",
                     "forks": 335,
                     "open_issues": 43,
-                    "watchers": 730,
+                    "watchers": 731,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -27530,9 +27530,9 @@
                     },
                     "score": 1
                 },
-                "stars": 730,
+                "stars": 731,
                 "url": "https://api.github.com/repos/OpenVPN/openvpn3",
-                "watchers": 730
+                "watchers": 731
             }
         ]
     },
@@ -27614,7 +27614,7 @@
                     "releases_url": "https://api.github.com/repos/COVESA/vsomeip/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/COVESA/vsomeip/deployments",
                     "created_at": "2016-09-16T18:36:18Z",
-                    "updated_at": "2022-12-16T10:41:17Z",
+                    "updated_at": "2022-12-19T05:53:08Z",
                     "pushed_at": "2022-12-14T09:24:40Z",
                     "git_url": "git://github.com/COVESA/vsomeip.git",
                     "ssh_url": "git@github.com:COVESA/vsomeip.git",
@@ -27622,8 +27622,8 @@
                     "svn_url": "https://github.com/COVESA/vsomeip",
                     "homepage": null,
                     "size": 12362,
-                    "stargazers_count": 638,
-                    "watchers_count": 638,
+                    "stargazers_count": 639,
+                    "watchers_count": 639,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -27631,7 +27631,7 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": false,
-                    "forks_count": 464,
+                    "forks_count": 466,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
@@ -27653,9 +27653,9 @@
                         "vsomeip"
                     ],
                     "visibility": "public",
-                    "forks": 464,
+                    "forks": 466,
                     "open_issues": 151,
-                    "watchers": 638,
+                    "watchers": 639,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -27666,9 +27666,9 @@
                     },
                     "score": 1
                 },
-                "stars": 638,
+                "stars": 639,
                 "url": "https://api.github.com/repos/COVESA/vsomeip",
-                "watchers": 638
+                "watchers": 639
             }
         ]
     },
