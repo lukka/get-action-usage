@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Fri, 06 Mar 2015 00:00:00 GMT",
+    "LastStartTimeName": "Thu, 31 Dec 2015 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -7961,13 +7961,13 @@
                     "deployments_url": "https://api.github.com/repos/simulationcraft/simc/deployments",
                     "created_at": "2015-03-15T19:03:52Z",
                     "updated_at": "2023-01-04T11:10:40Z",
-                    "pushed_at": "2023-01-07T04:41:02Z",
+                    "pushed_at": "2023-01-08T00:57:21Z",
                     "git_url": "git://github.com/simulationcraft/simc.git",
                     "ssh_url": "git@github.com:simulationcraft/simc.git",
                     "clone_url": "https://github.com/simulationcraft/simc.git",
                     "svn_url": "https://github.com/simulationcraft/simc",
                     "homepage": null,
-                    "size": 2122765,
+                    "size": 2122889,
                     "stargazers_count": 1200,
                     "watchers_count": 1200,
                     "language": "C++",
@@ -7981,7 +7981,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 72,
+                    "open_issues_count": 70,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -7995,7 +7995,7 @@
                     "topics": [],
                     "visibility": "public",
                     "forks": 618,
-                    "open_issues": 72,
+                    "open_issues": 70,
                     "watchers": 1200,
                     "default_branch": "dragonflight",
                     "permissions": {
@@ -9281,7 +9281,7 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": false,
-                    "forks_count": 70,
+                    "forks_count": 69,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
@@ -9319,7 +9319,7 @@
                         "windows"
                     ],
                     "visibility": "public",
-                    "forks": 70,
+                    "forks": 69,
                     "open_issues": 42,
                     "watchers": 198,
                     "default_branch": "master",
@@ -37269,7 +37269,7 @@
                     "releases_url": "https://api.github.com/repos/cneben/QuickQanava/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/cneben/QuickQanava/deployments",
                     "created_at": "2015-07-19T21:18:04Z",
-                    "updated_at": "2023-01-06T16:03:41Z",
+                    "updated_at": "2023-01-07T20:47:06Z",
                     "pushed_at": "2023-01-04T15:34:35Z",
                     "git_url": "git://github.com/cneben/QuickQanava.git",
                     "ssh_url": "git@github.com:cneben/QuickQanava.git",
@@ -37556,7 +37556,7 @@
                     "releases_url": "https://api.github.com/repos/cdcseacave/openMVS/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/cdcseacave/openMVS/deployments",
                     "created_at": "2015-05-18T15:21:44Z",
-                    "updated_at": "2023-01-06T07:07:09Z",
+                    "updated_at": "2023-01-07T13:46:07Z",
                     "pushed_at": "2023-01-01T17:42:11Z",
                     "git_url": "git://github.com/cdcseacave/openMVS.git",
                     "ssh_url": "git@github.com:cdcseacave/openMVS.git",
@@ -37564,8 +37564,8 @@
                     "svn_url": "https://github.com/cdcseacave/openMVS",
                     "homepage": "http://cdcseacave.github.io",
                     "size": 4834,
-                    "stargazers_count": 2383,
-                    "watchers_count": 2383,
+                    "stargazers_count": 2384,
+                    "watchers_count": 2384,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -37610,7 +37610,7 @@
                     "visibility": "public",
                     "forks": 773,
                     "open_issues": 224,
-                    "watchers": 2383,
+                    "watchers": 2384,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -37621,9 +37621,9 @@
                     },
                     "score": 1
                 },
-                "stars": 2383,
+                "stars": 2384,
                 "url": "https://api.github.com/repos/cdcseacave/openMVS",
-                "watchers": 2383
+                "watchers": 2384
             }
         ]
     },
@@ -37927,74 +37927,116 @@
         "endless-sky": [
             {
                 "actionName": "get-cmake",
-                "line": 444,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L444",
+                "line": 105,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd.yaml#L105",
                 "version": "latest"
             },
             {
                 "actionName": "run-vcpkg",
-                "line": 445,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L445",
+                "line": 106,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd.yaml#L106",
                 "version": "v10"
             },
             {
                 "actionName": "run-cmake",
-                "line": 448,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L448",
+                "line": 109,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd.yaml#L109",
                 "version": "v10"
             },
             {
                 "actionName": "get-cmake",
-                "line": 469,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L469",
+                "line": 53,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L53",
                 "version": "latest"
             },
             {
                 "actionName": "run-vcpkg",
-                "line": 470,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L470",
+                "line": 54,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L54",
                 "version": "v10"
             },
             {
                 "actionName": "run-cmake",
-                "line": 474,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L474",
+                "line": 57,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L57",
+                "version": "v10"
+            },
+            {
+                "actionName": "run-cmake",
+                "line": 65,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L65",
                 "version": "v10"
             },
             {
                 "actionName": "get-cmake",
+                "line": 260,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L260",
+                "version": "latest"
+            },
+            {
+                "actionName": "run-vcpkg",
+                "line": 261,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L261",
+                "version": "v10"
+            },
+            {
+                "actionName": "run-cmake",
+                "line": 264,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L264",
+                "version": "v10"
+            },
+            {
+                "actionName": "get-cmake",
+                "line": 442,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L442",
+                "version": "latest"
+            },
+            {
+                "actionName": "run-vcpkg",
+                "line": 443,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L443",
+                "version": "v10"
+            },
+            {
+                "actionName": "run-cmake",
+                "line": 446,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L446",
+                "version": "v10"
+            },
+            {
+                "actionName": "get-cmake",
+                "line": 467,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L467",
+                "version": "latest"
+            },
+            {
+                "actionName": "run-vcpkg",
+                "line": 468,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L468",
+                "version": "v10"
+            },
+            {
+                "actionName": "run-cmake",
+                "line": 472,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L472",
+                "version": "v10"
+            },
+            {
+                "actionName": "get-cmake",
+                "line": 493,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L493",
+                "version": "latest"
+            },
+            {
+                "actionName": "run-vcpkg",
                 "line": 494,
                 "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L494",
-                "version": "latest"
-            },
-            {
-                "actionName": "run-vcpkg",
-                "line": 495,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L495",
                 "version": "v10"
             },
             {
                 "actionName": "run-cmake",
                 "line": 498,
                 "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L498",
-                "version": "v10"
-            },
-            {
-                "actionName": "get-cmake",
-                "line": 518,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L518",
-                "version": "latest"
-            },
-            {
-                "actionName": "run-vcpkg",
-                "line": 519,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L519",
-                "version": "v10"
-            },
-            {
-                "actionName": "run-cmake",
-                "line": 523,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L523",
                 "version": "v10"
             },
             {
@@ -38067,16 +38109,16 @@
                     "releases_url": "https://api.github.com/repos/endless-sky/endless-sky/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/endless-sky/endless-sky/deployments",
                     "created_at": "2015-03-14T20:44:39Z",
-                    "updated_at": "2023-01-07T07:24:05Z",
-                    "pushed_at": "2023-01-07T08:00:52Z",
+                    "updated_at": "2023-01-07T14:40:18Z",
+                    "pushed_at": "2023-01-08T01:01:20Z",
                     "git_url": "git://github.com/endless-sky/endless-sky.git",
                     "ssh_url": "git@github.com:endless-sky/endless-sky.git",
                     "clone_url": "https://github.com/endless-sky/endless-sky.git",
                     "svn_url": "https://github.com/endless-sky/endless-sky",
                     "homepage": "https://endless-sky.github.io/",
-                    "size": 365407,
-                    "stargazers_count": 3772,
-                    "watchers_count": 3772,
+                    "size": 365543,
+                    "stargazers_count": 3773,
+                    "watchers_count": 3773,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -38088,7 +38130,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 935,
+                    "open_issues_count": 912,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -38123,8 +38165,8 @@
                     ],
                     "visibility": "public",
                     "forks": 835,
-                    "open_issues": 935,
-                    "watchers": 3772,
+                    "open_issues": 912,
+                    "watchers": 3773,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -38135,9 +38177,9 @@
                     },
                     "score": 1
                 },
-                "stars": 3772,
+                "stars": 3773,
                 "url": "https://api.github.com/repos/endless-sky/endless-sky",
-                "watchers": 3772
+                "watchers": 3773
             }
         ]
     },
