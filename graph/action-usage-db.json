@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Wed, 04 Feb 2015 00:00:00 GMT",
+    "LastStartTimeName": "Sun, 01 Nov 2015 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -7886,8 +7886,8 @@
         "simc": [
             {
                 "actionName": "get-cmake",
-                "line": 266,
-                "url": "https://github.com/simulationcraft/simc/blob/dragonflight/.github/workflows/main.yml#L266",
+                "line": 265,
+                "url": "https://github.com/simulationcraft/simc/blob/dragonflight/.github/workflows/main.yml#L265",
                 "version": "latest"
             },
             {
@@ -7961,13 +7961,13 @@
                     "deployments_url": "https://api.github.com/repos/simulationcraft/simc/deployments",
                     "created_at": "2015-03-15T19:03:52Z",
                     "updated_at": "2023-01-17T10:33:58Z",
-                    "pushed_at": "2023-01-18T19:54:46Z",
+                    "pushed_at": "2023-01-20T01:53:21Z",
                     "git_url": "git://github.com/simulationcraft/simc.git",
                     "ssh_url": "git@github.com:simulationcraft/simc.git",
                     "clone_url": "https://github.com/simulationcraft/simc.git",
                     "svn_url": "https://github.com/simulationcraft/simc",
                     "homepage": null,
-                    "size": 2123329,
+                    "size": 2136698,
                     "stargazers_count": 1205,
                     "watchers_count": 1205,
                     "language": "C++",
@@ -7981,7 +7981,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 78,
+                    "open_issues_count": 75,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -7995,7 +7995,7 @@
                     "topics": [],
                     "visibility": "public",
                     "forks": 625,
-                    "open_issues": 78,
+                    "open_issues": 75,
                     "watchers": 1205,
                     "default_branch": "dragonflight",
                     "permissions": {
@@ -8134,13 +8134,13 @@
                     "deployments_url": "https://api.github.com/repos/DragonJoker/Castor3D/deployments",
                     "created_at": "2015-04-30T09:53:00Z",
                     "updated_at": "2023-01-18T14:19:15Z",
-                    "pushed_at": "2023-01-06T14:13:55Z",
+                    "pushed_at": "2023-01-19T23:19:06Z",
                     "git_url": "git://github.com/DragonJoker/Castor3D.git",
                     "ssh_url": "git@github.com:DragonJoker/Castor3D.git",
                     "clone_url": "https://github.com/DragonJoker/Castor3D.git",
                     "svn_url": "https://github.com/DragonJoker/Castor3D",
                     "homepage": "https://dragonjoker.github.io/Castor3D",
-                    "size": 1074941,
+                    "size": 1075271,
                     "stargazers_count": 311,
                     "watchers_count": 311,
                     "language": "C++",
@@ -8154,7 +8154,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 20,
+                    "open_issues_count": 23,
                     "license": {
                         "key": "mit",
                         "name": "MIT License",
@@ -8172,7 +8172,7 @@
                     ],
                     "visibility": "public",
                     "forks": 14,
-                    "open_issues": 20,
+                    "open_issues": 23,
                     "watchers": 311,
                     "default_branch": "development",
                     "permissions": {
@@ -9126,16 +9126,16 @@
                     "releases_url": "https://api.github.com/repos/stohrendorf/CroftEngine/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/stohrendorf/CroftEngine/deployments",
                     "created_at": "2015-08-29T10:51:11Z",
-                    "updated_at": "2023-01-17T05:34:24Z",
-                    "pushed_at": "2023-01-18T18:50:04Z",
+                    "updated_at": "2023-01-19T19:07:06Z",
+                    "pushed_at": "2023-01-19T17:55:00Z",
                     "git_url": "git://github.com/stohrendorf/CroftEngine.git",
                     "ssh_url": "git@github.com:stohrendorf/CroftEngine.git",
                     "clone_url": "https://github.com/stohrendorf/CroftEngine.git",
                     "svn_url": "https://github.com/stohrendorf/CroftEngine",
                     "homepage": "",
-                    "size": 169552,
-                    "stargazers_count": 150,
-                    "watchers_count": 150,
+                    "size": 169554,
+                    "stargazers_count": 152,
+                    "watchers_count": 152,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": false,
@@ -9169,7 +9169,7 @@
                     "visibility": "public",
                     "forks": 15,
                     "open_issues": 3,
-                    "watchers": 150,
+                    "watchers": 152,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -9180,9 +9180,9 @@
                     },
                     "score": 1
                 },
-                "stars": 150,
+                "stars": 152,
                 "url": "https://api.github.com/repos/stohrendorf/CroftEngine",
-                "watchers": 150
+                "watchers": 152
             }
         ]
     },
@@ -38023,7 +38023,7 @@
                     "releases_url": "https://api.github.com/repos/cdcseacave/openMVS/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/cdcseacave/openMVS/deployments",
                     "created_at": "2015-05-18T15:21:44Z",
-                    "updated_at": "2023-01-18T13:26:09Z",
+                    "updated_at": "2023-01-19T13:20:43Z",
                     "pushed_at": "2023-01-01T17:42:11Z",
                     "git_url": "git://github.com/cdcseacave/openMVS.git",
                     "ssh_url": "git@github.com:cdcseacave/openMVS.git",
@@ -38576,16 +38576,16 @@
                     "releases_url": "https://api.github.com/repos/endless-sky/endless-sky/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/endless-sky/endless-sky/deployments",
                     "created_at": "2015-03-14T20:44:39Z",
-                    "updated_at": "2023-01-18T14:29:56Z",
-                    "pushed_at": "2023-01-18T20:07:27Z",
+                    "updated_at": "2023-01-18T21:43:28Z",
+                    "pushed_at": "2023-01-20T00:44:11Z",
                     "git_url": "git://github.com/endless-sky/endless-sky.git",
                     "ssh_url": "git@github.com:endless-sky/endless-sky.git",
                     "clone_url": "https://github.com/endless-sky/endless-sky.git",
                     "svn_url": "https://github.com/endless-sky/endless-sky",
                     "homepage": "https://endless-sky.github.io/",
-                    "size": 366597,
-                    "stargazers_count": 3784,
-                    "watchers_count": 3784,
+                    "size": 366648,
+                    "stargazers_count": 3785,
+                    "watchers_count": 3785,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -38597,7 +38597,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 937,
+                    "open_issues_count": 936,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -38632,8 +38632,8 @@
                     ],
                     "visibility": "public",
                     "forks": 835,
-                    "open_issues": 937,
-                    "watchers": 3784,
+                    "open_issues": 936,
+                    "watchers": 3785,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -38644,9 +38644,9 @@
                     },
                     "score": 1
                 },
-                "stars": 3784,
+                "stars": 3785,
                 "url": "https://api.github.com/repos/endless-sky/endless-sky",
-                "watchers": 3784
+                "watchers": 3785
             }
         ]
     },
@@ -40309,13 +40309,13 @@
                     "deployments_url": "https://api.github.com/repos/OpenDDS/OpenDDS/deployments",
                     "created_at": "2015-02-12T20:01:26Z",
                     "updated_at": "2023-01-19T02:56:04Z",
-                    "pushed_at": "2023-01-18T22:35:47Z",
+                    "pushed_at": "2023-01-20T03:26:59Z",
                     "git_url": "git://github.com/OpenDDS/OpenDDS.git",
                     "ssh_url": "git@github.com:OpenDDS/OpenDDS.git",
                     "clone_url": "https://github.com/OpenDDS/OpenDDS.git",
                     "svn_url": "https://github.com/OpenDDS/OpenDDS",
                     "homepage": "http://www.opendds.org",
-                    "size": 106826,
+                    "size": 106844,
                     "stargazers_count": 1050,
                     "watchers_count": 1050,
                     "language": "C++",
@@ -40329,7 +40329,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 103,
+                    "open_issues_count": 102,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -40348,7 +40348,7 @@
                     ],
                     "visibility": "public",
                     "forks": 413,
-                    "open_issues": 103,
+                    "open_issues": 102,
                     "watchers": 1050,
                     "default_branch": "master",
                     "permissions": {
