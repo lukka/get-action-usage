@@ -17,12 +17,12 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         token: ${{ secrets.PAT_WORKSPACES }}
         path: getactionusage
 
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       name: Fetch the web site repo to update.
       with:
         token: ${{ secrets.PAT_WORKSPACES }}
@@ -32,7 +32,7 @@ jobs:
 
     - uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '16.x'
     #- run: |
     #    npm install
     #    npm run build/pack

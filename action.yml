@@ -1,14 +1,14 @@
-# Copyright (c) 2022 Luca Cappa
+# Copyright (c) 2022-2023 Luca Cappa
 # Released under the term specified in file LICENSE
 # SPDX short identifier: CC-BY-SA-4.0
 
 name: 'get-action-usage'
-description: Query GitHub for usage of GitHub actions and build a graph.'
+description: Search in GitHub repositories for usage of GitHub Actions and creates a D3.js based graph.'
 author: 'Luca Cappa https://github.com/lukka'
 # inputs:
 # no inputs, no outputs!
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
 
 branding:
