@@ -1,4 +1,4 @@
-<!-- Copyright © 2022 by Luca Cappa lcappa at gmail dot com -- http://creativecommons.org/licenses/by-sa/4.0/" This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License -->
+<!-- Copyright © 2022-2023 by Luca Cappa lcappa at gmail dot com -- http://creativecommons.org/licenses/by-sa/4.0/" This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License -->
 <!DOCTYPE html>
 <meta charset="utf-8">
 
@@ -447,42 +447,49 @@
             const xyB = getPointOnCircle(width, height);
             dGButton = svg.select('.description').append("g");
 
-            dGL.attr("transform", `translate(${xyL.x}, ${xyL.y})`);
+            dGL.attr("transform", `translate(${xyL.x}, ${xyL.y})`)
+                .attr("text-anchor", "start")
+                .style("outline", "solid 1px grey")
+                .style("outline-offset", "3px");
             dGR.attr("transform", `translate(${xyR.x}, ${xyR.y})`)
+                .attr("text-anchor", "start")
+                .style("outline", "solid 1px grey")
+                .style("outline-offset", "3px");;
             dGButton.attr("transform", `translate(${xyB.x}, ${xyB.y})`);
 
             dGL.transition()
                 .duration(1000)
                 .attr("transform", (d) => {
                     return `translate(${width / 2. - descriptionSize.x},
-                        ${/*height / 4. -*/ descriptionSize.y + 50}) scale(2, 2) `;
+                        ${/*height / 4. -*/ descriptionSize.y + 100}) scale(2, 2) `;
                 });
             dGR.transition()
                 .duration(1000)
                 .attr("transform", (d) => {
                     return `translate(${width / 2. - descriptionSize.x},
-                        ${/*height / 4. -*/ descriptionSize.y + 50}) scale(2, 2) `;
+                        ${/*height / 4. -*/ descriptionSize.y + 120}) scale(2, 2) `;
                 });
             dGButton.transition()
                 .duration(1000)
                 .attr("transform", (d) => {
                     return `translate(${width / 2. - descriptionSize.x},
-                        ${/*height / 4. -*/ descriptionSize.y + 50}) scale(2, 2) `;
+                        ${/*height / 4. -*/ descriptionSize.y + 110}) scale(2, 2) `;
                 });
 
             let yOff = 0;
             let ySpacing = 16;
 
             dGL.append("text")
-                .attr("x", descriptionSize.x / 2.)
+                .attr("x", 0)
                 .attr("y", yOff += ySpacing)
-                .text("This graph shows the occurrences of GitHub Actions in public repositories:");
+                .text("This graph shows the occurrences in public repositories of these GitHub Actions:");
 
             for (const [key, values] of Object.entries(actionsDict)) {
                 dGL.append("svg:a")
                     .attr("xlink:href", `https://github.com/lukka/${key}`)
                     .attr("target", "_blank")
                     .insert("text")
+                    .attr("text-anchor", "middle")
                     .attr("font-weight", 700)
                     .text(`${key} [link 🔗]`)
                     .attr("x", descriptionSize.x / 2.)
@@ -490,19 +497,19 @@
             };
 
             dGL.append("text")
-                .attr("x", descriptionSize.x / 2.)
+                .attr("x", 0)
                 .attr("y", yOff += ySpacing)
                 .text("Each action is represented by a node located at a vertex of the triangle.")
             dGL.append("text")
-                .attr("x", descriptionSize.x / 2.)
+                .attr("x", 0)
                 .attr("y", yOff += ySpacing)
                 .text("Nodes for versions and repositories are loaded upon start.");
             dGL.append("text")
-                .attr("x", descriptionSize.x / 2.)
+                .attr("x", 0)
                 .attr("y", yOff += ySpacing)
                 .text("Edges between nodes from version to repo express <<uses>> relationship.");
             dGL.append("text")
-                .attr("x", descriptionSize.x / 2.)
+                .attr("x", 0)
                 .attr("y", yOff += ySpacing)
                 .text("Only public GitHub repositories with more than 25☆ are accounted.");
 
@@ -512,27 +519,27 @@
                 .text("Gestures:");
 
             dGR.append("text")
-                .attr("x", descriptionSize.x / 2.)
+                .attr("x", 0)
                 .attr("y", yOff += ySpacing)
                 .text("- Click/Tap on the occurrence numbers to list them on the GitHub search page.");
 
             dGR.append("text")
-                .attr("x", descriptionSize.x / 2.)
+                .attr("x", 0)
                 .attr("y", yOff += ySpacing)
                 .text("- Click/Tap on the repository to list actions the GitHub search page.");
 
             dGR.append("text")
-                .attr("x", descriptionSize.x / 2.)
+                .attr("x", 0)
                 .attr("y", yOff += ySpacing)
                 .text("- Click/Tap on the version's node to highlight the repositories using that version.");
 
             dGR.append("text")
-                .attr("x", descriptionSize.x / 2.)
+                .attr("x", 0)
                 .attr("y", yOff += ySpacing)
                 .text("- Hover on a repository to highlight what action(s) it uses.");
 
             dGR.append("text")
-                .attr("x", descriptionSize.x / 2.)
+                .attr("x", 0)
                 .attr("y", yOff += ySpacing)
                 .text("- Repo nodes can be rearranged by dragging them.");
 
@@ -577,12 +584,12 @@
                 dGL.transition()
                     .duration(1000)
                     .attr("transform", d =>
-                        `translate(${width * 0.00}, ${height / 1.5}) scale(1.2, 1.2)`);
+                        `translate(${width * 0.05}, ${height / 1.2}) scale(1.2, 1.2)`);
 
                 dGR.transition()
                     .duration(1000)
                     .attr("transform", d =>
-                        `translate(${width * 0.65}, ${height / 1.9}) scale(1.2, 1.2)`);
+                        `translate(${width * 0.65}, ${height / 1.4}) scale(1.2, 1.2)`);
 
                 const destPos = getPointOnCircle(width / 3, height / 3);
                 svg.select("polygon")
@@ -1001,7 +1008,7 @@
         }
     </script>
     <div style="text-align:center;">
-        <span>Copyright © 2022 by Luca Cappa
+        <span>Copyright © 2022-2023 by Luca Cappa
             <a href="https://github.com/lukka"><i class="fa fa-github"></i></a>
             <a href="https://twitter.com/luca_cpp"><i class="fa fa-twitter"></i></a>
             <a href="https://linkedin.com/in/lucacappa"><i class="fa fa-linkedin"></i></a>
