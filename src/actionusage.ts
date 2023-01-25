@@ -349,8 +349,14 @@ export class GHActionUsage {
               if (matches.length > 0) {
                 this.db.push(key, [...matches, aRepo], true);
               } else {
+                this.reporter.info(`no hits for key: '${key}'.`);
                 // Remove entries that are not using the actions anymore.
-                if (this.db.exists(key)) this.db.delete(key);
+                if (this.db.exists(key)) {
+                  this.db.delete(key);
+                  this.reporter.warn(
+                    `removed the repository with key: '${key}'.`
+                  );
+                }
               }
 
               barCounter++;
@@ -472,7 +478,7 @@ export class GHActionUsage {
                         url: github.getHtmlUrl(file.url, lineNumber),
                         version: match.groups.version,
                       };
-                      this.reporter.info(
+                      this.reporter.warn(
                         `\n Found '${hit.actionName}@${hit.version}' in repo: ${owner}/${repo} ${repoResponse.data.stargazers_count}⭑  ${repoResponse.data.watchers_count}👀`
                       );
                       matches.push(hit);
