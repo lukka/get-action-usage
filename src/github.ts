@@ -32,7 +32,7 @@ export class Reporter implements IReporter {
   public warn(message: string, error?: Error): void {
     core.warning(message);
     if (error) {
-      core.info(`${error.message} ${error?.stack}`);
+      core.warning(`${error.message} ${error?.stack}`);
     }
   }
   public error(message: string, error?: Error): void {

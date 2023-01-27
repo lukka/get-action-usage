@@ -30,7 +30,7 @@ jobs:
         path: lukkagithubio
         ref: main
 
-    - uses: actions/setup-node@v1
+    - uses: actions/setup-node@v3
       with:
         node-version: '16.x'
     #- run: |
@@ -47,7 +47,7 @@ jobs:
     
     - name: Check for modified files
       id: git-check
-      run: echo ::set-output name=modified::$(if [ -n "$(cd getactionusage && git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
+      run: echo "modified=$(if [ -n "$(cd getactionusage && git status --porcelain)" ]; then echo "true"; else echo "false"; fi)" >> $GITHUB_OUTPUT
 
     - name: Commit DB content and update CRON job
       if: steps.git-check.outputs.modified == 'true'
