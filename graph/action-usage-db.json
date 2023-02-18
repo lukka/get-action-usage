@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Fri, 06 Mar 2015 00:00:00 GMT",
+    "LastStartTimeName": "Tue, 01 Dec 2015 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -7384,13 +7384,13 @@
                     "deployments_url": "https://api.github.com/repos/simulationcraft/simc/deployments",
                     "created_at": "2015-03-15T19:03:52Z",
                     "updated_at": "2023-02-03T15:26:41Z",
-                    "pushed_at": "2023-02-18T02:33:48Z",
+                    "pushed_at": "2023-02-18T19:52:40Z",
                     "git_url": "git://github.com/simulationcraft/simc.git",
                     "ssh_url": "git@github.com:simulationcraft/simc.git",
                     "clone_url": "https://github.com/simulationcraft/simc.git",
                     "svn_url": "https://github.com/simulationcraft/simc",
                     "homepage": null,
-                    "size": 2160641,
+                    "size": 2167951,
                     "stargazers_count": 1210,
                     "watchers_count": 1210,
                     "language": "C++",
@@ -8411,7 +8411,7 @@
                     "deployments_url": "https://api.github.com/repos/stohrendorf/CroftEngine/deployments",
                     "created_at": "2015-08-29T10:51:11Z",
                     "updated_at": "2023-02-17T03:03:25Z",
-                    "pushed_at": "2023-02-16T16:52:58Z",
+                    "pushed_at": "2023-02-18T09:17:48Z",
                     "git_url": "git://github.com/stohrendorf/CroftEngine.git",
                     "ssh_url": "git@github.com:stohrendorf/CroftEngine.git",
                     "clone_url": "https://github.com/stohrendorf/CroftEngine.git",
@@ -35892,7 +35892,7 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 780,
+                    "forks_count": 779,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
@@ -35927,7 +35927,7 @@
                         "texture"
                     ],
                     "visibility": "public",
-                    "forks": 780,
+                    "forks": 779,
                     "open_issues": 232,
                     "watchers": 2432,
                     "default_branch": "master",
@@ -36282,20 +36282,20 @@
             },
             {
                 "actionName": "get-cmake",
-                "line": 108,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd.yaml#L108",
+                "line": 110,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd.yaml#L110",
                 "version": "latest"
             },
             {
                 "actionName": "run-vcpkg",
-                "line": 109,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd.yaml#L109",
+                "line": 111,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd.yaml#L111",
                 "version": "v10"
             },
             {
                 "actionName": "run-cmake",
-                "line": 112,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd.yaml#L112",
+                "line": 114,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd.yaml#L114",
                 "version": "v10"
             },
             {
@@ -36354,26 +36354,26 @@
             },
             {
                 "actionName": "get-cmake",
-                "line": 132,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L132",
+                "line": 134,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L134",
                 "version": "latest"
             },
             {
                 "actionName": "run-vcpkg",
-                "line": 133,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L133",
+                "line": 135,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L135",
                 "version": "v10"
             },
             {
                 "actionName": "run-cmake",
-                "line": 136,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L136",
+                "line": 138,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L138",
                 "version": "v10"
             },
             {
                 "actionName": "run-cmake",
-                "line": 144,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L144",
+                "line": 146,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/cd_release.yaml#L146",
                 "version": "v10"
             },
             {
@@ -36432,20 +36432,20 @@
             },
             {
                 "actionName": "get-cmake",
-                "line": 155,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L155",
+                "line": 157,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L157",
                 "version": "latest"
             },
             {
                 "actionName": "run-vcpkg",
-                "line": 156,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L156",
+                "line": 158,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L158",
                 "version": "v10"
             },
             {
                 "actionName": "run-cmake",
-                "line": 159,
-                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L159",
+                "line": 161,
+                "url": "https://github.com/endless-sky/endless-sky/blob/master/.github/workflows/ci.yml#L161",
                 "version": "v10"
             },
             {
@@ -36519,13 +36519,13 @@
                     "deployments_url": "https://api.github.com/repos/endless-sky/endless-sky/deployments",
                     "created_at": "2015-03-14T20:44:39Z",
                     "updated_at": "2023-02-17T19:26:04Z",
-                    "pushed_at": "2023-02-18T03:07:52Z",
+                    "pushed_at": "2023-02-18T20:35:18Z",
                     "git_url": "git://github.com/endless-sky/endless-sky.git",
                     "ssh_url": "git@github.com:endless-sky/endless-sky.git",
                     "clone_url": "https://github.com/endless-sky/endless-sky.git",
                     "svn_url": "https://github.com/endless-sky/endless-sky",
                     "homepage": "https://endless-sky.github.io/",
-                    "size": 369380,
+                    "size": 380016,
                     "stargazers_count": 3830,
                     "watchers_count": 3830,
                     "language": "C++",
@@ -36535,11 +36535,11 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 844,
+                    "forks_count": 845,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 952,
+                    "open_issues_count": 947,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -36573,8 +36573,8 @@
                         "top-down"
                     ],
                     "visibility": "public",
-                    "forks": 844,
-                    "open_issues": 952,
+                    "forks": 845,
+                    "open_issues": 947,
                     "watchers": 3830,
                     "default_branch": "master",
                     "permissions": {
