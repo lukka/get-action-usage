@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Fri, 02 Oct 2015 00:00:00 GMT",
+    "LastStartTimeName": "Tue, 28 Jun 2016 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -8845,16 +8845,16 @@
                     "releases_url": "https://api.github.com/repos/souffle-lang/souffle/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/souffle-lang/souffle/deployments",
                     "created_at": "2016-03-12T03:39:22Z",
-                    "updated_at": "2023-02-16T08:48:17Z",
-                    "pushed_at": "2023-02-18T10:31:07Z",
+                    "updated_at": "2023-02-21T15:29:20Z",
+                    "pushed_at": "2023-02-21T23:50:47Z",
                     "git_url": "git://github.com/souffle-lang/souffle.git",
                     "ssh_url": "git@github.com:souffle-lang/souffle.git",
                     "clone_url": "https://github.com/souffle-lang/souffle.git",
                     "svn_url": "https://github.com/souffle-lang/souffle",
                     "homepage": "http://souffle-lang.github.io/",
                     "size": 541161,
-                    "stargazers_count": 691,
-                    "watchers_count": 691,
+                    "stargazers_count": 692,
+                    "watchers_count": 692,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -8866,7 +8866,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 128,
+                    "open_issues_count": 131,
                     "license": {
                         "key": "upl-1.0",
                         "name": "Universal Permissive License v1.0",
@@ -8886,8 +8886,8 @@
                     ],
                     "visibility": "public",
                     "forks": 173,
-                    "open_issues": 128,
-                    "watchers": 691,
+                    "open_issues": 131,
+                    "watchers": 692,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -8898,9 +8898,9 @@
                     },
                     "score": 1
                 },
-                "stars": 691,
+                "stars": 692,
                 "url": "https://api.github.com/repos/souffle-lang/souffle",
-                "watchers": 691
+                "watchers": 692
             }
         ]
     },
@@ -8910,13 +8910,13 @@
                 "actionName": "run-vcpkg",
                 "line": 178,
                 "url": "https://github.com/marian-nmt/marian/blob/master/.github/workflows/release.yml#L178",
-                "version": "v2"
+                "version": "v4"
             },
             {
                 "actionName": "run-cmake",
                 "line": 187,
                 "url": "https://github.com/marian-nmt/marian/blob/master/.github/workflows/release.yml#L187",
-                "version": "v2"
+                "version": "v3"
             },
             {
                 "actionName": "run-vcpkg",
@@ -9007,13 +9007,13 @@
                     "deployments_url": "https://api.github.com/repos/marian-nmt/marian/deployments",
                     "created_at": "2016-04-14T10:27:41Z",
                     "updated_at": "2023-02-19T12:54:34Z",
-                    "pushed_at": "2022-02-08T16:52:38Z",
+                    "pushed_at": "2023-02-21T18:23:25Z",
                     "git_url": "git://github.com/marian-nmt/marian.git",
                     "ssh_url": "git@github.com:marian-nmt/marian.git",
                     "clone_url": "https://github.com/marian-nmt/marian.git",
                     "svn_url": "https://github.com/marian-nmt/marian",
                     "homepage": "https://marian-nmt.github.io",
-                    "size": 40840,
+                    "size": 41414,
                     "stargazers_count": 998,
                     "watchers_count": 998,
                     "language": "C++",
@@ -9165,13 +9165,13 @@
                     "deployments_url": "https://api.github.com/repos/marian-nmt/marian-dev/deployments",
                     "created_at": "2016-05-03T19:48:17Z",
                     "updated_at": "2023-02-02T22:53:55Z",
-                    "pushed_at": "2023-02-20T20:34:01Z",
+                    "pushed_at": "2023-02-21T18:20:12Z",
                     "git_url": "git://github.com/marian-nmt/marian-dev.git",
                     "ssh_url": "git@github.com:marian-nmt/marian-dev.git",
                     "clone_url": "https://github.com/marian-nmt/marian-dev.git",
                     "svn_url": "https://github.com/marian-nmt/marian-dev",
                     "homepage": "https://marian-nmt.github.io",
-                    "size": 18616,
+                    "size": 18617,
                     "stargazers_count": 211,
                     "watchers_count": 211,
                     "language": "C++",
@@ -9185,7 +9185,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 107,
+                    "open_issues_count": 106,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -9205,7 +9205,7 @@
                     ],
                     "visibility": "public",
                     "forks": 120,
-                    "open_issues": 107,
+                    "open_issues": 106,
                     "watchers": 211,
                     "default_branch": "master",
                     "permissions": {
