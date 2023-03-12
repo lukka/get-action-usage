@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Tue, 10 Dec 2019 00:00:00 GMT",
+    "LastStartTimeName": "Tue, 07 Jul 2020 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -1604,8 +1604,8 @@
         "irrlicht": [
             {
                 "actionName": "run-vcpkg",
-                "line": 176,
-                "url": "https://github.com/minetest/irrlicht/blob/master/.github/workflows/build.yml#L176",
+                "line": 173,
+                "url": "https://github.com/minetest/irrlicht/blob/master/.github/workflows/build.yml#L173",
                 "version": "v7"
             },
             {
@@ -1679,13 +1679,13 @@
                     "deployments_url": "https://api.github.com/repos/minetest/irrlicht/deployments",
                     "created_at": "2020-05-16T18:51:29Z",
                     "updated_at": "2023-03-09T21:02:43Z",
-                    "pushed_at": "2023-03-06T14:33:50Z",
+                    "pushed_at": "2023-03-11T14:12:11Z",
                     "git_url": "git://github.com/minetest/irrlicht.git",
                     "ssh_url": "git@github.com:minetest/irrlicht.git",
                     "clone_url": "https://github.com/minetest/irrlicht.git",
                     "svn_url": "https://github.com/minetest/irrlicht",
                     "homepage": null,
-                    "size": 20907,
+                    "size": 21169,
                     "stargazers_count": 80,
                     "watchers_count": 80,
                     "language": "C++",
@@ -1699,7 +1699,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 22,
+                    "open_issues_count": 20,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -1713,7 +1713,7 @@
                     "topics": [],
                     "visibility": "public",
                     "forks": 62,
-                    "open_issues": 22,
+                    "open_issues": 20,
                     "watchers": 80,
                     "default_branch": "master",
                     "permissions": {
