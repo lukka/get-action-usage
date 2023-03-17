@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Tue, 29 Mar 2022 00:00:00 GMT",
+    "LastStartTimeName": "Fri, 24 Mar 2023 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -34402,21 +34402,9 @@
         "dota2-rpc-client": [
             {
                 "actionName": "get-cmake",
-                "line": 30,
-                "url": "https://github.com/andsfonseca/dota2-rpc-client/blob/master/.github/workflows/build.yml#L30",
-                "version": "v3.21.2"
-            },
-            {
-                "actionName": "run-vcpkg",
-                "line": 32,
-                "url": "https://github.com/andsfonseca/dota2-rpc-client/blob/master/.github/workflows/build.yml#L32",
-                "version": "v10.3"
-            },
-            {
-                "actionName": "run-cmake",
-                "line": 37,
-                "url": "https://github.com/andsfonseca/dota2-rpc-client/blob/master/.github/workflows/build.yml#L37",
-                "version": "v10"
+                "line": 35,
+                "url": "https://github.com/andsfonseca/dota2-rpc-client/blob/master/.github/workflows/build.yml#L35",
+                "version": "latest"
             },
             {
                 "name": "dota2-rpc-client",
@@ -34489,13 +34477,13 @@
                     "deployments_url": "https://api.github.com/repos/andsfonseca/dota2-rpc-client/deployments",
                     "created_at": "2022-04-20T04:23:18Z",
                     "updated_at": "2023-01-31T19:45:56Z",
-                    "pushed_at": "2023-03-16T19:55:58Z",
+                    "pushed_at": "2023-03-16T22:51:09Z",
                     "git_url": "git://github.com/andsfonseca/dota2-rpc-client.git",
                     "ssh_url": "git@github.com:andsfonseca/dota2-rpc-client.git",
                     "clone_url": "https://github.com/andsfonseca/dota2-rpc-client.git",
                     "svn_url": "https://github.com/andsfonseca/dota2-rpc-client",
                     "homepage": "https://andsfonseca.github.io/dota2-rpc-client",
-                    "size": 3001,
+                    "size": 3005,
                     "stargazers_count": 30,
                     "watchers_count": 30,
                     "language": "C++",
@@ -38765,7 +38753,7 @@
                     "releases_url": "https://api.github.com/repos/MicroCBer/BetterNCM/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/MicroCBer/BetterNCM/deployments",
                     "created_at": "2022-04-03T17:00:22Z",
-                    "updated_at": "2023-03-16T15:35:11Z",
+                    "updated_at": "2023-03-17T09:44:45Z",
                     "pushed_at": "2023-03-11T15:04:26Z",
                     "git_url": "git://github.com/MicroCBer/BetterNCM.git",
                     "ssh_url": "git@github.com:MicroCBer/BetterNCM.git",
@@ -38773,8 +38761,8 @@
                     "svn_url": "https://github.com/MicroCBer/BetterNCM",
                     "homepage": "",
                     "size": 2370,
-                    "stargazers_count": 3735,
-                    "watchers_count": 3735,
+                    "stargazers_count": 3739,
+                    "watchers_count": 3739,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -38786,7 +38774,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 49,
+                    "open_issues_count": 47,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -38806,8 +38794,8 @@
                     ],
                     "visibility": "public",
                     "forks": 249,
-                    "open_issues": 49,
-                    "watchers": 3735,
+                    "open_issues": 47,
+                    "watchers": 3739,
                     "default_branch": "v2",
                     "permissions": {
                         "admin": false,
@@ -38818,9 +38806,9 @@
                     },
                     "score": 1
                 },
-                "stars": 3735,
+                "stars": 3739,
                 "url": "https://api.github.com/repos/MicroCBer/BetterNCM",
-                "watchers": 3735
+                "watchers": 3739
             }
         ]
     },
@@ -39190,16 +39178,16 @@
                     "releases_url": "https://api.github.com/repos/PaddlePaddle/FastDeploy/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/PaddlePaddle/FastDeploy/deployments",
                     "created_at": "2022-06-27T10:22:10Z",
-                    "updated_at": "2023-03-16T12:11:59Z",
-                    "pushed_at": "2023-03-16T14:06:29Z",
+                    "updated_at": "2023-03-17T10:09:24Z",
+                    "pushed_at": "2023-03-17T09:56:22Z",
                     "git_url": "git://github.com/PaddlePaddle/FastDeploy.git",
                     "ssh_url": "git@github.com:PaddlePaddle/FastDeploy.git",
                     "clone_url": "https://github.com/PaddlePaddle/FastDeploy.git",
                     "svn_url": "https://github.com/PaddlePaddle/FastDeploy",
                     "homepage": "https://www.paddlepaddle.org.cn/fastdeploy",
-                    "size": 39365,
-                    "stargazers_count": 1718,
-                    "watchers_count": 1718,
+                    "size": 37150,
+                    "stargazers_count": 1727,
+                    "watchers_count": 1727,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -39207,11 +39195,11 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 272,
+                    "forks_count": 274,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 328,
+                    "open_issues_count": 321,
                     "license": {
                         "key": "apache-2.0",
                         "name": "Apache License 2.0",
@@ -39242,9 +39230,9 @@
                         "yolov8"
                     ],
                     "visibility": "public",
-                    "forks": 272,
-                    "open_issues": 328,
-                    "watchers": 1718,
+                    "forks": 274,
+                    "open_issues": 321,
+                    "watchers": 1727,
                     "default_branch": "develop",
                     "permissions": {
                         "admin": false,
@@ -39255,9 +39243,9 @@
                     },
                     "score": 1
                 },
-                "stars": 1718,
+                "stars": 1727,
                 "url": "https://api.github.com/repos/PaddlePaddle/FastDeploy",
-                "watchers": 1718
+                "watchers": 1727
             }
         ]
     },
@@ -40375,7 +40363,7 @@
                     "releases_url": "https://api.github.com/repos/magenta/ddsp-vst/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/magenta/ddsp-vst/deployments",
                     "created_at": "2022-05-10T19:49:45Z",
-                    "updated_at": "2023-03-16T17:30:25Z",
+                    "updated_at": "2023-03-17T08:18:32Z",
                     "pushed_at": "2023-03-05T23:01:17Z",
                     "git_url": "git://github.com/magenta/ddsp-vst.git",
                     "ssh_url": "git@github.com:magenta/ddsp-vst.git",
@@ -40383,8 +40371,8 @@
                     "svn_url": "https://github.com/magenta/ddsp-vst",
                     "homepage": null,
                     "size": 2006,
-                    "stargazers_count": 385,
-                    "watchers_count": 385,
+                    "stargazers_count": 387,
+                    "watchers_count": 387,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -40411,7 +40399,7 @@
                     "visibility": "public",
                     "forks": 30,
                     "open_issues": 16,
-                    "watchers": 385,
+                    "watchers": 387,
                     "default_branch": "main",
                     "permissions": {
                         "admin": false,
@@ -40422,9 +40410,9 @@
                     },
                     "score": 1
                 },
-                "stars": 385,
+                "stars": 387,
                 "url": "https://api.github.com/repos/magenta/ddsp-vst",
-                "watchers": 385
+                "watchers": 387
             }
         ]
     },
@@ -41484,16 +41472,16 @@
                     "releases_url": "https://api.github.com/repos/zjhellofss/KuiperInfer/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/zjhellofss/KuiperInfer/deployments",
                     "created_at": "2022-11-21T05:28:01Z",
-                    "updated_at": "2023-03-16T08:00:17Z",
-                    "pushed_at": "2023-03-16T14:35:25Z",
+                    "updated_at": "2023-03-17T04:20:43Z",
+                    "pushed_at": "2023-03-17T04:44:59Z",
                     "git_url": "git://github.com/zjhellofss/KuiperInfer.git",
                     "ssh_url": "git@github.com:zjhellofss/KuiperInfer.git",
                     "clone_url": "https://github.com/zjhellofss/KuiperInfer.git",
                     "svn_url": "https://github.com/zjhellofss/KuiperInfer",
                     "homepage": "",
-                    "size": 209424,
-                    "stargazers_count": 660,
-                    "watchers_count": 660,
+                    "size": 209437,
+                    "stargazers_count": 661,
+                    "watchers_count": 661,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -41505,7 +41493,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 2,
+                    "open_issues_count": 1,
                     "license": {
                         "key": "mit",
                         "name": "MIT License",
@@ -41533,8 +41521,8 @@
                     ],
                     "visibility": "public",
                     "forks": 56,
-                    "open_issues": 2,
-                    "watchers": 660,
+                    "open_issues": 1,
+                    "watchers": 661,
                     "default_branch": "main",
                     "permissions": {
                         "admin": false,
@@ -41545,9 +41533,9 @@
                     },
                     "score": 1
                 },
-                "stars": 660,
+                "stars": 661,
                 "url": "https://api.github.com/repos/zjhellofss/KuiperInfer",
-                "watchers": 660
+                "watchers": 661
             }
         ]
     },
@@ -41786,16 +41774,16 @@
                     "releases_url": "https://api.github.com/repos/LagPixelLOL/ChatGPTCLIBot/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/LagPixelLOL/ChatGPTCLIBot/deployments",
                     "created_at": "2023-03-05T05:49:21Z",
-                    "updated_at": "2023-03-16T20:18:02Z",
-                    "pushed_at": "2023-03-15T22:27:18Z",
+                    "updated_at": "2023-03-16T23:00:30Z",
+                    "pushed_at": "2023-03-17T09:02:51Z",
                     "git_url": "git://github.com/LagPixelLOL/ChatGPTCLIBot.git",
                     "ssh_url": "git@github.com:LagPixelLOL/ChatGPTCLIBot.git",
                     "clone_url": "https://github.com/LagPixelLOL/ChatGPTCLIBot.git",
                     "svn_url": "https://github.com/LagPixelLOL/ChatGPTCLIBot",
                     "homepage": "",
-                    "size": 56,
-                    "stargazers_count": 30,
-                    "watchers_count": 30,
+                    "size": 87,
+                    "stargazers_count": 31,
+                    "watchers_count": 31,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -41828,7 +41816,7 @@
                     "visibility": "public",
                     "forks": 3,
                     "open_issues": 0,
-                    "watchers": 30,
+                    "watchers": 31,
                     "default_branch": "main",
                     "permissions": {
                         "admin": false,
@@ -41839,9 +41827,9 @@
                     },
                     "score": 1
                 },
-                "stars": 30,
+                "stars": 31,
                 "url": "https://api.github.com/repos/LagPixelLOL/ChatGPTCLIBot",
-                "watchers": 30
+                "watchers": 31
             }
         ]
     }
