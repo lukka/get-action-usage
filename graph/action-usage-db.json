@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Wed, 04 Feb 2015 00:00:00 GMT",
+    "LastStartTimeName": "Sun, 01 Nov 2015 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -7375,13 +7375,13 @@
                     "deployments_url": "https://api.github.com/repos/simulationcraft/simc/deployments",
                     "created_at": "2015-03-15T19:03:52Z",
                     "updated_at": "2023-04-27T22:13:18Z",
-                    "pushed_at": "2023-05-01T00:49:40Z",
+                    "pushed_at": "2023-05-01T16:40:03Z",
                     "git_url": "git://github.com/simulationcraft/simc.git",
                     "ssh_url": "git@github.com:simulationcraft/simc.git",
                     "clone_url": "https://github.com/simulationcraft/simc.git",
                     "svn_url": "https://github.com/simulationcraft/simc",
                     "homepage": null,
-                    "size": 2296055,
+                    "size": 2267308,
                     "stargazers_count": 1218,
                     "watchers_count": 1218,
                     "language": "C++",
@@ -7391,11 +7391,11 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 655,
+                    "forks_count": 657,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 50,
+                    "open_issues_count": 53,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -7408,8 +7408,8 @@
                     "web_commit_signoff_required": false,
                     "topics": [],
                     "visibility": "public",
-                    "forks": 655,
-                    "open_issues": 50,
+                    "forks": 657,
+                    "open_issues": 53,
                     "watchers": 1218,
                     "default_branch": "dragonflight",
                     "permissions": {
@@ -7562,7 +7562,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 26,
+                    "open_issues_count": 28,
                     "license": {
                         "key": "mit",
                         "name": "MIT License",
@@ -7580,7 +7580,7 @@
                     ],
                     "visibility": "public",
                     "forks": 16,
-                    "open_issues": 26,
+                    "open_issues": 28,
                     "watchers": 327,
                     "default_branch": "development",
                     "permissions": {
@@ -8540,13 +8540,13 @@
                     "deployments_url": "https://api.github.com/repos/Framstag/libosmscout/deployments",
                     "created_at": "2015-08-31T20:20:43Z",
                     "updated_at": "2023-04-27T06:28:31Z",
-                    "pushed_at": "2023-04-29T21:55:29Z",
+                    "pushed_at": "2023-05-01T15:01:44Z",
                     "git_url": "git://github.com/Framstag/libosmscout.git",
                     "ssh_url": "git@github.com:Framstag/libosmscout.git",
                     "clone_url": "https://github.com/Framstag/libosmscout.git",
                     "svn_url": "https://github.com/Framstag/libosmscout",
                     "homepage": "",
-                    "size": 81172,
+                    "size": 81244,
                     "stargazers_count": 204,
                     "watchers_count": 204,
                     "language": "C++",
@@ -8560,7 +8560,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 45,
+                    "open_issues_count": 46,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -8595,7 +8595,7 @@
                     ],
                     "visibility": "public",
                     "forks": 69,
-                    "open_issues": 45,
+                    "open_issues": 46,
                     "watchers": 204,
                     "default_branch": "master",
                     "permissions": {
@@ -36724,16 +36724,16 @@
                     "releases_url": "https://api.github.com/repos/endless-sky/endless-sky/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/endless-sky/endless-sky/deployments",
                     "created_at": "2015-03-14T20:44:39Z",
-                    "updated_at": "2023-04-29T21:09:10Z",
-                    "pushed_at": "2023-05-01T00:59:25Z",
+                    "updated_at": "2023-05-01T07:59:38Z",
+                    "pushed_at": "2023-05-01T17:19:23Z",
                     "git_url": "git://github.com/endless-sky/endless-sky.git",
                     "ssh_url": "git@github.com:endless-sky/endless-sky.git",
                     "clone_url": "https://github.com/endless-sky/endless-sky.git",
                     "svn_url": "https://github.com/endless-sky/endless-sky",
                     "homepage": "https://endless-sky.github.io/",
-                    "size": 403103,
-                    "stargazers_count": 3965,
-                    "watchers_count": 3965,
+                    "size": 403205,
+                    "stargazers_count": 3966,
+                    "watchers_count": 3966,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -36745,7 +36745,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 925,
+                    "open_issues_count": 923,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -36780,8 +36780,8 @@
                     ],
                     "visibility": "public",
                     "forks": 868,
-                    "open_issues": 925,
-                    "watchers": 3965,
+                    "open_issues": 923,
+                    "watchers": 3966,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -36792,9 +36792,9 @@
                     },
                     "score": 1
                 },
-                "stars": 3965,
+                "stars": 3966,
                 "url": "https://api.github.com/repos/endless-sky/endless-sky",
-                "watchers": 3965
+                "watchers": 3966
             }
         ]
     },
