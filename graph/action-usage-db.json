@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Sun, 10 Nov 2019 00:00:00 GMT",
+    "LastStartTimeName": "Sun, 07 Jun 2020 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -19558,11 +19558,11 @@
                     "has_wiki": false,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 52,
+                    "forks_count": 51,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 7,
+                    "open_issues_count": 8,
                     "license": {
                         "key": "mit",
                         "name": "MIT License",
@@ -19585,8 +19585,8 @@
                         "tokenizer"
                     ],
                     "visibility": "public",
-                    "forks": 52,
-                    "open_issues": 7,
+                    "forks": 51,
+                    "open_issues": 8,
                     "watchers": 334,
                     "default_branch": "master",
                     "permissions": {
@@ -19682,7 +19682,7 @@
                     "releases_url": "https://api.github.com/repos/lemire/fast_double_parser/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/lemire/fast_double_parser/deployments",
                     "created_at": "2020-03-09T21:14:11Z",
-                    "updated_at": "2023-04-29T13:54:52Z",
+                    "updated_at": "2023-05-01T21:51:56Z",
                     "pushed_at": "2023-01-10T15:24:35Z",
                     "git_url": "git://github.com/lemire/fast_double_parser.git",
                     "ssh_url": "git@github.com:lemire/fast_double_parser.git",
@@ -19690,8 +19690,8 @@
                     "svn_url": "https://github.com/lemire/fast_double_parser",
                     "homepage": "",
                     "size": 862,
-                    "stargazers_count": 575,
-                    "watchers_count": 575,
+                    "stargazers_count": 576,
+                    "watchers_count": 576,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -19718,7 +19718,7 @@
                     "visibility": "public",
                     "forks": 50,
                     "open_issues": 2,
-                    "watchers": 575,
+                    "watchers": 576,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -19729,9 +19729,9 @@
                     },
                     "score": 1
                 },
-                "stars": 575,
+                "stars": 576,
                 "url": "https://api.github.com/repos/lemire/fast_double_parser",
-                "watchers": 575
+                "watchers": 576
             }
         ]
     },
@@ -27773,7 +27773,7 @@
                     "releases_url": "https://api.github.com/repos/matt-42/lithium/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/matt-42/lithium/deployments",
                     "created_at": "2019-12-03T16:56:03Z",
-                    "updated_at": "2023-04-28T05:14:50Z",
+                    "updated_at": "2023-05-01T21:57:20Z",
                     "pushed_at": "2022-10-04T18:28:19Z",
                     "git_url": "git://github.com/matt-42/lithium.git",
                     "ssh_url": "git@github.com:matt-42/lithium.git",
@@ -27781,8 +27781,8 @@
                     "svn_url": "https://github.com/matt-42/lithium",
                     "homepage": "https://matt-42.github.io/lithium",
                     "size": 12583,
-                    "stargazers_count": 1118,
-                    "watchers_count": 1118,
+                    "stargazers_count": 1119,
+                    "watchers_count": 1119,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -27827,7 +27827,7 @@
                     "visibility": "public",
                     "forks": 86,
                     "open_issues": 22,
-                    "watchers": 1118,
+                    "watchers": 1119,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -27838,9 +27838,9 @@
                     },
                     "score": 1
                 },
-                "stars": 1118,
+                "stars": 1119,
                 "url": "https://api.github.com/repos/matt-42/lithium",
-                "watchers": 1118
+                "watchers": 1119
             }
         ]
     },
@@ -31129,14 +31129,14 @@
                     "releases_url": "https://api.github.com/repos/crud89/LiteFX/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/crud89/LiteFX/deployments",
                     "created_at": "2020-03-26T08:26:21Z",
-                    "updated_at": "2023-04-27T02:25:50Z",
-                    "pushed_at": "2023-04-30T19:46:03Z",
+                    "updated_at": "2023-05-01T19:30:09Z",
+                    "pushed_at": "2023-05-01T19:39:40Z",
                     "git_url": "git://github.com/crud89/LiteFX.git",
                     "ssh_url": "git@github.com:crud89/LiteFX.git",
                     "clone_url": "https://github.com/crud89/LiteFX.git",
                     "svn_url": "https://github.com/crud89/LiteFX",
                     "homepage": "https://litefx.crudolph.io/",
-                    "size": 39668,
+                    "size": 39732,
                     "stargazers_count": 50,
                     "watchers_count": 50,
                     "language": "C++",
@@ -31165,6 +31165,7 @@
                         "computer-graphics",
                         "cpp20",
                         "cpp23",
+                        "d3d12",
                         "directx-12",
                         "directx-12-engine",
                         "dx12",
@@ -31173,6 +31174,7 @@
                         "rendering",
                         "rendering-3d-graphics",
                         "rendering-engine",
+                        "shaders",
                         "vulkan",
                         "vulkan-engine",
                         "vulkan-renderer"
@@ -35257,7 +35259,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 3,
+                    "open_issues_count": 4,
                     "license": {
                         "key": "apache-2.0",
                         "name": "Apache License 2.0",
@@ -35273,7 +35275,7 @@
                     ],
                     "visibility": "public",
                     "forks": 30,
-                    "open_issues": 3,
+                    "open_issues": 4,
                     "watchers": 73,
                     "default_branch": "main",
                     "permissions": {
