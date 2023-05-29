@@ -4,7 +4,7 @@ on:
   pull_request:
   schedule:
     - cron: '0 * * * *'
-    - cron: '42 1 29 5 1'
+    - cron: '6 3 29 5 1'
   workflow_dispatch:
 
 jobs:
