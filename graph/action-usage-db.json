@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Mon, 03 Aug 2015 00:00:00 GMT",
+    "LastStartTimeName": "Fri, 29 Apr 2016 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -9000,7 +9000,7 @@
                     "deployments_url": "https://api.github.com/repos/Framstag/libosmscout/deployments",
                     "created_at": "2015-08-31T20:20:43Z",
                     "updated_at": "2023-08-09T12:03:49Z",
-                    "pushed_at": "2023-08-09T06:34:37Z",
+                    "pushed_at": "2023-08-10T05:42:50Z",
                     "git_url": "git://github.com/Framstag/libosmscout.git",
                     "ssh_url": "git@github.com:Framstag/libosmscout.git",
                     "clone_url": "https://github.com/Framstag/libosmscout.git",
@@ -9020,7 +9020,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 50,
+                    "open_issues_count": 46,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -9055,7 +9055,7 @@
                     ],
                     "visibility": "public",
                     "forks": 71,
-                    "open_issues": 50,
+                    "open_issues": 46,
                     "watchers": 217,
                     "default_branch": "master",
                     "permissions": {
@@ -9224,7 +9224,7 @@
                 "actionName": "run-vcpkg",
                 "line": 36,
                 "url": "https://github.com/souffle-lang/souffle/blob/master/.github/workflows/VS-CI-Tests.yml#L36",
-                "version": "v10"
+                "version": "v11"
             },
             {
                 "name": "souffle",
@@ -9296,16 +9296,16 @@
                     "releases_url": "https://api.github.com/repos/souffle-lang/souffle/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/souffle-lang/souffle/deployments",
                     "created_at": "2016-03-12T03:39:22Z",
-                    "updated_at": "2023-08-06T13:55:20Z",
-                    "pushed_at": "2023-07-30T07:53:56Z",
+                    "updated_at": "2023-08-09T14:42:28Z",
+                    "pushed_at": "2023-08-09T07:29:50Z",
                     "git_url": "git://github.com/souffle-lang/souffle.git",
                     "ssh_url": "git@github.com:souffle-lang/souffle.git",
                     "clone_url": "https://github.com/souffle-lang/souffle.git",
                     "svn_url": "https://github.com/souffle-lang/souffle",
                     "homepage": "http://souffle-lang.github.io/",
-                    "size": 541011,
-                    "stargazers_count": 741,
-                    "watchers_count": 741,
+                    "size": 541012,
+                    "stargazers_count": 742,
+                    "watchers_count": 742,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -9317,7 +9317,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 129,
+                    "open_issues_count": 128,
                     "license": {
                         "key": "upl-1.0",
                         "name": "Universal Permissive License v1.0",
@@ -9337,8 +9337,8 @@
                     ],
                     "visibility": "public",
                     "forks": 178,
-                    "open_issues": 129,
-                    "watchers": 741,
+                    "open_issues": 128,
+                    "watchers": 742,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -9349,9 +9349,9 @@
                     },
                     "score": 1
                 },
-                "stars": 741,
+                "stars": 742,
                 "url": "https://api.github.com/repos/souffle-lang/souffle",
-                "watchers": 741
+                "watchers": 742
             }
         ]
     },
@@ -26436,7 +26436,7 @@
                     "releases_url": "https://api.github.com/repos/CE-Programming/CEmu/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/CE-Programming/CEmu/deployments",
                     "created_at": "2015-11-13T05:35:39Z",
-                    "updated_at": "2023-08-09T03:08:27Z",
+                    "updated_at": "2023-08-09T16:34:11Z",
                     "pushed_at": "2023-07-16T05:12:53Z",
                     "git_url": "git://github.com/CE-Programming/CEmu.git",
                     "ssh_url": "git@github.com:CE-Programming/CEmu.git",
@@ -26444,8 +26444,8 @@
                     "svn_url": "https://github.com/CE-Programming/CEmu",
                     "homepage": "https://ce-programming.github.io/CEmu",
                     "size": 11051,
-                    "stargazers_count": 873,
-                    "watchers_count": 873,
+                    "stargazers_count": 874,
+                    "watchers_count": 874,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": false,
@@ -26479,7 +26479,7 @@
                     "visibility": "public",
                     "forks": 72,
                     "open_issues": 76,
-                    "watchers": 873,
+                    "watchers": 874,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -26490,9 +26490,9 @@
                     },
                     "score": 1
                 },
-                "stars": 873,
+                "stars": 874,
                 "url": "https://api.github.com/repos/CE-Programming/CEmu",
-                "watchers": 873
+                "watchers": 874
             }
         ]
     },
