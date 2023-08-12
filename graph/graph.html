@@ -638,7 +638,7 @@
                     enter => {
                         const g = enter.append("g")
                         const a = g.append("svg:a")
-                            .attr("xlink:href", d => d.url_search + actions.map(a => a.name).join("+OR+"))
+                            .attr("xlink:href", d => `${d.url_search}+AND+(${actions.map(a => a.name).join("+OR+")})`)
                             .attr("target", "_blank");
                         repoCircles = a.insert("circle")
                             .style("fill", d => getNodeColor(d))
