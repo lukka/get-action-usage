@@ -107,7 +107,7 @@
                     "releases_url": "https://api.github.com/repos/assimp/assimp/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/assimp/assimp/deployments",
                     "created_at": "2010-05-05T12:53:45Z",
-                    "updated_at": "2023-08-14T10:27:16Z",
+                    "updated_at": "2023-08-15T03:23:40Z",
                     "pushed_at": "2023-08-14T05:50:13Z",
                     "git_url": "git://github.com/assimp/assimp.git",
                     "ssh_url": "git@github.com:assimp/assimp.git",
@@ -115,8 +115,8 @@
                     "svn_url": "https://github.com/assimp/assimp",
                     "homepage": "https://www.assimp.org",
                     "size": 193380,
-                    "stargazers_count": 9366,
-                    "watchers_count": 9366,
+                    "stargazers_count": 9368,
+                    "watchers_count": 9368,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -124,7 +124,7 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 2665,
+                    "forks_count": 2666,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
@@ -160,9 +160,9 @@
                         "stl"
                     ],
                     "visibility": "public",
-                    "forks": 2665,
+                    "forks": 2666,
                     "open_issues": 688,
-                    "watchers": 9366,
+                    "watchers": 9368,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -173,9 +173,9 @@
                     },
                     "score": 1
                 },
-                "stars": 9366,
+                "stars": 9368,
                 "url": "https://api.github.com/repos/assimp/assimp",
-                "watchers": 9366
+                "watchers": 9368
             }
         ]
     },
@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Mon, 21 Aug 2023 00:00:00 GMT",
+    "LastStartTimeName": "Tue, 28 Sep 2010 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -36814,7 +36814,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 40,
+                    "open_issues_count": 41,
                     "license": {
                         "key": "apache-2.0",
                         "name": "Apache License 2.0",
@@ -36828,7 +36828,7 @@
                     "topics": [],
                     "visibility": "public",
                     "forks": 131,
-                    "open_issues": 40,
+                    "open_issues": 41,
                     "watchers": 205,
                     "default_branch": "master",
                     "permissions": {
