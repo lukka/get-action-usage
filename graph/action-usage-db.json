@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Thu, 24 Nov 2022 00:00:00 GMT",
+    "LastStartTimeName": "Wed, 20 Sep 2023 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -42937,7 +42937,7 @@
                     "releases_url": "https://api.github.com/repos/LagPixelLOL/ChatGPTCLIBot/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/LagPixelLOL/ChatGPTCLIBot/deployments",
                     "created_at": "2023-03-05T05:49:21Z",
-                    "updated_at": "2023-08-08T23:36:03Z",
+                    "updated_at": "2023-08-30T23:01:23Z",
                     "pushed_at": "2023-08-15T18:21:31Z",
                     "git_url": "git://github.com/LagPixelLOL/ChatGPTCLIBot.git",
                     "ssh_url": "git@github.com:LagPixelLOL/ChatGPTCLIBot.git",
@@ -42945,11 +42945,11 @@
                     "svn_url": "https://github.com/LagPixelLOL/ChatGPTCLIBot",
                     "homepage": "",
                     "size": 1569,
-                    "stargazers_count": 304,
-                    "watchers_count": 304,
+                    "stargazers_count": 308,
+                    "watchers_count": 308,
                     "language": "C++",
                     "has_issues": true,
-                    "has_projects": true,
+                    "has_projects": false,
                     "has_downloads": true,
                     "has_wiki": true,
                     "has_pages": false,
@@ -42980,7 +42980,7 @@
                     "visibility": "public",
                     "forks": 36,
                     "open_issues": 1,
-                    "watchers": 304,
+                    "watchers": 308,
                     "default_branch": "main",
                     "permissions": {
                         "admin": false,
@@ -42991,9 +42991,9 @@
                     },
                     "score": 1
                 },
-                "stars": 304,
+                "stars": 308,
                 "url": "https://api.github.com/repos/LagPixelLOL/ChatGPTCLIBot",
-                "watchers": 304
+                "watchers": 308
             }
         ]
     },
@@ -43368,7 +43368,7 @@
                     "releases_url": "https://api.github.com/repos/YuriSizuku/OnscripterYuri/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/YuriSizuku/OnscripterYuri/deployments",
                     "created_at": "2023-02-07T18:15:26Z",
-                    "updated_at": "2023-08-13T14:50:57Z",
+                    "updated_at": "2023-08-31T18:50:43Z",
                     "pushed_at": "2023-06-25T12:52:08Z",
                     "git_url": "git://github.com/YuriSizuku/OnscripterYuri.git",
                     "ssh_url": "git@github.com:YuriSizuku/OnscripterYuri.git",
@@ -43376,8 +43376,8 @@
                     "svn_url": "https://github.com/YuriSizuku/OnscripterYuri",
                     "homepage": "",
                     "size": 8652,
-                    "stargazers_count": 104,
-                    "watchers_count": 104,
+                    "stargazers_count": 111,
+                    "watchers_count": 111,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -43385,7 +43385,7 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 3,
+                    "forks_count": 4,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
@@ -43416,9 +43416,9 @@
                         "x86"
                     ],
                     "visibility": "public",
-                    "forks": 3,
+                    "forks": 4,
                     "open_issues": 2,
-                    "watchers": 104,
+                    "watchers": 111,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -43429,9 +43429,9 @@
                     },
                     "score": 1
                 },
-                "stars": 104,
+                "stars": 111,
                 "url": "https://api.github.com/repos/YuriSizuku/OnscripterYuri",
-                "watchers": 104
+                "watchers": 111
             }
         ]
     },
@@ -49131,6 +49131,137 @@
                 "stars": 11698,
                 "url": "https://api.github.com/repos/duckdb/duckdb",
                 "watchers": 11698
+            }
+        ]
+    },
+    "doodlum": {
+        "skyrim-community-shaders": [
+            {
+                "actionName": "run-vcpkg",
+                "line": 34,
+                "url": "https://github.com/doodlum/skyrim-community-shaders/blob/main/.github/workflows/build.yaml#L34",
+                "version": "v11"
+            },
+            {
+                "name": "skyrim-community-shaders",
+                "owner": "doodlum",
+                "repo_orig": {
+                    "id": 606527043,
+                    "node_id": "R_kgDOJCbeQw",
+                    "name": "skyrim-community-shaders",
+                    "full_name": "doodlum/skyrim-community-shaders",
+                    "private": false,
+                    "owner": {
+                        "login": "doodlum",
+                        "id": 15017472,
+                        "node_id": "MDQ6VXNlcjE1MDE3NDcy",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/15017472?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/doodlum",
+                        "html_url": "https://github.com/doodlum",
+                        "followers_url": "https://api.github.com/users/doodlum/followers",
+                        "following_url": "https://api.github.com/users/doodlum/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/doodlum/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/doodlum/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/doodlum/subscriptions",
+                        "organizations_url": "https://api.github.com/users/doodlum/orgs",
+                        "repos_url": "https://api.github.com/users/doodlum/repos",
+                        "events_url": "https://api.github.com/users/doodlum/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/doodlum/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "html_url": "https://github.com/doodlum/skyrim-community-shaders",
+                    "description": "SKSE core plugin for community-driven advanced graphics modifications for AE, SE and VR. Also fixes bugs.",
+                    "fork": false,
+                    "url": "https://api.github.com/repos/doodlum/skyrim-community-shaders",
+                    "forks_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/forks",
+                    "keys_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/keys{/key_id}",
+                    "collaborators_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/collaborators{/collaborator}",
+                    "teams_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/teams",
+                    "hooks_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/hooks",
+                    "issue_events_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/issues/events{/number}",
+                    "events_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/events",
+                    "assignees_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/assignees{/user}",
+                    "branches_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/branches{/branch}",
+                    "tags_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/tags",
+                    "blobs_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/git/blobs{/sha}",
+                    "git_tags_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/git/tags{/sha}",
+                    "git_refs_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/git/refs{/sha}",
+                    "trees_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/git/trees{/sha}",
+                    "statuses_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/statuses/{sha}",
+                    "languages_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/languages",
+                    "stargazers_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/stargazers",
+                    "contributors_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/contributors",
+                    "subscribers_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/subscribers",
+                    "subscription_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/subscription",
+                    "commits_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/commits{/sha}",
+                    "git_commits_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/git/commits{/sha}",
+                    "comments_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/comments{/number}",
+                    "issue_comment_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/issues/comments{/number}",
+                    "contents_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/contents/{+path}",
+                    "compare_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/compare/{base}...{head}",
+                    "merges_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/merges",
+                    "archive_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/{archive_format}{/ref}",
+                    "downloads_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/downloads",
+                    "issues_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/issues{/number}",
+                    "pulls_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/pulls{/number}",
+                    "milestones_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/milestones{/number}",
+                    "notifications_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/notifications{?since,all,participating}",
+                    "labels_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/labels{/name}",
+                    "releases_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/releases{/id}",
+                    "deployments_url": "https://api.github.com/repos/doodlum/skyrim-community-shaders/deployments",
+                    "created_at": "2023-02-25T18:57:32Z",
+                    "updated_at": "2023-09-02T23:31:09Z",
+                    "pushed_at": "2023-09-03T01:06:37Z",
+                    "git_url": "git://github.com/doodlum/skyrim-community-shaders.git",
+                    "ssh_url": "git@github.com:doodlum/skyrim-community-shaders.git",
+                    "clone_url": "https://github.com/doodlum/skyrim-community-shaders.git",
+                    "svn_url": "https://github.com/doodlum/skyrim-community-shaders",
+                    "homepage": "",
+                    "size": 1815,
+                    "stargazers_count": 34,
+                    "watchers_count": 34,
+                    "language": "C++",
+                    "has_issues": true,
+                    "has_projects": true,
+                    "has_downloads": true,
+                    "has_wiki": true,
+                    "has_pages": false,
+                    "has_discussions": false,
+                    "forks_count": 15,
+                    "mirror_url": null,
+                    "archived": false,
+                    "disabled": false,
+                    "open_issues_count": 13,
+                    "license": {
+                        "key": "gpl-3.0",
+                        "name": "GNU General Public License v3.0",
+                        "spdx_id": "GPL-3.0",
+                        "url": "https://api.github.com/licenses/gpl-3.0",
+                        "node_id": "MDc6TGljZW5zZTk="
+                    },
+                    "allow_forking": true,
+                    "is_template": false,
+                    "web_commit_signoff_required": false,
+                    "topics": [],
+                    "visibility": "public",
+                    "forks": 15,
+                    "open_issues": 13,
+                    "watchers": 34,
+                    "default_branch": "main",
+                    "permissions": {
+                        "admin": false,
+                        "maintain": false,
+                        "push": false,
+                        "triage": false,
+                        "pull": true
+                    },
+                    "score": 1
+                },
+                "stars": 34,
+                "url": "https://api.github.com/repos/doodlum/skyrim-community-shaders",
+                "watchers": 34
             }
         ]
     }
