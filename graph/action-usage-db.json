@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Thu, 24 Nov 2022 00:00:00 GMT",
+    "LastStartTimeName": "Fri, 20 Oct 2023 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -47671,7 +47671,7 @@
                     "releases_url": "https://api.github.com/repos/duckdblabs/duckdb_iceberg/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/duckdblabs/duckdb_iceberg/deployments",
                     "created_at": "2023-07-06T21:26:34Z",
-                    "updated_at": "2023-09-25T18:36:29Z",
+                    "updated_at": "2023-09-26T17:29:20Z",
                     "pushed_at": "2023-09-25T12:22:30Z",
                     "git_url": "git://github.com/duckdblabs/duckdb_iceberg.git",
                     "ssh_url": "git@github.com:duckdblabs/duckdb_iceberg.git",
@@ -47679,8 +47679,8 @@
                     "svn_url": "https://github.com/duckdblabs/duckdb_iceberg",
                     "homepage": null,
                     "size": 46961,
-                    "stargazers_count": 45,
-                    "watchers_count": 45,
+                    "stargazers_count": 47,
+                    "watchers_count": 47,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -47692,7 +47692,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 7,
+                    "open_issues_count": 8,
                     "license": {
                         "key": "mit",
                         "name": "MIT License",
@@ -47706,8 +47706,8 @@
                     "topics": [],
                     "visibility": "public",
                     "forks": 8,
-                    "open_issues": 7,
-                    "watchers": 45,
+                    "open_issues": 8,
+                    "watchers": 47,
                     "default_branch": "main",
                     "permissions": {
                         "admin": false,
@@ -47718,9 +47718,9 @@
                     },
                     "score": 1
                 },
-                "stars": 45,
+                "stars": 47,
                 "url": "https://api.github.com/repos/duckdblabs/duckdb_iceberg",
-                "watchers": 45
+                "watchers": 47
             }
         ]
     },
@@ -47802,7 +47802,7 @@
                     "releases_url": "https://api.github.com/repos/maxi-k/btrblocks/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/maxi-k/btrblocks/deployments",
                     "created_at": "2023-05-22T15:15:22Z",
-                    "updated_at": "2023-09-25T12:21:51Z",
+                    "updated_at": "2023-09-26T06:44:36Z",
                     "pushed_at": "2023-09-20T06:56:45Z",
                     "git_url": "git://github.com/maxi-k/btrblocks.git",
                     "ssh_url": "git@github.com:maxi-k/btrblocks.git",
@@ -47810,8 +47810,8 @@
                     "svn_url": "https://github.com/maxi-k/btrblocks",
                     "homepage": "",
                     "size": 197,
-                    "stargazers_count": 124,
-                    "watchers_count": 124,
+                    "stargazers_count": 127,
+                    "watchers_count": 127,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -47843,7 +47843,7 @@
                     "visibility": "public",
                     "forks": 2,
                     "open_issues": 0,
-                    "watchers": 124,
+                    "watchers": 127,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -47854,9 +47854,9 @@
                     },
                     "score": 1
                 },
-                "stars": 124,
+                "stars": 127,
                 "url": "https://api.github.com/repos/maxi-k/btrblocks",
-                "watchers": 124
+                "watchers": 127
             }
         ]
     },
@@ -49614,7 +49614,7 @@
                     "clone_url": "https://github.com/doodlum/skyrim-community-shaders.git",
                     "svn_url": "https://github.com/doodlum/skyrim-community-shaders",
                     "homepage": "",
-                    "size": 1863,
+                    "size": 1866,
                     "stargazers_count": 45,
                     "watchers_count": 45,
                     "language": "C++",
@@ -50154,6 +50154,24 @@
                 "version": "v10.6"
             },
             {
+                "actionName": "get-cmake",
+                "line": 25,
+                "url": "https://github.com/Starfield-Reverse-Engineering/CommonLibSF/blob/main/.github/workflows/update_pdb.yml#L25",
+                "version": "latest"
+            },
+            {
+                "actionName": "run-vcpkg",
+                "line": 28,
+                "url": "https://github.com/Starfield-Reverse-Engineering/CommonLibSF/blob/main/.github/workflows/update_pdb.yml#L28",
+                "version": "v11.1"
+            },
+            {
+                "actionName": "run-cmake",
+                "line": 33,
+                "url": "https://github.com/Starfield-Reverse-Engineering/CommonLibSF/blob/main/.github/workflows/update_pdb.yml#L33",
+                "version": "v10.6"
+            },
+            {
                 "name": "CommonLibSF",
                 "owner": "Starfield-Reverse-Engineering",
                 "repo_orig": {
@@ -50224,13 +50242,13 @@
                     "deployments_url": "https://api.github.com/repos/Starfield-Reverse-Engineering/CommonLibSF/deployments",
                     "created_at": "2023-09-05T19:27:45Z",
                     "updated_at": "2023-09-25T04:57:09Z",
-                    "pushed_at": "2023-09-25T19:43:38Z",
+                    "pushed_at": "2023-09-26T18:14:02Z",
                     "git_url": "git://github.com/Starfield-Reverse-Engineering/CommonLibSF.git",
                     "ssh_url": "git@github.com:Starfield-Reverse-Engineering/CommonLibSF.git",
                     "clone_url": "https://github.com/Starfield-Reverse-Engineering/CommonLibSF.git",
                     "svn_url": "https://github.com/Starfield-Reverse-Engineering/CommonLibSF",
                     "homepage": "",
-                    "size": 3599,
+                    "size": 4397,
                     "stargazers_count": 47,
                     "watchers_count": 47,
                     "language": "C++",
@@ -50240,11 +50258,11 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 17,
+                    "forks_count": 19,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 5,
+                    "open_issues_count": 7,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -50257,8 +50275,8 @@
                     "web_commit_signoff_required": false,
                     "topics": [],
                     "visibility": "public",
-                    "forks": 17,
-                    "open_issues": 5,
+                    "forks": 19,
+                    "open_issues": 7,
                     "watchers": 47,
                     "default_branch": "main",
                     "permissions": {
