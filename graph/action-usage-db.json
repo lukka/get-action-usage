@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Fri, 19 Jan 2018 00:00:00 GMT",
+    "LastStartTimeName": "Fri, 17 Aug 2018 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -14959,7 +14959,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 19,
+                    "open_issues_count": 20,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -14981,7 +14981,7 @@
                     ],
                     "visibility": "public",
                     "forks": 6,
-                    "open_issues": 19,
+                    "open_issues": 20,
                     "watchers": 66,
                     "default_branch": "master",
                     "permissions": {
@@ -15087,7 +15087,7 @@
                     "releases_url": "https://api.github.com/repos/crow-translate/crow-translate/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/crow-translate/crow-translate/deployments",
                     "created_at": "2018-02-23T11:41:36Z",
-                    "updated_at": "2023-10-11T07:38:12Z",
+                    "updated_at": "2023-10-12T02:41:32Z",
                     "pushed_at": "2023-09-07T12:16:57Z",
                     "git_url": "git://github.com/crow-translate/crow-translate.git",
                     "ssh_url": "git@github.com:crow-translate/crow-translate.git",
@@ -15095,8 +15095,8 @@
                     "svn_url": "https://github.com/crow-translate/crow-translate",
                     "homepage": "https://crow-translate.github.io/",
                     "size": 28037,
-                    "stargazers_count": 1466,
-                    "watchers_count": 1466,
+                    "stargazers_count": 1468,
+                    "watchers_count": 1468,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": false,
@@ -15135,7 +15135,7 @@
                     "visibility": "public",
                     "forks": 136,
                     "open_issues": 82,
-                    "watchers": 1466,
+                    "watchers": 1468,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -15146,9 +15146,9 @@
                     },
                     "score": 1
                 },
-                "stars": 1466,
+                "stars": 1468,
                 "url": "https://api.github.com/repos/crow-translate/crow-translate",
-                "watchers": 1466
+                "watchers": 1468
             }
         ]
     },
@@ -28166,7 +28166,7 @@
                     "releases_url": "https://api.github.com/repos/simdjson/simdjson/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/simdjson/simdjson/deployments",
                     "created_at": "2018-03-23T00:49:18Z",
-                    "updated_at": "2023-10-11T11:44:43Z",
+                    "updated_at": "2023-10-12T06:40:14Z",
                     "pushed_at": "2023-10-09T19:48:47Z",
                     "git_url": "git://github.com/simdjson/simdjson.git",
                     "ssh_url": "git@github.com:simdjson/simdjson.git",
@@ -28174,8 +28174,8 @@
                     "svn_url": "https://github.com/simdjson/simdjson",
                     "homepage": "https://simdjson.org",
                     "size": 46597,
-                    "stargazers_count": 17404,
-                    "watchers_count": 17404,
+                    "stargazers_count": 17407,
+                    "watchers_count": 17407,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -28221,7 +28221,7 @@
                     "visibility": "public",
                     "forks": 933,
                     "open_issues": 124,
-                    "watchers": 17404,
+                    "watchers": 17407,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -28232,9 +28232,9 @@
                     },
                     "score": 1
                 },
-                "stars": 17404,
+                "stars": 17407,
                 "url": "https://api.github.com/repos/simdjson/simdjson",
-                "watchers": 17404
+                "watchers": 17407
             }
         ]
     },
@@ -35761,7 +35761,7 @@
                     "deployments_url": "https://api.github.com/repos/KhronosGroup/Vulkan-Headers/deployments",
                     "created_at": "2018-05-03T19:59:08Z",
                     "updated_at": "2023-10-08T21:33:34Z",
-                    "pushed_at": "2023-10-06T13:26:13Z",
+                    "pushed_at": "2023-10-11T14:17:41Z",
                     "git_url": "git://github.com/KhronosGroup/Vulkan-Headers.git",
                     "ssh_url": "git@github.com:KhronosGroup/Vulkan-Headers.git",
                     "clone_url": "https://github.com/KhronosGroup/Vulkan-Headers.git",
@@ -35881,7 +35881,7 @@
                         "site_admin": false
                     },
                     "html_url": "https://github.com/KhronosGroup/Vulkan-ValidationLayers",
-                    "description": "Vulkan Validation Layers",
+                    "description": "Vulkan Validation Layers (VVL)",
                     "fork": false,
                     "url": "https://api.github.com/repos/KhronosGroup/Vulkan-ValidationLayers",
                     "forks_url": "https://api.github.com/repos/KhronosGroup/Vulkan-ValidationLayers/forks",
@@ -35921,16 +35921,16 @@
                     "releases_url": "https://api.github.com/repos/KhronosGroup/Vulkan-ValidationLayers/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/KhronosGroup/Vulkan-ValidationLayers/deployments",
                     "created_at": "2018-05-03T19:59:43Z",
-                    "updated_at": "2023-10-10T06:15:07Z",
-                    "pushed_at": "2023-10-10T22:32:10Z",
+                    "updated_at": "2023-10-11T17:47:42Z",
+                    "pushed_at": "2023-10-12T10:56:25Z",
                     "git_url": "git://github.com/KhronosGroup/Vulkan-ValidationLayers.git",
                     "ssh_url": "git@github.com:KhronosGroup/Vulkan-ValidationLayers.git",
                     "clone_url": "https://github.com/KhronosGroup/Vulkan-ValidationLayers.git",
                     "svn_url": "https://github.com/KhronosGroup/Vulkan-ValidationLayers",
                     "homepage": "https://vulkan.lunarg.com/doc/sdk/latest/linux/khronos_validation_layer.html",
-                    "size": 163626,
-                    "stargazers_count": 622,
-                    "watchers_count": 622,
+                    "size": 164023,
+                    "stargazers_count": 621,
+                    "watchers_count": 621,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -35938,11 +35938,11 @@
                     "has_wiki": false,
                     "has_pages": false,
                     "has_discussions": false,
-                    "forks_count": 378,
+                    "forks_count": 379,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 210,
+                    "open_issues_count": 208,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -35957,9 +35957,9 @@
                         "vulkan"
                     ],
                     "visibility": "public",
-                    "forks": 378,
-                    "open_issues": 210,
-                    "watchers": 622,
+                    "forks": 379,
+                    "open_issues": 208,
+                    "watchers": 621,
                     "default_branch": "main",
                     "permissions": {
                         "admin": false,
@@ -35970,9 +35970,9 @@
                     },
                     "score": 1
                 },
-                "stars": 622,
+                "stars": 621,
                 "url": "https://api.github.com/repos/KhronosGroup/Vulkan-ValidationLayers",
-                "watchers": 622
+                "watchers": 621
             }
         ],
         "Vulkan-Tools": [
@@ -35984,20 +35984,20 @@
             },
             {
                 "actionName": "get-cmake",
-                "line": 113,
-                "url": "https://github.com/KhronosGroup/Vulkan-Tools/blob/main/.github/workflows/tools.yml#L113",
+                "line": 121,
+                "url": "https://github.com/KhronosGroup/Vulkan-Tools/blob/main/.github/workflows/tools.yml#L121",
                 "version": "latest"
             },
             {
                 "actionName": "get-cmake",
-                "line": 141,
-                "url": "https://github.com/KhronosGroup/Vulkan-Tools/blob/main/.github/workflows/tools.yml#L141",
+                "line": 149,
+                "url": "https://github.com/KhronosGroup/Vulkan-Tools/blob/main/.github/workflows/tools.yml#L149",
                 "version": "latest"
             },
             {
                 "actionName": "get-cmake",
-                "line": 205,
-                "url": "https://github.com/KhronosGroup/Vulkan-Tools/blob/main/.github/workflows/tools.yml#L205",
+                "line": 185,
+                "url": "https://github.com/KhronosGroup/Vulkan-Tools/blob/main/.github/workflows/tools.yml#L185",
                 "version": "latest"
             },
             {
@@ -36070,16 +36070,16 @@
                     "releases_url": "https://api.github.com/repos/KhronosGroup/Vulkan-Tools/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/KhronosGroup/Vulkan-Tools/deployments",
                     "created_at": "2018-05-03T20:00:01Z",
-                    "updated_at": "2023-10-09T13:21:07Z",
-                    "pushed_at": "2023-10-10T23:28:58Z",
+                    "updated_at": "2023-10-11T02:02:59Z",
+                    "pushed_at": "2023-10-11T22:55:10Z",
                     "git_url": "git://github.com/KhronosGroup/Vulkan-Tools.git",
                     "ssh_url": "git@github.com:KhronosGroup/Vulkan-Tools.git",
                     "clone_url": "https://github.com/KhronosGroup/Vulkan-Tools.git",
                     "svn_url": "https://github.com/KhronosGroup/Vulkan-Tools",
                     "homepage": "",
-                    "size": 45200,
-                    "stargazers_count": 291,
-                    "watchers_count": 291,
+                    "size": 45215,
+                    "stargazers_count": 290,
+                    "watchers_count": 290,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": false,
@@ -36087,7 +36087,7 @@
                     "has_wiki": false,
                     "has_pages": false,
                     "has_discussions": false,
-                    "forks_count": 141,
+                    "forks_count": 142,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
@@ -36106,9 +36106,9 @@
                         "vulkan"
                     ],
                     "visibility": "public",
-                    "forks": 141,
+                    "forks": 142,
                     "open_issues": 15,
-                    "watchers": 291,
+                    "watchers": 290,
                     "default_branch": "main",
                     "permissions": {
                         "admin": false,
@@ -36119,9 +36119,9 @@
                     },
                     "score": 1
                 },
-                "stars": 291,
+                "stars": 290,
                 "url": "https://api.github.com/repos/KhronosGroup/Vulkan-Tools",
-                "watchers": 291
+                "watchers": 290
             }
         ],
         "Vulkan-ExtensionLayer": [
@@ -43835,13 +43835,13 @@
                     "deployments_url": "https://api.github.com/repos/LunarG/gfxreconstruct/deployments",
                     "created_at": "2018-05-17T17:57:33Z",
                     "updated_at": "2023-10-04T22:10:50Z",
-                    "pushed_at": "2023-10-10T13:41:20Z",
+                    "pushed_at": "2023-10-11T19:40:06Z",
                     "git_url": "git://github.com/LunarG/gfxreconstruct.git",
                     "ssh_url": "git@github.com:LunarG/gfxreconstruct.git",
                     "clone_url": "https://github.com/LunarG/gfxreconstruct.git",
                     "svn_url": "https://github.com/LunarG/gfxreconstruct",
                     "homepage": "https://vulkan.lunarg.com/doc/sdk/latest/linux/capture_tools.html",
-                    "size": 40099,
+                    "size": 40469,
                     "stargazers_count": 310,
                     "watchers_count": 310,
                     "language": "C++",
@@ -49648,16 +49648,16 @@
                     "releases_url": "https://api.github.com/repos/duckdb/duckdb/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/duckdb/duckdb/deployments",
                     "created_at": "2018-06-26T15:04:45Z",
-                    "updated_at": "2023-10-11T15:06:13Z",
-                    "pushed_at": "2023-10-11T16:59:40Z",
+                    "updated_at": "2023-10-12T10:38:50Z",
+                    "pushed_at": "2023-10-12T08:30:51Z",
                     "git_url": "git://github.com/duckdb/duckdb.git",
                     "ssh_url": "git@github.com:duckdb/duckdb.git",
                     "clone_url": "https://github.com/duckdb/duckdb.git",
                     "svn_url": "https://github.com/duckdb/duckdb",
                     "homepage": "http://www.duckdb.org",
                     "size": 226018,
-                    "stargazers_count": 12323,
-                    "watchers_count": 12323,
+                    "stargazers_count": 12335,
+                    "watchers_count": 12335,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -49665,11 +49665,11 @@
                     "has_wiki": false,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 1152,
+                    "forks_count": 1153,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 312,
+                    "open_issues_count": 314,
                     "license": {
                         "key": "mit",
                         "name": "MIT License",
@@ -49688,9 +49688,9 @@
                         "sql"
                     ],
                     "visibility": "public",
-                    "forks": 1152,
-                    "open_issues": 312,
-                    "watchers": 12323,
+                    "forks": 1153,
+                    "open_issues": 314,
+                    "watchers": 12335,
                     "default_branch": "main",
                     "permissions": {
                         "admin": false,
@@ -49701,9 +49701,9 @@
                     },
                     "score": 1
                 },
-                "stars": 12323,
+                "stars": 12335,
                 "url": "https://api.github.com/repos/duckdb/duckdb",
-                "watchers": 12323
+                "watchers": 12335
             }
         ]
     },
