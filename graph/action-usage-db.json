@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Wed, 13 Feb 2019 00:00:00 GMT",
+    "LastStartTimeName": "Wed, 11 Sep 2019 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -17634,13 +17634,13 @@
                     "deployments_url": "https://api.github.com/repos/MCJack123/craftos2/deployments",
                     "created_at": "2019-07-19T01:51:29Z",
                     "updated_at": "2023-09-29T22:58:28Z",
-                    "pushed_at": "2023-09-25T21:27:21Z",
+                    "pushed_at": "2023-10-19T19:36:12Z",
                     "git_url": "git://github.com/MCJack123/craftos2.git",
                     "ssh_url": "git@github.com:MCJack123/craftos2.git",
                     "clone_url": "https://github.com/MCJack123/craftos2.git",
                     "svn_url": "https://github.com/MCJack123/craftos2",
                     "homepage": "https://www.craftos-pc.cc",
-                    "size": 27923,
+                    "size": 27937,
                     "stargazers_count": 174,
                     "watchers_count": 174,
                     "language": "C++",
@@ -34873,13 +34873,13 @@
                     "deployments_url": "https://api.github.com/repos/philips-software/amp-embedded-infra-lib/deployments",
                     "created_at": "2019-03-22T14:27:21Z",
                     "updated_at": "2023-10-19T02:25:40Z",
-                    "pushed_at": "2023-10-18T11:22:29Z",
+                    "pushed_at": "2023-10-19T07:49:37Z",
                     "git_url": "git://github.com/philips-software/amp-embedded-infra-lib.git",
                     "ssh_url": "git@github.com:philips-software/amp-embedded-infra-lib.git",
                     "clone_url": "https://github.com/philips-software/amp-embedded-infra-lib.git",
                     "svn_url": "https://github.com/philips-software/amp-embedded-infra-lib",
                     "homepage": "",
-                    "size": 31339,
+                    "size": 31341,
                     "stargazers_count": 114,
                     "watchers_count": 114,
                     "language": "C++",
@@ -34893,7 +34893,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 15,
+                    "open_issues_count": 13,
                     "license": {
                         "key": "mit",
                         "name": "MIT License",
@@ -34918,7 +34918,7 @@
                     ],
                     "visibility": "public",
                     "forks": 23,
-                    "open_issues": 15,
+                    "open_issues": 13,
                     "watchers": 114,
                     "default_branch": "main",
                     "permissions": {
@@ -35234,19 +35234,19 @@
                 "actionName": "get-cmake",
                 "line": 28,
                 "url": "https://github.com/KhronosGroup/OpenXR-SDK/blob/main/.github/workflows/android.yml#L28",
-                "version": "v3.26.4"
+                "version": "v3.27.7"
             },
             {
                 "actionName": "get-cmake",
                 "line": 64,
                 "url": "https://github.com/KhronosGroup/OpenXR-SDK/blob/main/.github/workflows/android.yml#L64",
-                "version": "v3.26.4"
+                "version": "v3.27.7"
             },
             {
                 "actionName": "get-cmake",
                 "line": 35,
                 "url": "https://github.com/KhronosGroup/OpenXR-SDK/blob/main/.github/workflows/msvc-build-preset.yml#L35",
-                "version": "v3.26.4"
+                "version": "v3.27.7"
             },
             {
                 "name": "OpenXR-SDK",
@@ -35318,14 +35318,14 @@
                     "releases_url": "https://api.github.com/repos/KhronosGroup/OpenXR-SDK/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/KhronosGroup/OpenXR-SDK/deployments",
                     "created_at": "2019-07-28T17:11:34Z",
-                    "updated_at": "2023-10-16T17:10:08Z",
-                    "pushed_at": "2023-09-20T16:34:53Z",
+                    "updated_at": "2023-10-19T20:34:10Z",
+                    "pushed_at": "2023-10-19T16:35:27Z",
                     "git_url": "git://github.com/KhronosGroup/OpenXR-SDK.git",
                     "ssh_url": "git@github.com:KhronosGroup/OpenXR-SDK.git",
                     "clone_url": "https://github.com/KhronosGroup/OpenXR-SDK.git",
                     "svn_url": "https://github.com/KhronosGroup/OpenXR-SDK",
                     "homepage": "https://khronos.org/openxr",
-                    "size": 5913,
+                    "size": 6072,
                     "stargazers_count": 734,
                     "watchers_count": 734,
                     "language": "C++",
@@ -46478,7 +46478,7 @@
                     "releases_url": "https://api.github.com/repos/StereoKit/StereoKit/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/StereoKit/StereoKit/deployments",
                     "created_at": "2019-07-09T22:54:27Z",
-                    "updated_at": "2023-10-16T00:11:38Z",
+                    "updated_at": "2023-10-19T17:29:16Z",
                     "pushed_at": "2023-10-18T06:34:12Z",
                     "git_url": "git://github.com/StereoKit/StereoKit.git",
                     "ssh_url": "git@github.com:StereoKit/StereoKit.git",
@@ -46486,8 +46486,8 @@
                     "svn_url": "https://github.com/StereoKit/StereoKit",
                     "homepage": "https://stereokit.net/Pages/Guides/Getting-Started.html",
                     "size": 311315,
-                    "stargazers_count": 844,
-                    "watchers_count": 844,
+                    "stargazers_count": 845,
+                    "watchers_count": 845,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -46526,7 +46526,7 @@
                     "visibility": "public",
                     "forks": 102,
                     "open_issues": 147,
-                    "watchers": 844,
+                    "watchers": 845,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -46537,9 +46537,9 @@
                     },
                     "score": 1
                 },
-                "stars": 844,
+                "stars": 845,
                 "url": "https://api.github.com/repos/StereoKit/StereoKit",
-                "watchers": 844
+                "watchers": 845
             }
         ]
     },
