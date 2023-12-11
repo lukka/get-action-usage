@@ -5,12 +5,12 @@
   "license": "MIT",
   "repository": "",
   "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "luca cappa",
+    "email": "lcappa@gmail.com",
+    "url": "https://lukka.github.io/graph/graph.html"
   },
   "keywords": [
-    ""
+    "c++", "cmake", "vcpkg", "ninja"
   ],
   "files": [
     "lib"
@@ -31,7 +31,7 @@
     "pack": "npm run build && ncc build lib/main.js -o dist"
   },
   "dependencies": {
-    "@actions/core": "^1.6.0",
+    "@actions/core": "^1.10.1",
     "@octokit/auth-token": "^2.5.0",
     "@octokit/core": "^3.6.0",
     "@octokit/openapi-types": "^11.2.0",
@@ -43,7 +43,6 @@
     "@types/cli-progress": "^3.9.2",
     "@types/http-errors": "^1.8.2",
     "@types/node-json-db": "^0.9.3",
-    "@vercel/ncc": "^0.33.3",
     "cli-progress": "^3.10.0",
     "dotenv": "^16.0.0",
     "http-errors": "^2.0.0",
@@ -53,19 +52,20 @@
   },
   "devDependencies": {
     "@types/jest": "^23.3.3",
-    "@types/node": "^10.11.4",
+    "@types/node": "^20.10.4",
+    "@vercel/ncc": "^0.38.1",
     "coveralls": "^3.0.2",
     "jest": "^23.6.0",
     "prettier": "^1.19.1",
     "rimraf": "^2.6.2",
     "ts-jest": "^23.10.3",
-    "ts-node": "^7.0.1",
+    "ts-node": "^10.9.2",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "typescript": "^4.6.3"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=20.0.0"
   },
   "jest": {
     "preset": "ts-jest"

@@ -171,7 +171,12 @@ export class GHActionUsage {
       );
       this.db.save(true);
 
-      await this.setupCron(this.actionRootPath, limits.reset);
+      // Launching the workflow again at limits.reset time will
+      // exhausts again all the API quota. Let's run it at midnight each day.
+      // await this.setupCron(this.actionRootPath, limits.reset);
+      const nextRunDate = new Date();
+      nextRunDate.setUTCHours(24, 0, 0, 0);
+      await this.setupCron(this.actionRootPath, nextRunDate);
 
       this.progressBars.stop();
       // tslint:disable-next-line:no-console
