@@ -3,8 +3,8 @@ name: 'update graph.html'
 on:
   pull_request:
   schedule:
-    - cron: '0 * * * *'
-    - cron: '0 0 13 12 3'
+    - cron: '0 0 * * *'
+    #- cron: '24 17 11 12 1'
   workflow_dispatch:
 
 jobs:

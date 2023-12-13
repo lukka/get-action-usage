@@ -173,9 +173,8 @@ export class GHActionUsage {
 
       // Launching the workflow again at limits.reset time will
       // exhausts again all the API quota. Let's run it at midnight each day.
+      // The cron schedule is hardcoded in run.yml.
       // await this.setupCron(this.actionRootPath, limits.reset);
-      const nextRunDate = new Date(new Date().setUTCHours(24, 0, 0, 0));
-      await this.setupCron(this.actionRootPath, nextRunDate);
 
       this.progressBars.stop();
       // tslint:disable-next-line:no-console
@@ -274,6 +273,7 @@ export class GHActionUsage {
     return db;
   }
 
+  // @ts-ignore: Unreachable code error
   private async setupCron(rootPath: string, date: Date): Promise<void> {
     try {
       // Read content of workflow file.
