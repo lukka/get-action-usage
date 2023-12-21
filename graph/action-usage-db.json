@@ -3,14 +3,14 @@
         "assimp": [
             {
                 "actionName": "get-cmake",
-                "line": 53,
-                "url": "https://github.com/assimp/assimp/blob/master/.github/workflows/ccpp.yml#L53",
+                "line": 44,
+                "url": "https://github.com/assimp/assimp/blob/master/.github/workflows/ccpp.yml#L44",
                 "version": "latest"
             },
             {
                 "actionName": "run-cmake",
-                "line": 104,
-                "url": "https://github.com/assimp/assimp/blob/master/.github/workflows/ccpp.yml#L104",
+                "line": 81,
+                "url": "https://github.com/assimp/assimp/blob/master/.github/workflows/ccpp.yml#L81",
                 "version": "v3"
             },
             {
@@ -107,16 +107,16 @@
                     "releases_url": "https://api.github.com/repos/assimp/assimp/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/assimp/assimp/deployments",
                     "created_at": "2010-05-05T12:53:45Z",
-                    "updated_at": "2023-12-11T11:05:31Z",
-                    "pushed_at": "2023-12-11T10:09:18Z",
+                    "updated_at": "2023-12-20T21:15:39Z",
+                    "pushed_at": "2023-12-20T19:55:04Z",
                     "git_url": "git://github.com/assimp/assimp.git",
                     "ssh_url": "git@github.com:assimp/assimp.git",
                     "clone_url": "https://github.com/assimp/assimp.git",
                     "svn_url": "https://github.com/assimp/assimp",
                     "homepage": "https://www.assimp.org",
-                    "size": 194002,
-                    "stargazers_count": 9788,
-                    "watchers_count": 9788,
+                    "size": 193952,
+                    "stargazers_count": 9822,
+                    "watchers_count": 9822,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -124,11 +124,11 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 2769,
+                    "forks_count": 2777,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 701,
+                    "open_issues_count": 706,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -160,9 +160,9 @@
                         "stl"
                     ],
                     "visibility": "public",
-                    "forks": 2769,
-                    "open_issues": 701,
-                    "watchers": 9788,
+                    "forks": 2777,
+                    "open_issues": 706,
+                    "watchers": 9822,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -173,9 +173,9 @@
                     },
                     "score": 1
                 },
-                "stars": 9788,
+                "stars": 9822,
                 "url": "https://api.github.com/repos/assimp/assimp",
-                "watchers": 9788
+                "watchers": 9822
             }
         ]
     },
@@ -642,7 +642,7 @@
             }
         ]
     },
-    "LastStartTimeName": "Thu, 18 Jan 2024 00:00:00 GMT",
+    "LastStartTimeName": "Wed, 17 Oct 2012 00:00:00 GMT",
     "stevenlovegrove": {
         "Pangolin": [
             {
@@ -721,16 +721,16 @@
                     "releases_url": "https://api.github.com/repos/stevenlovegrove/Pangolin/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/stevenlovegrove/Pangolin/deployments",
                     "created_at": "2010-11-20T01:50:32Z",
-                    "updated_at": "2023-12-10T12:40:09Z",
-                    "pushed_at": "2023-11-28T17:57:04Z",
+                    "updated_at": "2023-12-20T13:48:36Z",
+                    "pushed_at": "2023-12-20T21:13:51Z",
                     "git_url": "git://github.com/stevenlovegrove/Pangolin.git",
                     "ssh_url": "git@github.com:stevenlovegrove/Pangolin.git",
                     "clone_url": "https://github.com/stevenlovegrove/Pangolin.git",
                     "svn_url": "https://github.com/stevenlovegrove/Pangolin",
                     "homepage": "",
-                    "size": 46880,
-                    "stargazers_count": 2138,
-                    "watchers_count": 2138,
+                    "size": 46894,
+                    "stargazers_count": 2148,
+                    "watchers_count": 2148,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -738,11 +738,11 @@
                     "has_wiki": true,
                     "has_pages": true,
                     "has_discussions": false,
-                    "forks_count": 816,
+                    "forks_count": 823,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 97,
+                    "open_issues_count": 99,
                     "license": {
                         "key": "mit",
                         "name": "MIT License",
@@ -755,9 +755,9 @@
                     "web_commit_signoff_required": false,
                     "topics": [],
                     "visibility": "public",
-                    "forks": 816,
-                    "open_issues": 97,
-                    "watchers": 2138,
+                    "forks": 823,
+                    "open_issues": 99,
+                    "watchers": 2148,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -768,9 +768,9 @@
                     },
                     "score": 1
                 },
-                "stars": 2138,
+                "stars": 2148,
                 "url": "https://api.github.com/repos/stevenlovegrove/Pangolin",
-                "watchers": 2138
+                "watchers": 2148
             }
         ]
     },
@@ -1000,16 +1000,16 @@
                     "releases_url": "https://api.github.com/repos/scummvm/scummvm/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/scummvm/scummvm/deployments",
                     "created_at": "2011-02-12T15:50:57Z",
-                    "updated_at": "2023-12-11T15:12:54Z",
-                    "pushed_at": "2023-12-11T14:36:41Z",
+                    "updated_at": "2023-12-20T03:04:23Z",
+                    "pushed_at": "2023-12-21T00:03:37Z",
                     "git_url": "git://github.com/scummvm/scummvm.git",
                     "ssh_url": "git@github.com:scummvm/scummvm.git",
                     "clone_url": "https://github.com/scummvm/scummvm.git",
                     "svn_url": "https://github.com/scummvm/scummvm",
                     "homepage": "https://www.scummvm.org",
-                    "size": 1641785,
-                    "stargazers_count": 2095,
-                    "watchers_count": 2095,
+                    "size": 1671583,
+                    "stargazers_count": 2096,
+                    "watchers_count": 2096,
                     "language": "C++",
                     "has_issues": false,
                     "has_projects": true,
@@ -1017,11 +1017,11 @@
                     "has_wiki": false,
                     "has_pages": false,
                     "has_discussions": false,
-                    "forks_count": 944,
+                    "forks_count": 949,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 38,
+                    "open_issues_count": 33,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -1039,9 +1039,9 @@
                         "rpg-engine"
                     ],
                     "visibility": "public",
-                    "forks": 944,
-                    "open_issues": 38,
-                    "watchers": 2095,
+                    "forks": 949,
+                    "open_issues": 33,
+                    "watchers": 2096,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -1052,9 +1052,9 @@
                     },
                     "score": 1
                 },
-                "stars": 2095,
+                "stars": 2096,
                 "url": "https://api.github.com/repos/scummvm/scummvm",
-                "watchers": 2095
+                "watchers": 2096
             }
         ]
     },
@@ -1136,7 +1136,7 @@
                     "releases_url": "https://api.github.com/repos/libspatialindex/libspatialindex/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/libspatialindex/libspatialindex/deployments",
                     "created_at": "2011-06-19T14:06:02Z",
-                    "updated_at": "2023-12-07T09:21:32Z",
+                    "updated_at": "2023-12-20T03:04:38Z",
                     "pushed_at": "2023-09-15T09:58:53Z",
                     "git_url": "git://github.com/libspatialindex/libspatialindex.git",
                     "ssh_url": "git@github.com:libspatialindex/libspatialindex.git",
@@ -1144,8 +1144,8 @@
                     "svn_url": "https://github.com/libspatialindex/libspatialindex",
                     "homepage": "https://libspatialindex.org",
                     "size": 4201,
-                    "stargazers_count": 675,
-                    "watchers_count": 675,
+                    "stargazers_count": 677,
+                    "watchers_count": 677,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -1153,7 +1153,7 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": false,
-                    "forks_count": 234,
+                    "forks_count": 233,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
@@ -1173,9 +1173,9 @@
                         "spatial-indexing"
                     ],
                     "visibility": "public",
-                    "forks": 234,
+                    "forks": 233,
                     "open_issues": 20,
-                    "watchers": 675,
+                    "watchers": 677,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -1186,9 +1186,9 @@
                     },
                     "score": 1
                 },
-                "stars": 675,
+                "stars": 677,
                 "url": "https://api.github.com/repos/libspatialindex/libspatialindex",
-                "watchers": 675
+                "watchers": 677
             }
         ]
     },
@@ -1270,7 +1270,7 @@
                     "releases_url": "https://api.github.com/repos/freeserf/freeserf/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/freeserf/freeserf/deployments",
                     "created_at": "2011-06-21T21:28:03Z",
-                    "updated_at": "2023-12-07T20:31:13Z",
+                    "updated_at": "2023-12-18T00:09:57Z",
                     "pushed_at": "2023-09-20T01:11:35Z",
                     "git_url": "git://github.com/freeserf/freeserf.git",
                     "ssh_url": "git@github.com:freeserf/freeserf.git",
@@ -1278,8 +1278,8 @@
                     "svn_url": "https://github.com/freeserf/freeserf",
                     "homepage": "http://jonls.dk/freeserf/",
                     "size": 5039,
-                    "stargazers_count": 305,
-                    "watchers_count": 305,
+                    "stargazers_count": 304,
+                    "watchers_count": 304,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -1309,7 +1309,7 @@
                     "visibility": "public",
                     "forks": 49,
                     "open_issues": 71,
-                    "watchers": 305,
+                    "watchers": 304,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -1320,9 +1320,9 @@
                     },
                     "score": 1
                 },
-                "stars": 305,
+                "stars": 304,
                 "url": "https://api.github.com/repos/freeserf/freeserf",
-                "watchers": 305
+                "watchers": 304
             }
         ]
     },
@@ -1467,8 +1467,8 @@
         "minetest": [
             {
                 "actionName": "run-vcpkg",
-                "line": 234,
-                "url": "https://github.com/minetest/minetest/blob/master/.github/workflows/build.yml#L234",
+                "line": 244,
+                "url": "https://github.com/minetest/minetest/blob/master/.github/workflows/build.yml#L244",
                 "version": "v7"
             },
             {
@@ -1541,16 +1541,16 @@
                     "releases_url": "https://api.github.com/repos/minetest/minetest/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/minetest/minetest/deployments",
                     "created_at": "2011-08-07T13:48:36Z",
-                    "updated_at": "2023-12-11T10:09:00Z",
-                    "pushed_at": "2023-12-11T15:18:15Z",
+                    "updated_at": "2023-12-20T22:17:57Z",
+                    "pushed_at": "2023-12-20T23:23:40Z",
                     "git_url": "git://github.com/minetest/minetest.git",
                     "ssh_url": "git@github.com:minetest/minetest.git",
                     "clone_url": "https://github.com/minetest/minetest.git",
                     "svn_url": "https://github.com/minetest/minetest",
                     "homepage": "https://www.minetest.net/",
-                    "size": 103182,
-                    "stargazers_count": 9659,
-                    "watchers_count": 9659,
+                    "size": 103234,
+                    "stargazers_count": 9685,
+                    "watchers_count": 9685,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -1558,11 +1558,11 @@
                     "has_wiki": false,
                     "has_pages": true,
                     "has_discussions": false,
-                    "forks_count": 1911,
+                    "forks_count": 1919,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 1189,
+                    "open_issues_count": 1198,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -1584,9 +1584,9 @@
                         "voxel-engine"
                     ],
                     "visibility": "public",
-                    "forks": 1911,
-                    "open_issues": 1189,
-                    "watchers": 9659,
+                    "forks": 1919,
+                    "open_issues": 1198,
+                    "watchers": 9685,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -1597,9 +1597,9 @@
                     },
                     "score": 1
                 },
-                "stars": 9659,
+                "stars": 9685,
                 "url": "https://api.github.com/repos/minetest/minetest",
-                "watchers": 9659
+                "watchers": 9685
             }
         ],
         "irrlicht": [
@@ -1737,8 +1737,8 @@
         "Cockatrice": [
             {
                 "actionName": "run-vcpkg",
-                "line": 350,
-                "url": "https://github.com/Cockatrice/Cockatrice/blob/master/.github/workflows/desktop-build.yml#L350",
+                "line": 344,
+                "url": "https://github.com/Cockatrice/Cockatrice/blob/master/.github/workflows/desktop-build.yml#L344",
                 "version": "v11"
             },
             {
@@ -1811,16 +1811,16 @@
                     "releases_url": "https://api.github.com/repos/Cockatrice/Cockatrice/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/Cockatrice/Cockatrice/deployments",
                     "created_at": "2011-12-03T20:58:09Z",
-                    "updated_at": "2023-12-11T07:59:17Z",
-                    "pushed_at": "2023-12-10T13:35:09Z",
+                    "updated_at": "2023-12-19T05:43:20Z",
+                    "pushed_at": "2023-12-18T22:58:38Z",
                     "git_url": "git://github.com/Cockatrice/Cockatrice.git",
                     "ssh_url": "git@github.com:Cockatrice/Cockatrice.git",
                     "clone_url": "https://github.com/Cockatrice/Cockatrice.git",
                     "svn_url": "https://github.com/Cockatrice/Cockatrice",
                     "homepage": "https://cockatrice.github.io",
-                    "size": 51064,
-                    "stargazers_count": 1403,
-                    "watchers_count": 1403,
+                    "size": 51105,
+                    "stargazers_count": 1409,
+                    "watchers_count": 1409,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -1828,11 +1828,11 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": false,
-                    "forks_count": 420,
+                    "forks_count": 421,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 421,
+                    "open_issues_count": 415,
                     "license": {
                         "key": "gpl-2.0",
                         "name": "GNU General Public License v2.0",
@@ -1853,9 +1853,9 @@
                         "transifex"
                     ],
                     "visibility": "public",
-                    "forks": 420,
-                    "open_issues": 421,
-                    "watchers": 1403,
+                    "forks": 421,
+                    "open_issues": 415,
+                    "watchers": 1409,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -1866,9 +1866,9 @@
                     },
                     "score": 1
                 },
-                "stars": 1403,
+                "stars": 1409,
                 "url": "https://api.github.com/repos/Cockatrice/Cockatrice",
-                "watchers": 1403
+                "watchers": 1409
             }
         ]
     },
@@ -1950,16 +1950,16 @@
                     "releases_url": "https://api.github.com/repos/qbittorrent/qBittorrent/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/qbittorrent/qBittorrent/deployments",
                     "created_at": "2012-02-04T09:37:46Z",
-                    "updated_at": "2023-12-11T15:14:52Z",
-                    "pushed_at": "2023-12-10T19:09:17Z",
+                    "updated_at": "2023-12-20T17:52:49Z",
+                    "pushed_at": "2023-12-19T21:36:00Z",
                     "git_url": "git://github.com/qbittorrent/qBittorrent.git",
                     "ssh_url": "git@github.com:qbittorrent/qBittorrent.git",
                     "clone_url": "https://github.com/qbittorrent/qBittorrent.git",
                     "svn_url": "https://github.com/qbittorrent/qBittorrent",
                     "homepage": "https://www.qbittorrent.org",
-                    "size": 203916,
-                    "stargazers_count": 23254,
-                    "watchers_count": 23254,
+                    "size": 202209,
+                    "stargazers_count": 23372,
+                    "watchers_count": 23372,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -1967,11 +1967,11 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 3686,
+                    "forks_count": 3701,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 2827,
+                    "open_issues_count": 2788,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -1991,9 +1991,9 @@
                         "torrent-client"
                     ],
                     "visibility": "public",
-                    "forks": 3686,
-                    "open_issues": 2827,
-                    "watchers": 23254,
+                    "forks": 3701,
+                    "open_issues": 2788,
+                    "watchers": 23372,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -2004,9 +2004,9 @@
                     },
                     "score": 1
                 },
-                "stars": 23254,
+                "stars": 23372,
                 "url": "https://api.github.com/repos/qbittorrent/qBittorrent",
-                "watchers": 23254
+                "watchers": 23372
             }
         ]
     },
@@ -2113,16 +2113,16 @@
                     "releases_url": "https://api.github.com/repos/OPM/ResInsight/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/OPM/ResInsight/deployments",
                     "created_at": "2012-05-15T13:08:52Z",
-                    "updated_at": "2023-12-05T10:07:03Z",
-                    "pushed_at": "2023-12-11T15:13:27Z",
+                    "updated_at": "2023-12-19T22:41:50Z",
+                    "pushed_at": "2023-12-20T18:05:47Z",
                     "git_url": "git://github.com/OPM/ResInsight.git",
                     "ssh_url": "git@github.com:OPM/ResInsight.git",
                     "clone_url": "https://github.com/OPM/ResInsight.git",
                     "svn_url": "https://github.com/OPM/ResInsight",
                     "homepage": "http://resinsight.org/",
-                    "size": 227768,
-                    "stargazers_count": 151,
-                    "watchers_count": 151,
+                    "size": 228297,
+                    "stargazers_count": 155,
+                    "watchers_count": 155,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": false,
@@ -2134,7 +2134,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 1245,
+                    "open_issues_count": 1257,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -2159,8 +2159,8 @@
                     ],
                     "visibility": "public",
                     "forks": 85,
-                    "open_issues": 1245,
-                    "watchers": 151,
+                    "open_issues": 1257,
+                    "watchers": 155,
                     "default_branch": "dev",
                     "permissions": {
                         "admin": false,
@@ -2171,9 +2171,9 @@
                     },
                     "score": 1
                 },
-                "stars": 151,
+                "stars": 155,
                 "url": "https://api.github.com/repos/OPM/ResInsight",
-                "watchers": 151
+                "watchers": 155
             }
         ]
     },
@@ -34146,16 +34146,16 @@
                     "releases_url": "https://api.github.com/repos/halide/Halide/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/halide/Halide/deployments",
                     "created_at": "2012-07-31T04:05:25Z",
-                    "updated_at": "2023-12-10T14:33:44Z",
-                    "pushed_at": "2023-12-08T23:58:32Z",
+                    "updated_at": "2023-12-20T03:05:33Z",
+                    "pushed_at": "2023-12-19T22:22:09Z",
                     "git_url": "git://github.com/halide/Halide.git",
                     "ssh_url": "git@github.com:halide/Halide.git",
                     "clone_url": "https://github.com/halide/Halide.git",
                     "svn_url": "https://github.com/halide/Halide",
                     "homepage": "https://halide-lang.org",
-                    "size": 173339,
-                    "stargazers_count": 5582,
-                    "watchers_count": 5582,
+                    "size": 173828,
+                    "stargazers_count": 5598,
+                    "watchers_count": 5598,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -34167,7 +34167,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 975,
+                    "open_issues_count": 977,
                     "license": {
                         "key": "other",
                         "name": "Other",
@@ -34189,8 +34189,8 @@
                     ],
                     "visibility": "public",
                     "forks": 1045,
-                    "open_issues": 975,
-                    "watchers": 5582,
+                    "open_issues": 977,
+                    "watchers": 5598,
                     "default_branch": "main",
                     "permissions": {
                         "admin": false,
@@ -34201,9 +34201,9 @@
                     },
                     "score": 1
                 },
-                "stars": 5582,
+                "stars": 5598,
                 "url": "https://api.github.com/repos/halide/Halide",
-                "watchers": 5582
+                "watchers": 5598
             }
         ]
     },
@@ -37025,13 +37025,13 @@
                     "deployments_url": "https://api.github.com/repos/RTKConsortium/RTK/deployments",
                     "created_at": "2010-07-09T15:21:42Z",
                     "updated_at": "2023-11-09T02:48:46Z",
-                    "pushed_at": "2023-12-09T06:54:26Z",
+                    "pushed_at": "2023-12-13T08:16:53Z",
                     "git_url": "git://github.com/RTKConsortium/RTK.git",
                     "ssh_url": "git@github.com:RTKConsortium/RTK.git",
                     "clone_url": "https://github.com/RTKConsortium/RTK.git",
                     "svn_url": "https://github.com/RTKConsortium/RTK",
                     "homepage": "",
-                    "size": 15190,
+                    "size": 15163,
                     "stargazers_count": 218,
                     "watchers_count": 218,
                     "language": "C++",
@@ -37045,7 +37045,7 @@
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 43,
+                    "open_issues_count": 42,
                     "license": {
                         "key": "apache-2.0",
                         "name": "Apache License 2.0",
@@ -37059,7 +37059,7 @@
                     "topics": [],
                     "visibility": "public",
                     "forks": 136,
-                    "open_issues": 43,
+                    "open_issues": 42,
                     "watchers": 218,
                     "default_branch": "master",
                     "permissions": {
@@ -47507,13 +47507,13 @@
                     "deployments_url": "https://api.github.com/repos/colobot/colobot/deployments",
                     "created_at": "2012-03-08T18:06:46Z",
                     "updated_at": "2023-12-07T20:09:17Z",
-                    "pushed_at": "2023-12-09T12:27:27Z",
+                    "pushed_at": "2023-12-18T19:07:33Z",
                     "git_url": "git://github.com/colobot/colobot.git",
                     "ssh_url": "git@github.com:colobot/colobot.git",
                     "clone_url": "https://github.com/colobot/colobot.git",
                     "svn_url": "https://github.com/colobot/colobot",
                     "homepage": "http://colobot.info/",
-                    "size": 57339,
+                    "size": 57344,
                     "stargazers_count": 1054,
                     "watchers_count": 1054,
                     "language": "C++",
@@ -47523,11 +47523,11 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": true,
-                    "forks_count": 183,
+                    "forks_count": 184,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 389,
+                    "open_issues_count": 390,
                     "license": {
                         "key": "gpl-3.0",
                         "name": "GNU General Public License v3.0",
@@ -47545,8 +47545,8 @@
                         "programming"
                     ],
                     "visibility": "public",
-                    "forks": 183,
-                    "open_issues": 389,
+                    "forks": 184,
+                    "open_issues": 390,
                     "watchers": 1054,
                     "default_branch": "dev",
                     "permissions": {
@@ -47779,7 +47779,7 @@
                     "releases_url": "https://api.github.com/repos/Farama-Foundation/Arcade-Learning-Environment/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/Farama-Foundation/Arcade-Learning-Environment/deployments",
                     "created_at": "2012-09-15T01:42:13Z",
-                    "updated_at": "2023-12-07T13:13:53Z",
+                    "updated_at": "2023-12-20T04:24:27Z",
                     "pushed_at": "2023-12-04T13:57:39Z",
                     "git_url": "git://github.com/Farama-Foundation/Arcade-Learning-Environment.git",
                     "ssh_url": "git@github.com:Farama-Foundation/Arcade-Learning-Environment.git",
@@ -47787,8 +47787,8 @@
                     "svn_url": "https://github.com/Farama-Foundation/Arcade-Learning-Environment",
                     "homepage": null,
                     "size": 7788,
-                    "stargazers_count": 2025,
-                    "watchers_count": 2025,
+                    "stargazers_count": 2033,
+                    "watchers_count": 2033,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -47796,7 +47796,7 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": false,
-                    "forks_count": 405,
+                    "forks_count": 406,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
@@ -47813,9 +47813,9 @@
                     "web_commit_signoff_required": false,
                     "topics": [],
                     "visibility": "public",
-                    "forks": 405,
+                    "forks": 406,
                     "open_issues": 32,
-                    "watchers": 2025,
+                    "watchers": 2033,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -47826,9 +47826,9 @@
                     },
                     "score": 1
                 },
-                "stars": 2025,
+                "stars": 2033,
                 "url": "https://api.github.com/repos/Farama-Foundation/Arcade-Learning-Environment",
-                "watchers": 2025
+                "watchers": 2033
             }
         ]
     },
@@ -50982,16 +50982,16 @@
                     "releases_url": "https://api.github.com/repos/SFML/SFML/releases{/id}",
                     "deployments_url": "https://api.github.com/repos/SFML/SFML/deployments",
                     "created_at": "2011-03-25T08:05:25Z",
-                    "updated_at": "2023-12-11T12:27:00Z",
-                    "pushed_at": "2023-12-11T04:42:55Z",
+                    "updated_at": "2023-12-20T15:11:46Z",
+                    "pushed_at": "2023-12-19T21:37:14Z",
                     "git_url": "git://github.com/SFML/SFML.git",
                     "ssh_url": "git@github.com:SFML/SFML.git",
                     "clone_url": "https://github.com/SFML/SFML.git",
                     "svn_url": "https://github.com/SFML/SFML",
                     "homepage": "https://www.sfml-dev.org/",
-                    "size": 103568,
-                    "stargazers_count": 9253,
-                    "watchers_count": 9253,
+                    "size": 103775,
+                    "stargazers_count": 9276,
+                    "watchers_count": 9276,
                     "language": "C++",
                     "has_issues": true,
                     "has_projects": true,
@@ -50999,11 +50999,11 @@
                     "has_wiki": true,
                     "has_pages": false,
                     "has_discussions": false,
-                    "forks_count": 1639,
+                    "forks_count": 1643,
                     "mirror_url": null,
                     "archived": false,
                     "disabled": false,
-                    "open_issues_count": 173,
+                    "open_issues_count": 171,
                     "license": {
                         "key": "zlib",
                         "name": "zlib License",
@@ -51027,9 +51027,9 @@
                         "sfml"
                     ],
                     "visibility": "public",
-                    "forks": 1639,
-                    "open_issues": 173,
-                    "watchers": 9253,
+                    "forks": 1643,
+                    "open_issues": 171,
+                    "watchers": 9276,
                     "default_branch": "master",
                     "permissions": {
                         "admin": false,
@@ -51040,9 +51040,9 @@
                     },
                     "score": 1
                 },
-                "stars": 9253,
+                "stars": 9276,
                 "url": "https://api.github.com/repos/SFML/SFML",
-                "watchers": 9253
+                "watchers": 9276
             }
         ],
         "imgui-sfml": [
