@@ -17,12 +17,12 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         token: ${{ secrets.PAT_WORKSPACES }}
         path: getactionusage
 
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       name: Fetch the web site repo to update.
       with:
         token: ${{ secrets.PAT_WORKSPACES }}
