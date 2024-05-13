@@ -218,5 +218,5 @@ Feedback is welcome, create [Issues](https://github.com/lukka/get-action-usage/i
 
 ## **License Information**
 
-Copyright 2022-2023 by Luca Cappa lcappa@gmail.com
+Copyright 2022-2023-2024 by Luca Cappa lcappa@gmail.com
 All content of this repository is licensed under the CC BY-SA License. See the LICENSE file in the root for license information.
