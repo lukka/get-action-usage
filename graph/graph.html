@@ -1,4 +1,4 @@
-<!-- Copyright © 2022-2023 by Luca Cappa lcappa at gmail dot com -- http://creativecommons.org/licenses/by-sa/4.0/" This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License -->
+<!-- Copyright © 2022-2023-2024 by Luca Cappa lcappa at gmail dot com -- http://creativecommons.org/licenses/by-sa/4.0/" This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License -->
 <!DOCTYPE html>
 <meta charset="utf-8">
 
@@ -198,7 +198,7 @@
 
                     const searchA = g.append("svg:a")
                         .attr("xlink:href", d =>
-                            `https://cs.github.com/?scopeName=All+repos&scope=&q=%22lukka%2F${d.name}%22+%28path%3A*.yml+OR+path%3A*.yaml%29`)
+                            `https://github.com/search?q=%22lukka%2F${d.name}%22+%28path%3A*.yml+OR+path%3A*.yaml%29`)
                         .attr("target", "_blank");
 
                     searchA.append('text')
@@ -266,7 +266,7 @@
                                 gravityCenter: { x: centerX, y: centerY },
                                 url_top: repoData.repo_orig.owner.html_url,
                                 url_bottom: repoData.repo_orig.html_url,
-                                url_search: `https://cs.github.com/${item}/${repo}?q=`,
+                                url_search: `https://github.com/search?type=code&q=repo%3A${item}%2F${repo}`,
                                 selected: undefined, /* 'undefined' means to use the intrinsic diameter size for the circle */
                             };
                             const length = repos.push(repoObj);
@@ -410,7 +410,7 @@
                         });
 
                         const searchA = g.append("svg:a")
-                            .attr("xlink:href", d => `https://cs.github.com/?scopeName=All+repos&scope=&q=%22lukka%2F${encodeURIComponent(d.id)}%22+%28path%3A*.yml+OR+path%3A*.yaml%29`)
+                            .attr("xlink:href", d => `https://github.com/search?q=%22lukka%2F${encodeURIComponent(d.id)}%22+%28path%3A*.yml+OR+path%3A*.yaml%29`)
                             .attr("target", "_blank");
                         searchA.append('text')
                             .attr("x", d => d.x)
@@ -1008,7 +1008,7 @@
         }
     </script>
     <div style="text-align:center;">
-        <span>Copyright © 2022-2023 by Luca Cappa
+        <span>Copyright © 2022-2023-2024 by Luca Cappa
             <a href="https://github.com/lukka"><i class="fa fa-github"></i></a>
             <a href="https://twitter.com/luca_cpp"><i class="fa fa-twitter"></i></a>
             <a href="https://linkedin.com/in/lucacappa"><i class="fa fa-linkedin"></i></a>
