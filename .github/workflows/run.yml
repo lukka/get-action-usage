@@ -40,7 +40,7 @@ jobs:
       name: Scan GitHub public repositories
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_WORKSPACES }}
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: results
         path: ${{ github.workspace }}/getactionusage/graph/action-usage-db.json
