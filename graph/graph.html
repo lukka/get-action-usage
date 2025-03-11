@@ -145,7 +145,7 @@
         var versions = [];
         var getNodeColor = d3.scaleOrdinal(d3.schemeSet3).domain(repos);
         var versionsCount = 0;
-        const dataFileName = "action-usage-db.json";
+        const dataFileName = "action-usage-db";
         var simulation;
         var offset;
         const allNodes = [];
@@ -884,14 +884,14 @@
 
             d3.select(".repos").selectAll("circle").classed("active", false);
             d3.select(".repos").selectAll("circle").classed("disactive", false);
-            d3.select(".links").selectAll("line").attr("opacity", "1");
             repos.forEach(repo => repo.selected = undefined);
             allNodes.forEach(o => o.selected = undefined);
+            links.forEach(link => link.color = versionUnselectedColor);
             simulation.nodes(allNodes);
             simulation.alpha(.3).restart();
         }
 
-        function enableSelection(versionNode,) {
+        function enableSelection(versionNode) {
             if (showDescription)
                 return;
 
@@ -908,6 +908,7 @@
                 const idString = versionNode.attr("id");
                 if (idString.startsWith("id")) {
                     const idNum = parseInt(idString.substr(2), 10);
+                    link.color = versionUnselectedColor;
                     // A version node is always the source of the link.
                     versionIndexInAllNodes = link.source.index;
                     actionOrRepoIndexAllNodes = link.target.index;
@@ -922,7 +923,6 @@
                             allNodes[actionOrRepoIndexAllNodes].selected = true;
                             d3.select(".links")
                                 .select(`#id${linkIndex} `)
-                                .attr("opacity", "1.0")
                                 .attr("stroke-width", "1.5px");
                             selectedItems[actionOrRepoIndexAllNodes] = true;
                         }
@@ -1056,10 +1056,16 @@
             }
         }
 
+        // To test locally with a custom JSON, run a web server with: 
+        // >npx http-server --cors
+        // and comment out the unwanted web GETs.
         async function getData() {
-            return d3.json(`https://lukka.github.io/graph/${dataFileName}`)
+            return d3.json(`https://lukka.github.io/graph/${dataFileName}.json`)
                 .catch((err) => {
-                    return d3.json(`http://localhost:8080/graph/${dataFileName}`)
+                    return d3.json(`http://localhost:8080/graph/${dataFileName}.json`)
+                    .catch((err) => {
+                        return d3.json(`http://localhost:8080/graph/${dataFileName}-small-test.json`);
+                    })
                 }).catch((err) => {
                     throw err;
                 });
