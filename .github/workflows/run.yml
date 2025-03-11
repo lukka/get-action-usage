@@ -45,12 +45,24 @@ jobs:
         name: results
         path: ${{ github.workspace }}/getactionusage/graph/action-usage-db.json
     
-    - name: Check for modified files
-      id: git-check
+    - name: Check for modified DB content
+      id: action-usage-db-check
       run: echo "modified=$(if [ -n "$(cd getactionusage && git status --porcelain)" ]; then echo "true"; else echo "false"; fi)" >> $GITHUB_OUTPUT
 
+    - name: Check for modified graph.html
+      id: graph-html-check
+      shell: bash
+      run: |
+        # Check if the graph.html file has been modified by comparing the two files
+        if ! diff -q ./getactionusage/graph/graph.html ./lukkagithubio/graph/graph.html; then
+          echo "modified=true" >> $GITHUB_OUTPUT
+        else
+          echo "modified=false" >> $GITHUB_OUTPUT
+        fi
+      continue-on-error: true
+
     - name: Commit DB content and update CRON job
-      if: steps.git-check.outputs.modified == 'true'
+      if: steps.action-usage-db-check.outputs.modified == 'true'
       run: |
         cd getactionusage
         git config --global user.name 'Luca'
@@ -61,9 +73,10 @@ jobs:
         git status
         git commit -m "Automated commit for DB JSON file and updated CRON job"
         git push
+      continue-on-error: true
 
     - name: Publish updated network graph
-      if: steps.git-check.outputs.modified == 'true'
+      if: steps.graph-html-check.outputs.modified == 'true'
       shell: bash
       run: |
         cd lukkagithubio
@@ -71,10 +84,9 @@ jobs:
         git config --global user.email '681992+lukka@users.noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.PAT_WORKSPACES }}@github.com/lukka/lukka.github.io
         mkdir -pv ./graph/
-        cp ../getactionusage/graph/action-usage-db.json ./graph
         cp ../getactionusage/graph/graph.html ./graph
-        git add -f ./graph/action-usage-db.json
         git add -f ./graph/graph.html
         git status
         git commit -m "Automated commit for publishing updated graph web page"
         git push
+      continue-on-error: true
