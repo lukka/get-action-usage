@@ -86,7 +86,7 @@ export class GHActionUsage {
     LPF.init(0);
   }
 
-  public async run(): Promise<void> {
+  public async run(): Promise<boolean> {
     this.reporter.debug(`run()<< ${new Date().toUTCString()}`);
     // tslint:disable-next-line:no-console
     console.time('run():');
@@ -96,7 +96,7 @@ export class GHActionUsage {
     // be committed.
     if (await this.isAlreadyRunning()) {
       this.reporter.info('Already running, exiting...');
-      return;
+      return false;
     }
 
     try {
@@ -181,6 +181,7 @@ export class GHActionUsage {
       console.timeLog('run()');
       this.reporter.debug(`run()>>`);
     }
+    return true;
   }
 
   public setRemainingCalls(restApi?: number, searchApi?: number): void {
@@ -479,7 +480,7 @@ export class GHActionUsage {
                       const hit = {
                         actionName: match.groups.action,
                         line: lineNumber,
-                        url: github.getHtmlUrl(file.url, lineNumber),
+                        url: github.getHtmlUrl(file, lineNumber),
                         version: match.groups.version,
                       };
                       this.reporter.warn(

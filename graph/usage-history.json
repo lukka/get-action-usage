@@ -1,0 +1,5157 @@
+{
+  "version": 1,
+  "snapshots": [
+    {
+      "date": "2022-06-06T05:40:39.000Z",
+      "commit": "759e704ec87e28522ad4d669a952e8d7e5ed83d6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 3,
+          "occurrences": 7
+        },
+        {
+          "action": "run-cmake",
+          "projects": 2,
+          "occurrences": 4
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 1,
+          "occurrences": 1
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-06-12T23:51:57.000Z",
+      "commit": "ce07be488da73938b0a046ab6010e450b12f42ff",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 115,
+          "occurrences": 212
+        },
+        {
+          "action": "run-cmake",
+          "projects": 55,
+          "occurrences": 105
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 102,
+          "occurrences": 193
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-06-19T23:33:24.000Z",
+      "commit": "4d04495f9bf96d337071b15e3847638277c460de",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 116,
+          "occurrences": 217
+        },
+        {
+          "action": "run-cmake",
+          "projects": 55,
+          "occurrences": 105
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 103,
+          "occurrences": 194
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-06-26T23:43:27.000Z",
+      "commit": "bccde30e072d08c00804d2f06e71ab20bbd8d31a",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 119,
+          "occurrences": 223
+        },
+        {
+          "action": "run-cmake",
+          "projects": 55,
+          "occurrences": 105
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 105,
+          "occurrences": 197
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-07-03T23:03:38.000Z",
+      "commit": "2094ae8bc44abfbaba08861625f745d74e27a695",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 119,
+          "occurrences": 220
+        },
+        {
+          "action": "run-cmake",
+          "projects": 56,
+          "occurrences": 106
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 105,
+          "occurrences": 197
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-07-10T23:47:14.000Z",
+      "commit": "39ff9661e26306520c0236430eb4844b936858e6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 120,
+          "occurrences": 221
+        },
+        {
+          "action": "run-cmake",
+          "projects": 57,
+          "occurrences": 107
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 107,
+          "occurrences": 199
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-07-17T23:18:32.000Z",
+      "commit": "8d19e19ac7317b5904ef196d92d26e6a439bd3d2",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 122,
+          "occurrences": 224
+        },
+        {
+          "action": "run-cmake",
+          "projects": 57,
+          "occurrences": 107
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 107,
+          "occurrences": 199
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-07-24T22:59:22.000Z",
+      "commit": "c5de52761c94a5e69a44a1ecbb9d22b0ff95e578",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 124,
+          "occurrences": 230
+        },
+        {
+          "action": "run-cmake",
+          "projects": 59,
+          "occurrences": 109
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 110,
+          "occurrences": 202
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-07-31T22:59:33.000Z",
+      "commit": "f28abdb5cff782ca61cba57a6729f3958373e35b",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 125,
+          "occurrences": 230
+        },
+        {
+          "action": "run-cmake",
+          "projects": 59,
+          "occurrences": 109
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 110,
+          "occurrences": 202
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-08-07T23:39:47.000Z",
+      "commit": "e27fa1ea754f681ebfaeefdc3490676a4b638023",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 126,
+          "occurrences": 232
+        },
+        {
+          "action": "run-cmake",
+          "projects": 60,
+          "occurrences": 112
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 110,
+          "occurrences": 202
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-08-14T23:51:15.000Z",
+      "commit": "159292eef4ddd78fadbbc4c5544e72c0d3a5585c",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 126,
+          "occurrences": 232
+        },
+        {
+          "action": "run-cmake",
+          "projects": 60,
+          "occurrences": 112
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 110,
+          "occurrences": 202
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-08-21T23:58:31.000Z",
+      "commit": "7d550b9ea0e997c64bf06174c96fce9b5d90be34",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 128,
+          "occurrences": 236
+        },
+        {
+          "action": "run-cmake",
+          "projects": 61,
+          "occurrences": 115
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 111,
+          "occurrences": 206
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-08-28T23:44:33.000Z",
+      "commit": "3f0d3cf618398a568254a7ad8a6bee486f22bedf",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 133,
+          "occurrences": 249
+        },
+        {
+          "action": "run-cmake",
+          "projects": 62,
+          "occurrences": 119
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 112,
+          "occurrences": 211
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-09-04T23:41:36.000Z",
+      "commit": "ff0f808931f7173925918f3e6a3b10aec981da9f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 136,
+          "occurrences": 256
+        },
+        {
+          "action": "run-cmake",
+          "projects": 63,
+          "occurrences": 122
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 113,
+          "occurrences": 216
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-09-11T23:15:59.000Z",
+      "commit": "998f5c0ea77692552a4e229293df592e5b6b2a29",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 137,
+          "occurrences": 260
+        },
+        {
+          "action": "run-cmake",
+          "projects": 65,
+          "occurrences": 125
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 114,
+          "occurrences": 217
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-09-18T22:42:31.000Z",
+      "commit": "64c5a46dd4ff81e3684ea35561638a89a3f93288",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 139,
+          "occurrences": 263
+        },
+        {
+          "action": "run-cmake",
+          "projects": 64,
+          "occurrences": 124
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 114,
+          "occurrences": 217
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-09-25T23:23:40.000Z",
+      "commit": "22e3c2d18ebb3c5b92d0435a8b97f3ea0218310e",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 138,
+          "occurrences": 262
+        },
+        {
+          "action": "run-cmake",
+          "projects": 64,
+          "occurrences": 124
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 114,
+          "occurrences": 218
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-10-02T23:15:36.000Z",
+      "commit": "c9db85e11000a4b990ceb80839b204a621096c65",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 140,
+          "occurrences": 270
+        },
+        {
+          "action": "run-cmake",
+          "projects": 65,
+          "occurrences": 126
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 115,
+          "occurrences": 219
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-10-09T23:24:10.000Z",
+      "commit": "9eee862a8dce1a4050bffb7c2356f3be8be1fcf5",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 142,
+          "occurrences": 273
+        },
+        {
+          "action": "run-cmake",
+          "projects": 66,
+          "occurrences": 127
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 117,
+          "occurrences": 223
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-10-16T23:04:44.000Z",
+      "commit": "6bd2fcc71fd9e65435f1d3e41240d81ff35787c1",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 144,
+          "occurrences": 276
+        },
+        {
+          "action": "run-cmake",
+          "projects": 67,
+          "occurrences": 128
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 118,
+          "occurrences": 225
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-10-23T23:22:19.000Z",
+      "commit": "5eca2136f9de54e1ff9f20390407e01ba6ff56ac",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 144,
+          "occurrences": 277
+        },
+        {
+          "action": "run-cmake",
+          "projects": 66,
+          "occurrences": 127
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 118,
+          "occurrences": 225
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-10-30T22:55:42.000Z",
+      "commit": "614cfb7c1315a07cd1d7927dbbb47301ff9ed05f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 145,
+          "occurrences": 277
+        },
+        {
+          "action": "run-cmake",
+          "projects": 67,
+          "occurrences": 129
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 119,
+          "occurrences": 227
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-11-06T23:58:41.000Z",
+      "commit": "a348e1f3e1c5ea26c6c1c09c698ed3fe26c5af1f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 148,
+          "occurrences": 287
+        },
+        {
+          "action": "run-cmake",
+          "projects": 68,
+          "occurrences": 130
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 119,
+          "occurrences": 227
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-11-13T23:54:39.000Z",
+      "commit": "e268285f80d53b9ffc6ffff220f0acedd8911e31",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 150,
+          "occurrences": 291
+        },
+        {
+          "action": "run-cmake",
+          "projects": 69,
+          "occurrences": 131
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 120,
+          "occurrences": 229
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-11-20T23:56:34.000Z",
+      "commit": "dcd884364e75232c30524553867d29e2b5aedd73",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 153,
+          "occurrences": 299
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 132
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 122,
+          "occurrences": 231
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-11-27T23:49:15.000Z",
+      "commit": "8f9e75b1ec4358798dfbfea6ceb9e7a5d2b4bf4f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 156,
+          "occurrences": 306
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 132
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 123,
+          "occurrences": 234
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-12-04T23:17:27.000Z",
+      "commit": "d17de8fd2e6ee351c12a20b0b2d59bca30e7765d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 157,
+          "occurrences": 307
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 132
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 124,
+          "occurrences": 235
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-12-11T23:44:17.000Z",
+      "commit": "f7c3ee85f26be47499ea9da65ea0eb4e40b05240",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 160,
+          "occurrences": 318
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 136
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 125,
+          "occurrences": 239
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-12-18T23:58:51.000Z",
+      "commit": "272871a02593b32e0e29d66ab8c043f69cec0ca4",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 162,
+          "occurrences": 323
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 136
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 125,
+          "occurrences": 239
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2022-12-25T23:58:13.000Z",
+      "commit": "5e8ec4e33444d455152edf3c693679376eda0328",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 165,
+          "occurrences": 326
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 136
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 125,
+          "occurrences": 239
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-01-01T23:12:11.000Z",
+      "commit": "a257f3684899d9fe35dc723a34ec1ab31cd7e7de",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 170,
+          "occurrences": 332
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 136
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 125,
+          "occurrences": 239
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-01-08T23:13:00.000Z",
+      "commit": "7207f943d19bbc81db634ea03518d8075f4702d8",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 171,
+          "occurrences": 335
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 140
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 126,
+          "occurrences": 242
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-01-15T23:58:46.000Z",
+      "commit": "f7a22b7d785be6ff7a45ff808d02e9079a7e7b22",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 175,
+          "occurrences": 348
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 140
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 127,
+          "occurrences": 286
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-01-22T23:15:42.000Z",
+      "commit": "8005d2aa46f567479055ac92c0f189b17da24b0e",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 167,
+          "occurrences": 340
+        },
+        {
+          "action": "run-cmake",
+          "projects": 68,
+          "occurrences": 141
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 122,
+          "occurrences": 285
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-01-29T23:36:00.000Z",
+      "commit": "2677f2b8886e55e0cf3c3ff2d40f49a604271d57",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 169,
+          "occurrences": 347
+        },
+        {
+          "action": "run-cmake",
+          "projects": 68,
+          "occurrences": 141
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 122,
+          "occurrences": 285
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-02-05T23:16:57.000Z",
+      "commit": "41156fd9be1baec776c47472cc70989152050b9b",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 170,
+          "occurrences": 349
+        },
+        {
+          "action": "run-cmake",
+          "projects": 68,
+          "occurrences": 141
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 124,
+          "occurrences": 288
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-02-12T23:58:49.000Z",
+      "commit": "b2dbf18c14e9951373b872bf12bebfd1c0322c8d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 172,
+          "occurrences": 351
+        },
+        {
+          "action": "run-cmake",
+          "projects": 68,
+          "occurrences": 140
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 124,
+          "occurrences": 287
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-02-19T23:12:38.000Z",
+      "commit": "bc044c7f5a17910801eb3b3b591aa11f525b17c7",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 173,
+          "occurrences": 362
+        },
+        {
+          "action": "run-cmake",
+          "projects": 68,
+          "occurrences": 140
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 123,
+          "occurrences": 284
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-02-26T23:01:57.000Z",
+      "commit": "61699e295c86a78282c691cec289893a3b1984d6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 178,
+          "occurrences": 372
+        },
+        {
+          "action": "run-cmake",
+          "projects": 69,
+          "occurrences": 144
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 124,
+          "occurrences": 292
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-03-05T23:15:14.000Z",
+      "commit": "7ccf3fb25fc6e90082a1187b898b56a85c9bf3cc",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 180,
+          "occurrences": 379
+        },
+        {
+          "action": "run-cmake",
+          "projects": 69,
+          "occurrences": 146
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 124,
+          "occurrences": 294
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-03-12T23:57:28.000Z",
+      "commit": "20dc59472dd051db5e50f99adb479a6fb8a91e74",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 183,
+          "occurrences": 385
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 151
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 125,
+          "occurrences": 297
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-03-19T23:17:35.000Z",
+      "commit": "d292ee9e8c5c5f606fe7e05234f28b782fd56c63",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 185,
+          "occurrences": 389
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 151
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 126,
+          "occurrences": 298
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-03-26T23:44:17.000Z",
+      "commit": "aee0cc90c54ef308876f2ab20ef8ea0de147a354",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 188,
+          "occurrences": 399
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 152
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 127,
+          "occurrences": 301
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-04-02T23:53:26.000Z",
+      "commit": "3f4109f0f5cd993aa8bfd404cc30253f38503490",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 188,
+          "occurrences": 399
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 152
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 127,
+          "occurrences": 301
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-04-09T23:41:18.000Z",
+      "commit": "aa8fc59c6dd0bd3f22794cebef77e858b951f7f6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 189,
+          "occurrences": 402
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 152
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 128,
+          "occurrences": 302
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-04-16T23:47:10.000Z",
+      "commit": "a74dd530adefe37c37a76fd758b17d5d60928b9c",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 190,
+          "occurrences": 404
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 153
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 129,
+          "occurrences": 301
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-04-23T23:38:31.000Z",
+      "commit": "9c40dc4e05283e231597683c5aa4fb0e9290a482",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 190,
+          "occurrences": 402
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 155
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 129,
+          "occurrences": 301
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-04-30T23:51:30.000Z",
+      "commit": "46ce9b4ddc69e2077cd7defc47cb0690bfc7e603",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 191,
+          "occurrences": 404
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 155
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 129,
+          "occurrences": 301
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-05-07T23:46:24.000Z",
+      "commit": "bff86de946c31d633f7682af1fca16bed1bec214",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 192,
+          "occurrences": 407
+        },
+        {
+          "action": "run-cmake",
+          "projects": 70,
+          "occurrences": 154
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 130,
+          "occurrences": 304
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-05-14T23:44:51.000Z",
+      "commit": "c2bf58030c7579c6050c74184afe5a5ae9ddbd09",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 196,
+          "occurrences": 414
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 156
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 131,
+          "occurrences": 306
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-05-21T23:30:44.000Z",
+      "commit": "9ab277d00500e7bf23f33e25bfa9e19f8b0b71e4",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 197,
+          "occurrences": 414
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 156
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 131,
+          "occurrences": 306
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-05-28T23:43:19.000Z",
+      "commit": "897b1e7c6ab2c1e28aa76cbbde7c056990b377f8",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 200,
+          "occurrences": 424
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 156
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 131,
+          "occurrences": 306
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-06-04T22:56:20.000Z",
+      "commit": "e59b9202fa8e2ffd7a03cfd582e84007465e217e",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 201,
+          "occurrences": 424
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 157
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 132,
+          "occurrences": 307
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-06-11T23:24:06.000Z",
+      "commit": "157ea618f0071a1fa3bb84390f536b622408fed3",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 202,
+          "occurrences": 431
+        },
+        {
+          "action": "run-cmake",
+          "projects": 71,
+          "occurrences": 157
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 132,
+          "occurrences": 311
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-06-18T23:04:40.000Z",
+      "commit": "4ba2d44e8ea05872269f28eaae263dd3a6bb2c73",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 200,
+          "occurrences": 429
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 164
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 133,
+          "occurrences": 311
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-06-25T23:02:19.000Z",
+      "commit": "97176dcaf1e4744f181670c46a33446934949900",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 202,
+          "occurrences": 433
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 164
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 134,
+          "occurrences": 314
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-07-02T23:58:39.000Z",
+      "commit": "6a93b0dedbbf8df1a9df9c4b15e76a32d090ad8d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 203,
+          "occurrences": 435
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 164
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 134,
+          "occurrences": 314
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-07-09T23:15:42.000Z",
+      "commit": "bb2d801819f349ccda27e65f7a02703625b0d697",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 205,
+          "occurrences": 440
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 164
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 133,
+          "occurrences": 314
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-07-16T23:34:04.000Z",
+      "commit": "4ae5cf59f4828bd8f068f848514e05caab65aae6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 205,
+          "occurrences": 442
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 162
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 137,
+          "occurrences": 321
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-07-23T23:12:56.000Z",
+      "commit": "b16372e42f08833b5105de123975ec859d63841d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 206,
+          "occurrences": 449
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 162
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 138,
+          "occurrences": 323
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-07-25T23:25:53.000Z",
+      "commit": "9067297ff002dfaf9050b80231bc83f29851ef6a",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 206,
+          "occurrences": 450
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 162
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 138,
+          "occurrences": 323
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-08-06T23:49:41.000Z",
+      "commit": "3603e670e9279b6b4d55c631948c50aa6fe148f4",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 209,
+          "occurrences": 456
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 161
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 139,
+          "occurrences": 327
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-08-13T23:35:55.000Z",
+      "commit": "aa42de66bb1759a740019a28dabada048d5146c9",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 210,
+          "occurrences": 462
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 162
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 142,
+          "occurrences": 333
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-08-16T15:55:27.000Z",
+      "commit": "9336e0b68cddfe29a28240edf7e5177bb1aef52e",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 210,
+          "occurrences": 462
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 162
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 143,
+          "occurrences": 335
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-09-03T23:30:10.000Z",
+      "commit": "b0f5d8300ab54b6c028bb3ac88194ed025206fc1",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 216,
+          "occurrences": 476
+        },
+        {
+          "action": "run-cmake",
+          "projects": 72,
+          "occurrences": 164
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 147,
+          "occurrences": 342
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-09-10T23:28:48.000Z",
+      "commit": "e84dbaabdfef4ed200f5a8d43e52fb34355c4634",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 217,
+          "occurrences": 508
+        },
+        {
+          "action": "run-cmake",
+          "projects": 73,
+          "occurrences": 166
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 149,
+          "occurrences": 343
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-09-17T23:42:39.000Z",
+      "commit": "3478dd2cdd3866ab4b6029d6732067fe63c1ed99",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 218,
+          "occurrences": 505
+        },
+        {
+          "action": "run-cmake",
+          "projects": 74,
+          "occurrences": 167
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 151,
+          "occurrences": 348
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-09-24T23:52:43.000Z",
+      "commit": "918d226e263c44dee6c8d0d9f6ff57677e06f80e",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 219,
+          "occurrences": 506
+        },
+        {
+          "action": "run-cmake",
+          "projects": 74,
+          "occurrences": 168
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 153,
+          "occurrences": 351
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-10-01T22:58:38.000Z",
+      "commit": "b9759b2a459a93cd4c4c6fca754a8a7edd20d01b",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 220,
+          "occurrences": 511
+        },
+        {
+          "action": "run-cmake",
+          "projects": 74,
+          "occurrences": 171
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 153,
+          "occurrences": 353
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-10-08T23:40:38.000Z",
+      "commit": "17b43c51f29a6c7b7513529e377f2f70e47e66cc",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 223,
+          "occurrences": 515
+        },
+        {
+          "action": "run-cmake",
+          "projects": 75,
+          "occurrences": 172
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 155,
+          "occurrences": 357
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-10-15T23:04:19.000Z",
+      "commit": "cb22a4050f17f1a602fa8dd7ff8079666907b3da",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 226,
+          "occurrences": 522
+        },
+        {
+          "action": "run-cmake",
+          "projects": 76,
+          "occurrences": 174
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 156,
+          "occurrences": 361
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-10-22T23:38:59.000Z",
+      "commit": "d4d373af437294f4f6052a3d053e807bdef2e303",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 229,
+          "occurrences": 528
+        },
+        {
+          "action": "run-cmake",
+          "projects": 77,
+          "occurrences": 175
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 159,
+          "occurrences": 367
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-10-29T23:51:40.000Z",
+      "commit": "523043792aaa55198d60551a24dde6c55022e2de",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 228,
+          "occurrences": 528
+        },
+        {
+          "action": "run-cmake",
+          "projects": 76,
+          "occurrences": 173
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 159,
+          "occurrences": 370
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-11-05T23:23:30.000Z",
+      "commit": "d5612133f17059a71f048d22be2f7460e06a88bd",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 229,
+          "occurrences": 538
+        },
+        {
+          "action": "run-cmake",
+          "projects": 76,
+          "occurrences": 173
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 159,
+          "occurrences": 370
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-11-08T19:43:58.000Z",
+      "commit": "5ec67c49c0ad22e613febdcb73e7d3d09cb121fb",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 230,
+          "occurrences": 539
+        },
+        {
+          "action": "run-cmake",
+          "projects": 76,
+          "occurrences": 173
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 159,
+          "occurrences": 370
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-12-08T02:05:54.000Z",
+      "commit": "292a6f78cb8b47eff17ea92e7ce538deaf923791",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 239,
+          "occurrences": 554
+        },
+        {
+          "action": "run-cmake",
+          "projects": 75,
+          "occurrences": 174
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 159,
+          "occurrences": 374
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-12-17T00:40:03.000Z",
+      "commit": "72d8f922712655e9d1cbbddfe1825097cf84c102",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 241,
+          "occurrences": 556
+        },
+        {
+          "action": "run-cmake",
+          "projects": 75,
+          "occurrences": 174
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 161,
+          "occurrences": 377
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-12-24T00:35:16.000Z",
+      "commit": "1f55162e574026522a6d98f44e593d5e7f31506c",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 240,
+          "occurrences": 555
+        },
+        {
+          "action": "run-cmake",
+          "projects": 75,
+          "occurrences": 175
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 161,
+          "occurrences": 377
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2023-12-31T00:35:19.000Z",
+      "commit": "ecf2cb78a72bdf443e4a564a1575073526ce609f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 240,
+          "occurrences": 554
+        },
+        {
+          "action": "run-cmake",
+          "projects": 75,
+          "occurrences": 174
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 161,
+          "occurrences": 377
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-01-07T00:40:43.000Z",
+      "commit": "c3e98fa6b0e57910f71813c407ff1582050a997f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 242,
+          "occurrences": 561
+        },
+        {
+          "action": "run-cmake",
+          "projects": 76,
+          "occurrences": 175
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 164,
+          "occurrences": 384
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-01-13T01:11:01.000Z",
+      "commit": "43da10c1cf62506ee313c5b9ff0a0b71f5651dbd",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 242,
+          "occurrences": 561
+        },
+        {
+          "action": "run-cmake",
+          "projects": 76,
+          "occurrences": 175
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 164,
+          "occurrences": 384
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-01-20T01:11:05.000Z",
+      "commit": "149e8208f72f834712d43fdfbbd379567068b066",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 242,
+          "occurrences": 561
+        },
+        {
+          "action": "run-cmake",
+          "projects": 76,
+          "occurrences": 175
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 164,
+          "occurrences": 384
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-01-27T01:06:07.000Z",
+      "commit": "b6f0b82368799f5bcecf7ecb502ee7c3ec95844d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 243,
+          "occurrences": 562
+        },
+        {
+          "action": "run-cmake",
+          "projects": 77,
+          "occurrences": 176
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 165,
+          "occurrences": 385
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-02-03T01:05:00.000Z",
+      "commit": "6e23f3a45eb2d195a09340a9b2db278f73da3f2a",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 242,
+          "occurrences": 559
+        },
+        {
+          "action": "run-cmake",
+          "projects": 77,
+          "occurrences": 176
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 165,
+          "occurrences": 385
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-02-10T01:03:31.000Z",
+      "commit": "48903cb4b685efbe92084390636295b92e5316ab",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 242,
+          "occurrences": 559
+        },
+        {
+          "action": "run-cmake",
+          "projects": 77,
+          "occurrences": 176
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 165,
+          "occurrences": 385
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-02-17T01:04:31.000Z",
+      "commit": "3e83d6a579bd5bb35a053426fc8ee4320b31cd68",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 242,
+          "occurrences": 559
+        },
+        {
+          "action": "run-cmake",
+          "projects": 77,
+          "occurrences": 176
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 165,
+          "occurrences": 385
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-02-24T01:03:13.000Z",
+      "commit": "052ccfa19f6937ae5ac16b4c96dd89a7c1c1f4d2",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 243,
+          "occurrences": 563
+        },
+        {
+          "action": "run-cmake",
+          "projects": 77,
+          "occurrences": 176
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 165,
+          "occurrences": 385
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-03-02T01:03:52.000Z",
+      "commit": "bd203c9fee75798601366126b75a934b6c46b1ec",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 244,
+          "occurrences": 567
+        },
+        {
+          "action": "run-cmake",
+          "projects": 77,
+          "occurrences": 176
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 165,
+          "occurrences": 383
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-03-09T01:10:35.000Z",
+      "commit": "2ff36543f28cebb0a12e618d1227f8d9d9b92a33",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 247,
+          "occurrences": 571
+        },
+        {
+          "action": "run-cmake",
+          "projects": 78,
+          "occurrences": 177
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 166,
+          "occurrences": 384
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-03-16T01:04:08.000Z",
+      "commit": "e7e39ee86324daca0997cebad4781d3d18365dca",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 249,
+          "occurrences": 574
+        },
+        {
+          "action": "run-cmake",
+          "projects": 78,
+          "occurrences": 177
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 167,
+          "occurrences": 386
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-03-23T01:10:35.000Z",
+      "commit": "5a8ef684aa6c124dda8dbad9269b7b32c04de0ca",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 251,
+          "occurrences": 576
+        },
+        {
+          "action": "run-cmake",
+          "projects": 81,
+          "occurrences": 183
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 170,
+          "occurrences": 389
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-03-30T00:59:41.000Z",
+      "commit": "d7d9d9a5035ce2fb5b6f601261ce69641a9be8e2",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 254,
+          "occurrences": 581
+        },
+        {
+          "action": "run-cmake",
+          "projects": 82,
+          "occurrences": 185
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 172,
+          "occurrences": 393
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-04-06T01:00:13.000Z",
+      "commit": "64f35e36bf7143a90ae0ec9705542d25459309f4",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 254,
+          "occurrences": 581
+        },
+        {
+          "action": "run-cmake",
+          "projects": 82,
+          "occurrences": 185
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 172,
+          "occurrences": 393
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-04-13T00:56:32.000Z",
+      "commit": "942f012e7a2b4b4bc88c108f8e8c6b26c90f2d68",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 255,
+          "occurrences": 582
+        },
+        {
+          "action": "run-cmake",
+          "projects": 82,
+          "occurrences": 185
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 173,
+          "occurrences": 394
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-04-20T01:08:38.000Z",
+      "commit": "61dd24f1d5d753463f39ea7b3e728c6165c51fe9",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 255,
+          "occurrences": 584
+        },
+        {
+          "action": "run-cmake",
+          "projects": 82,
+          "occurrences": 185
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 173,
+          "occurrences": 394
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-04-27T01:08:49.000Z",
+      "commit": "d090f44cd4fe21b7d873ddfb9c24fd017b13c49d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 256,
+          "occurrences": 587
+        },
+        {
+          "action": "run-cmake",
+          "projects": 82,
+          "occurrences": 185
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 174,
+          "occurrences": 394
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-05-18T01:11:57.000Z",
+      "commit": "f1f93c6570874d6ead90b4f45fac4c94a259f417",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 257,
+          "occurrences": 594
+        },
+        {
+          "action": "run-cmake",
+          "projects": 82,
+          "occurrences": 185
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 177,
+          "occurrences": 399
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-05-25T01:11:04.000Z",
+      "commit": "ec41aaf8bf73888d7836190640f33dc5f308944c",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 257,
+          "occurrences": 594
+        },
+        {
+          "action": "run-cmake",
+          "projects": 82,
+          "occurrences": 185
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 177,
+          "occurrences": 399
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-06-01T01:16:04.000Z",
+      "commit": "17190be31bc190420b231a05cc779865b0b43ccf",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 257,
+          "occurrences": 594
+        },
+        {
+          "action": "run-cmake",
+          "projects": 82,
+          "occurrences": 186
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 177,
+          "occurrences": 399
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-06-08T01:12:40.000Z",
+      "commit": "7023c2321068c996117fea0eecf216d5e9727d52",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 258,
+          "occurrences": 602
+        },
+        {
+          "action": "run-cmake",
+          "projects": 83,
+          "occurrences": 187
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 179,
+          "occurrences": 403
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-06-15T01:13:35.000Z",
+      "commit": "2e0794b9e9383ba3f1c8eb1bac9df349fb13a2b3",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 258,
+          "occurrences": 604
+        },
+        {
+          "action": "run-cmake",
+          "projects": 83,
+          "occurrences": 187
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 180,
+          "occurrences": 401
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-06-22T01:13:27.000Z",
+      "commit": "1469399c3be545d74ef35afed250e4d75c296ac6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 258,
+          "occurrences": 604
+        },
+        {
+          "action": "run-cmake",
+          "projects": 83,
+          "occurrences": 189
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 180,
+          "occurrences": 401
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-06-29T01:12:59.000Z",
+      "commit": "f3c5c4e31e26cad19e97eacfec6675b8787103b0",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 259,
+          "occurrences": 606
+        },
+        {
+          "action": "run-cmake",
+          "projects": 84,
+          "occurrences": 190
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 181,
+          "occurrences": 405
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-07-06T01:13:15.000Z",
+      "commit": "606ad7147c34e7c235fa50a37af23e3b709b7dd8",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 259,
+          "occurrences": 606
+        },
+        {
+          "action": "run-cmake",
+          "projects": 84,
+          "occurrences": 190
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 181,
+          "occurrences": 406
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-07-13T01:16:18.000Z",
+      "commit": "280684fdb08cba79c8dc09f31e7103b55770e0e7",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 260,
+          "occurrences": 607
+        },
+        {
+          "action": "run-cmake",
+          "projects": 84,
+          "occurrences": 190
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 182,
+          "occurrences": 409
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-07-20T01:14:07.000Z",
+      "commit": "ae86dad8611a9c350ee87d3a8dbb846f93a5045c",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 260,
+          "occurrences": 607
+        },
+        {
+          "action": "run-cmake",
+          "projects": 84,
+          "occurrences": 190
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 184,
+          "occurrences": 411
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-07-27T01:11:42.000Z",
+      "commit": "686c35aaaff33aaa1cca2dc2a1973bf97bbc1ac6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 263,
+          "occurrences": 612
+        },
+        {
+          "action": "run-cmake",
+          "projects": 86,
+          "occurrences": 193
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 186,
+          "occurrences": 411
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-08-03T01:16:50.000Z",
+      "commit": "17ff78528ddb079c308e1a15f1297d0de529b05b",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 265,
+          "occurrences": 615
+        },
+        {
+          "action": "run-cmake",
+          "projects": 86,
+          "occurrences": 193
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 188,
+          "occurrences": 415
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-08-10T01:18:20.000Z",
+      "commit": "090835149a25aab30278504f7a15fa700dfdff14",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 265,
+          "occurrences": 616
+        },
+        {
+          "action": "run-cmake",
+          "projects": 86,
+          "occurrences": 194
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 188,
+          "occurrences": 416
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-08-17T01:14:39.000Z",
+      "commit": "dffe18f59a762dcf69154018de7f1c71412d55c2",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 271,
+          "occurrences": 634
+        },
+        {
+          "action": "run-cmake",
+          "projects": 86,
+          "occurrences": 193
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 194,
+          "occurrences": 426
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-08-24T01:10:35.000Z",
+      "commit": "813d49dd042272e56a4c3f89c5ce818c9ee76306",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 273,
+          "occurrences": 636
+        },
+        {
+          "action": "run-cmake",
+          "projects": 86,
+          "occurrences": 193
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 196,
+          "occurrences": 428
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-08-31T01:27:15.000Z",
+      "commit": "e95a671736cae167e4672101f55ef36c62c24c90",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 274,
+          "occurrences": 641
+        },
+        {
+          "action": "run-cmake",
+          "projects": 88,
+          "occurrences": 196
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 196,
+          "occurrences": 427
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-09-07T01:17:25.000Z",
+      "commit": "db81ef0ce79f2d28eb785039aa832d729ff5321d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 275,
+          "occurrences": 641
+        },
+        {
+          "action": "run-cmake",
+          "projects": 88,
+          "occurrences": 195
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 196,
+          "occurrences": 428
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-09-14T01:21:41.000Z",
+      "commit": "4baa05be563680c7768979d5ff314a13477105c2",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 278,
+          "occurrences": 646
+        },
+        {
+          "action": "run-cmake",
+          "projects": 89,
+          "occurrences": 196
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 197,
+          "occurrences": 428
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-09-21T01:19:36.000Z",
+      "commit": "6fae250d7676dd1bc86c66daa76187fa9572a946",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 280,
+          "occurrences": 655
+        },
+        {
+          "action": "run-cmake",
+          "projects": 90,
+          "occurrences": 202
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 199,
+          "occurrences": 437
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-09-28T01:27:45.000Z",
+      "commit": "e04459d893398d7ef09ede7711183843e54b195c",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 280,
+          "occurrences": 655
+        },
+        {
+          "action": "run-cmake",
+          "projects": 90,
+          "occurrences": 202
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 200,
+          "occurrences": 439
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-10-05T01:22:05.000Z",
+      "commit": "cab2363232c71742ffe405264c05c1c5266bc440",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 280,
+          "occurrences": 655
+        },
+        {
+          "action": "run-cmake",
+          "projects": 89,
+          "occurrences": 198
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 200,
+          "occurrences": 439
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-10-12T01:24:22.000Z",
+      "commit": "ec61d18073cf238888cd4b07af5ca208c18e51b0",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 281,
+          "occurrences": 656
+        },
+        {
+          "action": "run-cmake",
+          "projects": 89,
+          "occurrences": 199
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 200,
+          "occurrences": 440
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-10-19T01:22:29.000Z",
+      "commit": "41c345ac405b482c291e2671ae589f0ae750955a",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 280,
+          "occurrences": 655
+        },
+        {
+          "action": "run-cmake",
+          "projects": 89,
+          "occurrences": 199
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 200,
+          "occurrences": 440
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-10-26T01:24:38.000Z",
+      "commit": "e6afcdd70f28f14e110c403ffb461df9281de977",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 281,
+          "occurrences": 656
+        },
+        {
+          "action": "run-cmake",
+          "projects": 90,
+          "occurrences": 200
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 201,
+          "occurrences": 442
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-11-02T01:30:57.000Z",
+      "commit": "b211ee4fc0c73a5e777f942df88addf41444083c",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 283,
+          "occurrences": 661
+        },
+        {
+          "action": "run-cmake",
+          "projects": 90,
+          "occurrences": 202
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 202,
+          "occurrences": 445
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-11-09T01:23:14.000Z",
+      "commit": "f96c3bed622b9056dcc6fdd62891ff7b26fc1b95",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 284,
+          "occurrences": 663
+        },
+        {
+          "action": "run-cmake",
+          "projects": 91,
+          "occurrences": 203
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 203,
+          "occurrences": 445
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-11-16T01:25:05.000Z",
+      "commit": "d3cff8491c9653a6e61d7f419dccbb14311e7770",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 284,
+          "occurrences": 663
+        },
+        {
+          "action": "run-cmake",
+          "projects": 93,
+          "occurrences": 206
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 203,
+          "occurrences": 446
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-11-23T01:24:31.000Z",
+      "commit": "6b9fc5631ba8e70443a354a24a297d8d6b826cd2",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 287,
+          "occurrences": 674
+        },
+        {
+          "action": "run-cmake",
+          "projects": 93,
+          "occurrences": 206
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 203,
+          "occurrences": 446
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-11-30T01:26:44.000Z",
+      "commit": "a73a78ef6a10351461ecc0d2101a80abb890127d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 289,
+          "occurrences": 680
+        },
+        {
+          "action": "run-cmake",
+          "projects": 93,
+          "occurrences": 206
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 205,
+          "occurrences": 448
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-12-07T01:29:24.000Z",
+      "commit": "cbfa49c97d537ebe9e7c6bfcaa9fc242d3d039c4",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 290,
+          "occurrences": 682
+        },
+        {
+          "action": "run-cmake",
+          "projects": 93,
+          "occurrences": 208
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 205,
+          "occurrences": 448
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-12-14T01:28:06.000Z",
+      "commit": "c8e0bd01c97fa3be0ee8e8f2af8f8c7cd5b1d537",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 293,
+          "occurrences": 686
+        },
+        {
+          "action": "run-cmake",
+          "projects": 94,
+          "occurrences": 210
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 207,
+          "occurrences": 451
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-12-21T01:22:54.000Z",
+      "commit": "5697711ae17aed1f5adab722402774d653c07ec7",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 297,
+          "occurrences": 694
+        },
+        {
+          "action": "run-cmake",
+          "projects": 95,
+          "occurrences": 214
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 212,
+          "occurrences": 467
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2024-12-28T01:21:17.000Z",
+      "commit": "eee2cbd9c03d61aad90f35dbbc6cf74ff5d18d5f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 299,
+          "occurrences": 695
+        },
+        {
+          "action": "run-cmake",
+          "projects": 95,
+          "occurrences": 215
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 220,
+          "occurrences": 489
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-01-04T01:19:11.000Z",
+      "commit": "c1389061041ac781eac892639b27f3a423592808",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 306,
+          "occurrences": 706
+        },
+        {
+          "action": "run-cmake",
+          "projects": 96,
+          "occurrences": 216
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 226,
+          "occurrences": 505
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-01-11T01:26:42.000Z",
+      "commit": "2a84840ab8f6762fe9e10492eb176456e78dd0d7",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 307,
+          "occurrences": 716
+        },
+        {
+          "action": "run-cmake",
+          "projects": 95,
+          "occurrences": 215
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 226,
+          "occurrences": 505
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-01-18T01:19:02.000Z",
+      "commit": "a949745ad099a39a5f14902b7c7b9157d5f1aa64",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 305,
+          "occurrences": 707
+        },
+        {
+          "action": "run-cmake",
+          "projects": 95,
+          "occurrences": 216
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 226,
+          "occurrences": 505
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-01-25T01:17:50.000Z",
+      "commit": "0759dfbe7bb4c689bbf82cded3fdfe47109bafa6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 305,
+          "occurrences": 706
+        },
+        {
+          "action": "run-cmake",
+          "projects": 95,
+          "occurrences": 216
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 226,
+          "occurrences": 505
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-02-01T01:26:55.000Z",
+      "commit": "bd17570af7425967d5c26c6fd7bf7b7228b840f3",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 306,
+          "occurrences": 710
+        },
+        {
+          "action": "run-cmake",
+          "projects": 95,
+          "occurrences": 217
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 227,
+          "occurrences": 508
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-02-08T01:21:20.000Z",
+      "commit": "69f30088fb8ec6a4d1b08bf3ccee8439012d8069",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 308,
+          "occurrences": 717
+        },
+        {
+          "action": "run-cmake",
+          "projects": 95,
+          "occurrences": 217
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 227,
+          "occurrences": 509
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-02-15T01:22:36.000Z",
+      "commit": "d41528a33429e17bd93781fec594f77d0db6d69e",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 309,
+          "occurrences": 719
+        },
+        {
+          "action": "run-cmake",
+          "projects": 95,
+          "occurrences": 217
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 227,
+          "occurrences": 509
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-02-22T01:22:12.000Z",
+      "commit": "d21f23126ad0946d6ddf23210af3295464106e29",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 309,
+          "occurrences": 719
+        },
+        {
+          "action": "run-cmake",
+          "projects": 95,
+          "occurrences": 217
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 227,
+          "occurrences": 509
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-03-01T01:30:01.000Z",
+      "commit": "18b34e0bcfc67208ce788ac14b8151e2ba8cb60d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 311,
+          "occurrences": 722
+        },
+        {
+          "action": "run-cmake",
+          "projects": 96,
+          "occurrences": 217
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 228,
+          "occurrences": 512
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-03-08T01:10:01.000Z",
+      "commit": "e107d96441fbc6089c4a48c4b88cc8c87fedf1e6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 311,
+          "occurrences": 725
+        },
+        {
+          "action": "run-cmake",
+          "projects": 96,
+          "occurrences": 217
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 228,
+          "occurrences": 512
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-03-15T01:26:38.000Z",
+      "commit": "f675beb518a48e2f6451ea87ade1f7cc949efb33",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 312,
+          "occurrences": 727
+        },
+        {
+          "action": "run-cmake",
+          "projects": 97,
+          "occurrences": 218
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 229,
+          "occurrences": 513
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-03-22T01:25:53.000Z",
+      "commit": "ace4baa39ac6bad74d78e0454ce2f57b6a52b21d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 311,
+          "occurrences": 728
+        },
+        {
+          "action": "run-cmake",
+          "projects": 97,
+          "occurrences": 219
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 228,
+          "occurrences": 512
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-03-29T01:27:25.000Z",
+      "commit": "4263b287603325d44e8588d7d45f6cc699fa4331",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 312,
+          "occurrences": 730
+        },
+        {
+          "action": "run-cmake",
+          "projects": 97,
+          "occurrences": 219
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 229,
+          "occurrences": 515
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-04-05T01:27:08.000Z",
+      "commit": "54ea1497d708e954ba4c59cfb5dd64b89dc04991",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 316,
+          "occurrences": 736
+        },
+        {
+          "action": "run-cmake",
+          "projects": 97,
+          "occurrences": 219
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 228,
+          "occurrences": 518
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-04-12T01:27:42.000Z",
+      "commit": "656af43d8a692bf2ca2ed052b8a262beef87809a",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 318,
+          "occurrences": 741
+        },
+        {
+          "action": "run-cmake",
+          "projects": 97,
+          "occurrences": 219
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 228,
+          "occurrences": 516
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-04-19T01:26:38.000Z",
+      "commit": "fa86d2952153480f18b33a155ef3b9259b3ecd5b",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 321,
+          "occurrences": 752
+        },
+        {
+          "action": "run-cmake",
+          "projects": 98,
+          "occurrences": 220
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 228,
+          "occurrences": 516
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-04-26T01:28:27.000Z",
+      "commit": "b9721c32641cf1faba22c1bd203e5ecce3f51fd9",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 324,
+          "occurrences": 755
+        },
+        {
+          "action": "run-cmake",
+          "projects": 100,
+          "occurrences": 229
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 229,
+          "occurrences": 518
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-05-03T01:30:18.000Z",
+      "commit": "b5f0bd1cb8f0ddea5d02824c80e69b76355c6c52",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 330,
+          "occurrences": 763
+        },
+        {
+          "action": "run-cmake",
+          "projects": 100,
+          "occurrences": 229
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 230,
+          "occurrences": 519
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-05-10T01:30:46.000Z",
+      "commit": "2a74f9b841654a286a681726410c2a61cb4375d6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 330,
+          "occurrences": 763
+        },
+        {
+          "action": "run-cmake",
+          "projects": 100,
+          "occurrences": 228
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 230,
+          "occurrences": 519
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-05-17T01:41:38.000Z",
+      "commit": "ba6500d56fb60f17ceadbc2b57a51d8d3df79715",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 333,
+          "occurrences": 766
+        },
+        {
+          "action": "run-cmake",
+          "projects": 101,
+          "occurrences": 230
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 230,
+          "occurrences": 519
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-05-24T01:39:42.000Z",
+      "commit": "6eb7b1e413f73fc1e7160d9dab0de132a88350fa",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 338,
+          "occurrences": 772
+        },
+        {
+          "action": "run-cmake",
+          "projects": 102,
+          "occurrences": 232
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 233,
+          "occurrences": 528
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-05-31T01:42:11.000Z",
+      "commit": "235b84aa8a0d127133f73f578f5a334f1da958e7",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 353,
+          "occurrences": 792
+        },
+        {
+          "action": "run-cmake",
+          "projects": 105,
+          "occurrences": 235
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 242,
+          "occurrences": 543
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-06-07T01:47:08.000Z",
+      "commit": "3c0eefa6528736a97870328e638fdd30e3c05c06",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 353,
+          "occurrences": 784
+        },
+        {
+          "action": "run-cmake",
+          "projects": 105,
+          "occurrences": 235
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 242,
+          "occurrences": 543
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-06-14T01:44:15.000Z",
+      "commit": "13a5b65fa85ff32b37f864270e91826d6ac0c740",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 354,
+          "occurrences": 787
+        },
+        {
+          "action": "run-cmake",
+          "projects": 105,
+          "occurrences": 235
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 241,
+          "occurrences": 539
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-06-21T01:43:57.000Z",
+      "commit": "9077467275e78d79e3f39e9e5a8891637b50a5b6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 355,
+          "occurrences": 788
+        },
+        {
+          "action": "run-cmake",
+          "projects": 105,
+          "occurrences": 235
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 241,
+          "occurrences": 539
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-06-28T01:44:20.000Z",
+      "commit": "4f95030864dfe491170f72e92b7a114491a8c3c0",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 356,
+          "occurrences": 790
+        },
+        {
+          "action": "run-cmake",
+          "projects": 105,
+          "occurrences": 236
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 241,
+          "occurrences": 540
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-07-05T01:43:01.000Z",
+      "commit": "62f10062e723491b71d6c82e7b978307139c2303",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 358,
+          "occurrences": 795
+        },
+        {
+          "action": "run-cmake",
+          "projects": 105,
+          "occurrences": 240
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 241,
+          "occurrences": 540
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-07-12T01:52:32.000Z",
+      "commit": "1ec9cdf091922b3420d8c3b08d410ff83d2afb96",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 360,
+          "occurrences": 800
+        },
+        {
+          "action": "run-cmake",
+          "projects": 105,
+          "occurrences": 240
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 241,
+          "occurrences": 540
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-07-19T01:49:03.000Z",
+      "commit": "ca354bfefafd5d5d5332d1754cb2396d08d183af",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 360,
+          "occurrences": 800
+        },
+        {
+          "action": "run-cmake",
+          "projects": 104,
+          "occurrences": 239
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 240,
+          "occurrences": 539
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-07-26T01:50:10.000Z",
+      "commit": "1b89127d406bd5f04c5a016de0e053654c57f727",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 360,
+          "occurrences": 800
+        },
+        {
+          "action": "run-cmake",
+          "projects": 104,
+          "occurrences": 239
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 240,
+          "occurrences": 539
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-08-02T01:50:58.000Z",
+      "commit": "cb1701622187e768883f89e964d7bb7bbf8e1924",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 361,
+          "occurrences": 801
+        },
+        {
+          "action": "run-cmake",
+          "projects": 104,
+          "occurrences": 239
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 240,
+          "occurrences": 540
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-08-09T01:46:28.000Z",
+      "commit": "96a09b89c3c6e92ce94e1c616b1cfe8e6087fd53",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 361,
+          "occurrences": 793
+        },
+        {
+          "action": "run-cmake",
+          "projects": 104,
+          "occurrences": 239
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 239,
+          "occurrences": 539
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-08-16T01:43:13.000Z",
+      "commit": "a47886e15b90cfef1c75e3fb15d8b22eaaadfb33",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 362,
+          "occurrences": 800
+        },
+        {
+          "action": "run-cmake",
+          "projects": 104,
+          "occurrences": 239
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 239,
+          "occurrences": 539
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-08-23T01:30:11.000Z",
+      "commit": "db98c9a6a091a40fb8ff141dc181e5023aab7fb4",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 363,
+          "occurrences": 801
+        },
+        {
+          "action": "run-cmake",
+          "projects": 104,
+          "occurrences": 239
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 240,
+          "occurrences": 542
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-08-30T01:25:44.000Z",
+      "commit": "a7595416396e492b7152c22dae1c1a6236aefab2",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 364,
+          "occurrences": 804
+        },
+        {
+          "action": "run-cmake",
+          "projects": 104,
+          "occurrences": 239
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 240,
+          "occurrences": 542
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-09-06T01:26:52.000Z",
+      "commit": "90a4bcf9080f0f28db5e38a002b9d926b9795751",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 366,
+          "occurrences": 808
+        },
+        {
+          "action": "run-cmake",
+          "projects": 103,
+          "occurrences": 238
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 240,
+          "occurrences": 542
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-09-13T01:23:20.000Z",
+      "commit": "04cdaf737cc0454f3d2537fbb5c3b1e93dc3a13b",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 365,
+          "occurrences": 802
+        },
+        {
+          "action": "run-cmake",
+          "projects": 101,
+          "occurrences": 235
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 238,
+          "occurrences": 541
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-09-20T01:24:58.000Z",
+      "commit": "c06beb59eba768bd90ffae4370dab123b14300ec",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 367,
+          "occurrences": 814
+        },
+        {
+          "action": "run-cmake",
+          "projects": 103,
+          "occurrences": 249
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 239,
+          "occurrences": 552
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-09-27T01:25:12.000Z",
+      "commit": "9b5d081594e4200b4495a1e2ae7bf70463c87b98",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 368,
+          "occurrences": 818
+        },
+        {
+          "action": "run-cmake",
+          "projects": 103,
+          "occurrences": 249
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 239,
+          "occurrences": 552
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-10-04T01:25:15.000Z",
+      "commit": "7335fd4631f668b234c20560c1e5d4844b25b0af",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 368,
+          "occurrences": 818
+        },
+        {
+          "action": "run-cmake",
+          "projects": 103,
+          "occurrences": 249
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 240,
+          "occurrences": 560
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-10-11T01:25:21.000Z",
+      "commit": "6fbfc1578c02754499a2c59e2a182750879734e0",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 373,
+          "occurrences": 823
+        },
+        {
+          "action": "run-cmake",
+          "projects": 106,
+          "occurrences": 252
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 245,
+          "occurrences": 564
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-10-18T01:26:44.000Z",
+      "commit": "25867d42084f02d1e4557f913060922fdf662132",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 373,
+          "occurrences": 795
+        },
+        {
+          "action": "run-cmake",
+          "projects": 107,
+          "occurrences": 255
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 246,
+          "occurrences": 567
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-10-25T01:29:39.000Z",
+      "commit": "2e8b28665c5c8ec21c6d273f06fbb2a3a6bc1ded",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 378,
+          "occurrences": 801
+        },
+        {
+          "action": "run-cmake",
+          "projects": 108,
+          "occurrences": 256
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 248,
+          "occurrences": 570
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-11-01T01:45:07.000Z",
+      "commit": "edc9abf8d663a8f1b1cffc4d0d3650038a293436",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 385,
+          "occurrences": 818
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 259
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 253,
+          "occurrences": 581
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-11-08T01:29:23.000Z",
+      "commit": "0158bfdeaf0e1363445e8cd5e76894460919e94b",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 391,
+          "occurrences": 826
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 259
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 259,
+          "occurrences": 596
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-11-15T01:44:04.000Z",
+      "commit": "6455af53305231939be99ac8122e468f4bd0bbfb",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 392,
+          "occurrences": 840
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 259
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 259,
+          "occurrences": 596
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-11-22T01:31:18.000Z",
+      "commit": "dfe04919c0540611e28d16258b52ea408bc5defd",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 394,
+          "occurrences": 846
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 260
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 258,
+          "occurrences": 597
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-11-29T01:42:34.000Z",
+      "commit": "e4300887ed020641212bbe0d8f0982c3e0da8677",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 394,
+          "occurrences": 846
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 260
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 256,
+          "occurrences": 592
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-12-06T01:41:50.000Z",
+      "commit": "fa1707296ab9b0be11f745e152c89808cca65572",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 394,
+          "occurrences": 849
+        },
+        {
+          "action": "run-cmake",
+          "projects": 108,
+          "occurrences": 248
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 255,
+          "occurrences": 592
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-12-13T01:44:21.000Z",
+      "commit": "71a1634a91a416639c78e5e42eebcfbe7d8c8176",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 394,
+          "occurrences": 848
+        },
+        {
+          "action": "run-cmake",
+          "projects": 108,
+          "occurrences": 248
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 255,
+          "occurrences": 592
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-12-20T01:44:48.000Z",
+      "commit": "28d4015b4c695ec60711e28eeb05ac921112feb4",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 395,
+          "occurrences": 852
+        },
+        {
+          "action": "run-cmake",
+          "projects": 108,
+          "occurrences": 248
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 256,
+          "occurrences": 595
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2025-12-27T01:48:07.000Z",
+      "commit": "351e8afb4e8c18b0f8c4a7b24821f0303999e232",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 396,
+          "occurrences": 853
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 249
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 257,
+          "occurrences": 596
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-01-03T01:47:40.000Z",
+      "commit": "e2f769b2fd1005fddb9c72fd616161a7a23f3212",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 396,
+          "occurrences": 854
+        },
+        {
+          "action": "run-cmake",
+          "projects": 108,
+          "occurrences": 246
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 257,
+          "occurrences": 597
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-01-10T01:50:54.000Z",
+      "commit": "9530f3580b269aef08e09f05d7195ef7ca7a0a88",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 397,
+          "occurrences": 858
+        },
+        {
+          "action": "run-cmake",
+          "projects": 108,
+          "occurrences": 246
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 258,
+          "occurrences": 604
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-01-17T01:49:35.000Z",
+      "commit": "66b857fe58dc895c4c27518f4f8ce06e0d0d4022",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 399,
+          "occurrences": 860
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 249
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 259,
+          "occurrences": 608
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-01-24T01:50:41.000Z",
+      "commit": "0bfdaaaddde37879b436c73a67a6b7843f1978b9",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 400,
+          "occurrences": 861
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 249
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 260,
+          "occurrences": 609
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-01-31T02:05:57.000Z",
+      "commit": "2af27c00269ab7b2a8c3889bfdefb063428debe4",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 401,
+          "occurrences": 862
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 249
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 260,
+          "occurrences": 610
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-02-07T02:10:34.000Z",
+      "commit": "3d4bf3cbc1b4429cd16be4e85dcb6a5b51ccb687",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 402,
+          "occurrences": 863
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 249
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 261,
+          "occurrences": 611
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-02-14T02:10:02.000Z",
+      "commit": "7e2eef282e23488a28a10c490b807c80d9c1e978",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 402,
+          "occurrences": 863
+        },
+        {
+          "action": "run-cmake",
+          "projects": 108,
+          "occurrences": 248
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 263,
+          "occurrences": 614
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-02-21T02:07:39.000Z",
+      "commit": "096ed26925d89a1acccfc8842b3ec4ca3dd28f9b",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 403,
+          "occurrences": 866
+        },
+        {
+          "action": "run-cmake",
+          "projects": 108,
+          "occurrences": 248
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 265,
+          "occurrences": 617
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-02-28T02:00:58.000Z",
+      "commit": "857a3b8dd6f80edfe1854445103b05479c6f7eda",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 405,
+          "occurrences": 874
+        },
+        {
+          "action": "run-cmake",
+          "projects": 108,
+          "occurrences": 248
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 264,
+          "occurrences": 616
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-03-07T02:06:30.000Z",
+      "commit": "c1a80dda85e364f57ae2543c8fc21930df39748f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 409,
+          "occurrences": 890
+        },
+        {
+          "action": "run-cmake",
+          "projects": 107,
+          "occurrences": 236
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 261,
+          "occurrences": 616
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-03-14T02:10:53.000Z",
+      "commit": "72012fd1a318c65b24338840febbbe2a9db78387",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 409,
+          "occurrences": 891
+        },
+        {
+          "action": "run-cmake",
+          "projects": 107,
+          "occurrences": 236
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 263,
+          "occurrences": 618
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-03-21T02:08:32.000Z",
+      "commit": "caab8f6558ee3493621d856dcb68a5192255ac32",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 414,
+          "occurrences": 900
+        },
+        {
+          "action": "run-cmake",
+          "projects": 109,
+          "occurrences": 238
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 263,
+          "occurrences": 612
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-03-28T02:25:51.000Z",
+      "commit": "30576c88a5204c9f4de9be2e72091aa50a9745a7",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 413,
+          "occurrences": 900
+        },
+        {
+          "action": "run-cmake",
+          "projects": 110,
+          "occurrences": 240
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 263,
+          "occurrences": 613
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-04-04T02:24:12.000Z",
+      "commit": "688e63b7b7d8508ef712343047d005c418566287",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 418,
+          "occurrences": 908
+        },
+        {
+          "action": "run-cmake",
+          "projects": 112,
+          "occurrences": 249
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 266,
+          "occurrences": 622
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-04-11T02:27:28.000Z",
+      "commit": "16eddc41b1dfa1228c22330c429179e60b938d2d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 421,
+          "occurrences": 914
+        },
+        {
+          "action": "run-cmake",
+          "projects": 113,
+          "occurrences": 250
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 267,
+          "occurrences": 618
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-04-18T02:35:10.000Z",
+      "commit": "d04562408386ffc5fbc261e0cd421695e3e9fc2f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 424,
+          "occurrences": 924
+        },
+        {
+          "action": "run-cmake",
+          "projects": 115,
+          "occurrences": 254
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 272,
+          "occurrences": 625
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-04-25T02:36:10.000Z",
+      "commit": "b4ef616e1bde7f86e5aa2f7e0610552a355b0c3f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 430,
+          "occurrences": 939
+        },
+        {
+          "action": "run-cmake",
+          "projects": 115,
+          "occurrences": 254
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 280,
+          "occurrences": 643
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-05-02T02:48:14.000Z",
+      "commit": "d5af1ba3683e57c43027b8f22ed1965a82324de3",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 433,
+          "occurrences": 948
+        },
+        {
+          "action": "run-cmake",
+          "projects": 117,
+          "occurrences": 262
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 284,
+          "occurrences": 653
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-05-09T02:53:02.000Z",
+      "commit": "6a7b1f24033f7cbd40ae4184a34b95b06b1bebe6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 433,
+          "occurrences": 948
+        },
+        {
+          "action": "run-cmake",
+          "projects": 117,
+          "occurrences": 262
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 284,
+          "occurrences": 653
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-05-16T03:04:02.000Z",
+      "commit": "52f13a28af8fe915f55ae544a5873f49901f16ab",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 435,
+          "occurrences": 955
+        },
+        {
+          "action": "run-cmake",
+          "projects": 117,
+          "occurrences": 262
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 285,
+          "occurrences": 656
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-05-23T03:28:33.000Z",
+      "commit": "02efbbfa93d070c7d0ebdf3f616e4f10ab5bd631",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 437,
+          "occurrences": 959
+        },
+        {
+          "action": "run-cmake",
+          "projects": 118,
+          "occurrences": 266
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 286,
+          "occurrences": 658
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-05-30T03:34:18.000Z",
+      "commit": "62a26a69d57365e754d563799f90f93ce2b7b5c4",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 439,
+          "occurrences": 960
+        },
+        {
+          "action": "run-cmake",
+          "projects": 119,
+          "occurrences": 269
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 289,
+          "occurrences": 660
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-06-06T03:40:04.000Z",
+      "commit": "1e881e68274abdde5c303551111b7798b3e125da",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 438,
+          "occurrences": 959
+        },
+        {
+          "action": "run-cmake",
+          "projects": 119,
+          "occurrences": 269
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 288,
+          "occurrences": 660
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-06-13T03:55:30.000Z",
+      "commit": "fe5f231cc67261c3df8803518e4149006ec76c5a",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 438,
+          "occurrences": 946
+        },
+        {
+          "action": "run-cmake",
+          "projects": 119,
+          "occurrences": 269
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 289,
+          "occurrences": 658
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-06-20T03:49:36.000Z",
+      "commit": "3a527228a6bca12a92ba4f47f36beb5cde259108",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 440,
+          "occurrences": 952
+        },
+        {
+          "action": "run-cmake",
+          "projects": 120,
+          "occurrences": 273
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 291,
+          "occurrences": 661
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-06-27T03:36:08.000Z",
+      "commit": "e5e3e7e7587c5ed8662bc0b85e17813527da1699",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 441,
+          "occurrences": 954
+        },
+        {
+          "action": "run-cmake",
+          "projects": 120,
+          "occurrences": 274
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 291,
+          "occurrences": 662
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-07-04T03:19:17.000Z",
+      "commit": "0f2866a183a30c51c02382b0d65f907b1f3033b3",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 442,
+          "occurrences": 958
+        },
+        {
+          "action": "run-cmake",
+          "projects": 120,
+          "occurrences": 276
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 293,
+          "occurrences": 667
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-07-11T02:47:08.000Z",
+      "commit": "ff554d5bdf723d3249a48e4433b1a6df78ba19da",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 443,
+          "occurrences": 960
+        },
+        {
+          "action": "run-cmake",
+          "projects": 120,
+          "occurrences": 276
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 294,
+          "occurrences": 672
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-07-18T02:36:03.000Z",
+      "commit": "ab4690b91a5c3cfeba85367644969e4bb2288eab",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 444,
+          "occurrences": 966
+        },
+        {
+          "action": "run-cmake",
+          "projects": 120,
+          "occurrences": 276
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 294,
+          "occurrences": 672
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-07-25T02:44:20.000Z",
+      "commit": "502a696f24471606dd794fccf69a495b44b61a54",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 446,
+          "occurrences": 992
+        },
+        {
+          "action": "run-cmake",
+          "projects": 120,
+          "occurrences": 275
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 294,
+          "occurrences": 673
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-08-01T02:53:34.000Z",
+      "commit": "1eb8ed9358c8c5d4df6c9b7b55f047693d456141",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 447,
+          "occurrences": 994
+        },
+        {
+          "action": "run-cmake",
+          "projects": 120,
+          "occurrences": 275
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 295,
+          "occurrences": 678
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-08-08T01:44:07.000Z",
+      "commit": "355b9a9736273ff38af5b20adbdb75979187a4cf",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 448,
+          "occurrences": 996
+        },
+        {
+          "action": "run-cmake",
+          "projects": 120,
+          "occurrences": 275
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 294,
+          "occurrences": 677
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-08-15T01:17:02.000Z",
+      "commit": "e1a2de072a413b56392025f798b49c7e18f34d27",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 451,
+          "occurrences": 998
+        },
+        {
+          "action": "run-cmake",
+          "projects": 121,
+          "occurrences": 275
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 297,
+          "occurrences": 680
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-08-22T01:17:12.000Z",
+      "commit": "5e2ef56513b2a015c1815272bb7a06f0985f1ce6",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 451,
+          "occurrences": 998
+        },
+        {
+          "action": "run-cmake",
+          "projects": 121,
+          "occurrences": 275
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 297,
+          "occurrences": 681
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-08-29T06:01:04.000Z",
+      "commit": "09d2c4dcf67e75c29dc2c69caa8779a2b012a0b1",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 453,
+          "occurrences": 1004
+        },
+        {
+          "action": "run-cmake",
+          "projects": 121,
+          "occurrences": 275
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 297,
+          "occurrences": 681
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-09-05T03:22:26.000Z",
+      "commit": "03cdd25725da45298984e6a8c72df93dbb13426d",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 455,
+          "occurrences": 1010
+        },
+        {
+          "action": "run-cmake",
+          "projects": 121,
+          "occurrences": 275
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 298,
+          "occurrences": 683
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-09-12T03:32:55.000Z",
+      "commit": "e517823af21b214254c642856e3f81a9c4b4700f",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 455,
+          "occurrences": 1014
+        },
+        {
+          "action": "run-cmake",
+          "projects": 121,
+          "occurrences": 275
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 298,
+          "occurrences": 683
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-09-19T03:34:08.000Z",
+      "commit": "414138eecf92ab1bb303d2b72b81866facb1826a",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 455,
+          "occurrences": 1021
+        },
+        {
+          "action": "run-cmake",
+          "projects": 122,
+          "occurrences": 280
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 298,
+          "occurrences": 686
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-09-26T03:58:50.000Z",
+      "commit": "9915e67517480a1bc51b690ab529ac72b25a29b0",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 456,
+          "occurrences": 1022
+        },
+        {
+          "action": "run-cmake",
+          "projects": 122,
+          "occurrences": 280
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 299,
+          "occurrences": 687
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-10-03T04:12:17.000Z",
+      "commit": "2e9a0719ba89e438ec5c7b5c4ea5cdc9c5049cc0",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 458,
+          "occurrences": 1034
+        },
+        {
+          "action": "run-cmake",
+          "projects": 123,
+          "occurrences": 280
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 303,
+          "occurrences": 693
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-10-10T04:45:00.000Z",
+      "commit": "7195863c7bd9d2779b8a778cc64bb2a31bd19885",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 459,
+          "occurrences": 1038
+        },
+        {
+          "action": "run-cmake",
+          "projects": 123,
+          "occurrences": 284
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 303,
+          "occurrences": 695
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-10-17T03:21:43.000Z",
+      "commit": "09a47e0a4ff95d31a012f589c77eb8c17a10ff05",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 462,
+          "occurrences": 1048
+        },
+        {
+          "action": "run-cmake",
+          "projects": 124,
+          "occurrences": 285
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 303,
+          "occurrences": 693
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    },
+    {
+      "date": "2026-10-24T03:39:31.000Z",
+      "commit": "df3fe4ba73284e8f1e7eabf495581162df85cb64",
+      "actions": [
+        {
+          "action": "get-cmake",
+          "projects": 468,
+          "occurrences": 1063
+        },
+        {
+          "action": "run-cmake",
+          "projects": 125,
+          "occurrences": 287
+        },
+        {
+          "action": "run-vcpkg",
+          "projects": 307,
+          "occurrences": 703
+        }
+      ],
+      "skippedRepositories": 0,
+      "skippedUsages": 0
+    }
+  ]
+}

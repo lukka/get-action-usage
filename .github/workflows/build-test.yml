@@ -21,6 +21,11 @@ jobs:
       with:
         node-version: '20.x'
     - run: |
-        npm install
+        npm ci
         npm run pack
-        npm run test
+        npm run test -- --runInBand
+        git diff --exit-code -- 'graph/*.js'
+    - name: Install browser
+      run: npx playwright install --with-deps chromium
+    - name: Test explorer interactions and scale
+      run: npm run test:browser

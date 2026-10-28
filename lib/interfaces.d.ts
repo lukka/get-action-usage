@@ -3,6 +3,7 @@ export interface IFile {
     size: number;
     path: string;
     url: string;
+    html_url: string | null;
     download_url: string;
 }
 export interface IRepository {

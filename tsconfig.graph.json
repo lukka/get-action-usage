@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./web",
+    "outDir": "./graph",
+    "module": "es2020",
+    "target": "es2018",
+    "lib": ["es2020", "dom", "dom.iterable"],
+    "noEmitOnError": true,
+    "declaration": false,
+    "inlineSourceMap": false,
+    "inlineSources": false
+  },
+  "include": ["web/**/*.ts"],
+  "exclude": []
+}

@@ -18,7 +18,7 @@ export declare class GHActionUsage {
     private totalRepositoryChecked;
     private readonly actionRootPath;
     constructor(octokit: ok.Octokit, reposProviderFactory: IRepositoriesProviderFactory, reporter: IReporter);
-    run(): Promise<void>;
+    run(): Promise<boolean>;
     setRemainingCalls(restApi?: number, searchApi?: number): void;
     private getActionPath;
     private isAlreadyRunning;
