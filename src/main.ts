@@ -12,6 +12,7 @@ import { Octokit } from '@octokit/core';
 import { throttling } from '@octokit/plugin-throttling';
 import { retry } from '@octokit/plugin-retry';
 import { restEndpointMethods } from '@octokit/plugin-rest-endpoint-methods';
+import * as core from '@actions/core';
 
 const localReporter: IReporter = {
   debug: (a: string, b: Error) => log(a, b),
@@ -43,7 +44,10 @@ export async function main(): Promise<void> {
     reporter
   );
 
-  await usageScanner.run();
+  const collectionRan = await usageScanner.run();
+  if (github.isRunningOnGitHubRunner()) {
+    core.setOutput('collection-ran', collectionRan);
+  }
 }
 
 const MyOctokit = Octokit.plugin(throttling, retry, restEndpointMethods);

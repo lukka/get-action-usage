@@ -19,15 +19,19 @@
   "types": "lib/index",
   "scripts": {
     "clean": "rimraf lib && rimraf coverage",
-    "format": "prettier --write \"{src,__tests__}/**/*.ts\" --single-quote --trailing-comma es5",
+    "format": "prettier --write \"{src,web,scripts,__tests__}/**/*.ts\" --single-quote --trailing-comma es5",
     "lint": "tslint --force --format verbose \"src/**/*.ts\"",
     "prepublishOnly": "npm run build",
-    "prebuild": "npm run clean && npm run format && npm run lint && echo Using TypeScript && tsc --version",
+    "prebuild": "npm run clean && npm run format && npm run lint && npm run build:graph && echo Using TypeScript && tsc --version",
     "build": "tsc --pretty",
+    "build:graph": "tsc --project tsconfig.graph.json --pretty",
+    "history:record": "ts-node scripts/usage-history.ts --record",
+    "history:backfill": "ts-node scripts/usage-history.ts --backfill",
     "test": "jest",
     "coverage": "jest --coverage",
     "watch": "npm run build -- --watch",
     "watch:test": "jest --watch",
+    "test:browser": "playwright test",
     "pack": "npm run build && ncc build lib/main.js -o dist"
   },
   "dependencies": {
@@ -51,6 +55,7 @@
     "ts-stopwatch": "^0.0.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@types/jest": "^23.3.3",
     "@types/node": "^20.10.4",
     "@vercel/ncc": "^0.38.1",

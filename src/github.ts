@@ -2,24 +2,34 @@
 // All content of this repository is licensed under the CC BY-SA License.
 // See the LICENSE file in the root for license information.
 
-import { IReporter } from './interfaces';
+import { IFile, IReporter } from './interfaces';
 import * as core from '@actions/core';
 
 export function isRunningOnGitHubRunner(): boolean {
   return 'GITHUB_ACTIONS' in process.env;
 }
 
-export function getHtmlUrl(url: string, line: number) {
-  // Save some HTTP requests to satisfy throttling and rate limits.
-  const branchRegExp = new RegExp('\\?ref=(?<branch>[\\w\\d]+)');
-  const branch = url.match(branchRegExp)?.groups?.branch ?? 'main';
-  return (
-    url
-      .replace(`?ref=${branch}`, '')
-      .replace(`/repos/`, '/')
-      .replace('api.github.com', 'github.com')
-      .replace('/contents/.github', `/blob/${branch}/.github`) + `#L${line}`
-  );
+export function getHtmlUrl(
+  file: Pick<IFile, 'html_url'>,
+  line: number
+): string {
+  if (!file.html_url) {
+    throw new Error('GitHub did not provide a workflow HTML URL.');
+  }
+  const url = new URL(file.html_url);
+  if (
+    url.origin !== 'https://github.com' ||
+    url.username ||
+    url.password ||
+    !/^\/[^/]+\/[^/]+\/blob\//.test(url.pathname)
+  ) {
+    throw new Error('Expected a GitHub workflow HTML URL.');
+  }
+  if (!Number.isSafeInteger(line) || line < 1) {
+    throw new Error('Workflow line must be a positive integer.');
+  }
+  url.hash = `L${line}`;
+  return url.href;
 }
 
 export class Reporter implements IReporter {
