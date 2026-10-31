@@ -541,6 +541,34 @@ describe('layout and pointer index', () => {
     ).toThrow('viewport');
   });
 
+  test('reserves every hub hit area when fitting dense short mobile maps', () => {
+    for (const count of [1, 1000]) {
+      const projects: Record<string, unknown> = {};
+      for (let index = 0; index < count; index++) {
+        projects[`project-${index}`] = entries([25, 100, 1000][index % 3], [
+          usage('get-cmake', 'v3'),
+        ]);
+      }
+      const repositories = normalizeDatabase({ acme: projects }).repositories;
+      for (const size of [
+        viewport,
+        { width: 360, height: 264 },
+        { width: 290, height: 240 },
+      ]) {
+        const layout = layoutRepositories(repositories, size);
+        const hitRadius = Math.min(32, size.width / 10) + 8;
+        for (const repository of repositories) {
+          for (const hub of layout.hubs) {
+            expect(
+              Math.hypot(repository.x - hub.x, repository.y - hub.y) -
+                repository.radius
+            ).toBeGreaterThanOrEqual(hitRadius);
+          }
+        }
+      }
+    }
+  });
+
   test('finds the nearest visible node, including negative cells and zoom padding', () => {
     const repositories = sample();
     repositories[0].x = -100;
@@ -662,6 +690,20 @@ describe('shareable views', () => {
     expect(readView('?view=unknown&metric=unknown').warnings).toHaveLength(2);
     expect(readView('?view=unknown').view).toBe('map');
     expect(readView('?metric=unknown').metric).toBe('projects');
+  });
+
+  test('keeps the trend metric in map links even while the charts are hidden', () => {
+    const filters = { ...DEFAULT_FILTERS, query: 'acme' };
+    const query = writeView(filters, 'acme/alpha', 'map', 'occurrences');
+    expect(readView(query)).toEqual({
+      filters,
+      selected: 'acme/alpha',
+      view: 'map',
+      metric: 'occurrences',
+      warnings: [],
+    });
+    expect(new URLSearchParams(query).has('view')).toBe(false);
+    expect(writeView(DEFAULT_FILTERS, null, 'map', 'projects')).toBe('');
   });
 
   test('reports invalid URL filters and preserves unknown versions as empty results', () => {

@@ -150,6 +150,25 @@ test.describe('usage trends SPA', () => {
     await expect(page.locator('#project-search')).toHaveValue('alpha');
   });
 
+  test('preserves the chosen metric when copying and reloading a map link', async ({ page, context }) => {
+    await mockHistory(context);
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    await openTrends(page, '?q=alpha&repo=acme%2Falpha&view=trends&metric=occurrences');
+    await page.getByRole('tab', { name: 'Repository map' }).click();
+    await expect(page.locator('#repository-list')).toHaveAttribute('aria-busy', 'false');
+    await page.getByRole('button', { name: 'Copy view link' }).click();
+    const copied = await page.evaluate(() => navigator.clipboard.readText());
+    expect(new URL(copied).searchParams.get('metric')).toBe('occurrences');
+    await page.goto(copied);
+    await expect(page.locator('#repository-list')).toHaveAttribute('aria-busy', 'false');
+    await expect(page.locator('#project-search')).toHaveValue('alpha');
+    await expect(page.locator('#inspector-mode')).toHaveText('PINNED');
+    await page.getByRole('tab', { name: 'Usage trends' }).click();
+    await expect(page.locator('.trend-card')).toHaveCount(3);
+    await expect(page.locator('#trend-metric')).toHaveValue('occurrences');
+    await expect(card(page).locator('.trend-total strong')).toHaveText('9');
+  });
+
   test('charts actual dates, switches metrics, and exposes exact keyboard and tabular values', async ({ page, context }) => {
     await mockHistory(context);
     await openTrends(page);

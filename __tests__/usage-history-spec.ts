@@ -8,7 +8,7 @@ import {
   usageSnapshot,
   weeklyRevisions,
 } from '../scripts/usage-history';
-import { normalizeUsageHistory } from '../web/model';
+import { normalizeUsageHistory, UsageHistory } from '../web/model';
 
 function database(count = 1) {
   const projects: Record<string, unknown> = {};
@@ -157,6 +157,34 @@ describe('recorded usage history', () => {
         .snapshots[1].actions[0].projects
     ).toBe(3);
   });
+
+  test('reconciles the same source revision without dropping equal-count scans', () => {
+    const commit = 'a'.repeat(40);
+    const first = usageSnapshot(database(), firstDate);
+    const recorded = usageSnapshot(database(), nextDate);
+    const duplicate = usageSnapshot(
+      database(),
+      new Date(nextDate.getTime() + 60000),
+      commit
+    );
+    const history = mergeSnapshots(
+      {
+        version: 1,
+        snapshots: [
+          first,
+          recorded,
+          duplicate,
+          {
+            ...duplicate,
+            date: new Date(nextDate.getTime() + 120000).toISOString(),
+          },
+        ],
+      },
+      [{ ...recorded, commit }]
+    );
+    expect(history.snapshots).toEqual([first, { ...recorded, commit }]);
+    expect(mergeSnapshots(history, [{ ...recorded, commit }])).toEqual(history);
+  });
 });
 
 describe('history persistence', () => {
@@ -233,5 +261,79 @@ describe('history persistence', () => {
     fs.writeFileSync(filename, '{"version": 2}');
     expect(() => updateUsageHistory('record', directory)).toThrow('version 1');
     expect(fs.readFileSync(filename, 'utf8')).toBe('{"version": 2}');
+  });
+
+  test('uses committed collector timestamps instead of counting their commits again', () => {
+    const git = (...args: string[]) =>
+      execFileSync('git', args, {
+        cwd: directory,
+        encoding: 'utf8',
+        stdio: 'pipe',
+      }).trim();
+    git('init', '--quiet');
+    git('config', 'user.name', 'Test');
+    git('config', 'user.email', 'test@example.com');
+    const commit = (date: Date) =>
+      execFileSync(
+        'git',
+        [
+          'commit',
+          '--quiet',
+          '-m',
+          'Saved scan\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>',
+        ],
+        {
+          cwd: directory,
+          env: {
+            ...process.env,
+            GIT_AUTHOR_DATE: date.toISOString(),
+            GIT_COMMITTER_DATE: date.toISOString(),
+          },
+          stdio: 'pipe',
+        }
+      );
+    const dates = [firstDate, nextDate];
+    let recorded: UsageHistory = { version: 1, snapshots: [] };
+    for (const [index, date] of dates.entries()) {
+      fs.writeFileSync(
+        path.join(directory, 'graph/action-usage-db.json'),
+        JSON.stringify({
+          ...database(),
+          LastStartTimeName: date.toISOString(),
+        })
+      );
+      recorded = updateUsageHistory('record', directory, date);
+      git('add', 'graph/action-usage-db.json', 'graph/usage-history.json');
+      commit(new Date(date.getTime() + 60000));
+      expect(recorded.snapshots).toHaveLength(index + 1);
+    }
+    const backfilled = updateUsageHistory('backfill', directory);
+    expect(backfilled.snapshots.map(snapshot => snapshot.date)).toEqual(
+      dates.map(date => date.toISOString())
+    );
+    expect(backfilled.snapshots.map(snapshot => snapshot.actions)).toEqual(
+      recorded.snapshots.map(snapshot => snapshot.actions)
+    );
+    expect(backfilled.snapshots.map(snapshot => snapshot.commit)).toEqual([
+      git('rev-parse', 'HEAD^'),
+      git('rev-parse', 'HEAD'),
+    ]);
+    expect(updateUsageHistory('backfill', directory)).toEqual(backfilled);
+
+    const databaseOnlyDate = new Date(nextDate.getTime() + 86400000);
+    fs.writeFileSync(
+      path.join(directory, 'graph/action-usage-db.json'),
+      JSON.stringify({
+        ...database(),
+        LastStartTimeName: databaseOnlyDate.toISOString(),
+      })
+    );
+    git('add', 'graph/action-usage-db.json');
+    commit(databaseOnlyDate);
+    const revised = updateUsageHistory('backfill', directory);
+    expect(revised.snapshots.slice(0, 2)).toEqual(backfilled.snapshots);
+    expect(revised.snapshots[2].date).toBe(databaseOnlyDate.toISOString());
+    expect(revised.snapshots[2].commit).toBe(git('rev-parse', 'HEAD'));
+    expect(updateUsageHistory('backfill', directory)).toEqual(revised);
   });
 });

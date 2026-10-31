@@ -63,7 +63,7 @@ async function open(page, query = '') {
 }
 
 async function results(page, count) {
-  await expect(page.locator('#result-count')).toHaveText(String(count));
+  await expect(page.locator('#result-count')).toHaveText(count.toLocaleString('en'));
   await expect(page.locator('#repository-list')).toHaveAttribute('aria-busy', 'false');
 }
 
@@ -1821,6 +1821,92 @@ test('names the supported GitHub Actions and keeps headings readable across scre
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
     expect(await page.locator('.brand-name').evaluate(link => link.scrollWidth <= link.clientWidth)).toBe(true);
   }
+});
+
+test('keeps small text above AA contrast in normal, hover, and pinned states', async ({ page, context }) => {
+  await mockDatabase(context);
+  await open(page);
+  const check = async (locator, pseudo = null) => {
+    const ratio = await locator.evaluate((node, pseudo) => {
+      const rgba = color => color.match(/[\d.]+/g).map(Number);
+      const blend = (front, back) => front.slice(0, 3).map((value, index) =>
+        value * (front[3] ?? 1) + back[index] * (1 - (front[3] ?? 1))
+      );
+      const ancestors = [];
+      for (let current = node; current; current = current.parentElement) ancestors.unshift(current);
+      const background = ancestors.reduce(
+        (color, ancestor) => blend(rgba(getComputedStyle(ancestor).backgroundColor), color),
+        [255, 255, 255]
+      );
+      const style = getComputedStyle(node, pseudo);
+      const color = rgba(style.color);
+      color[3] = (color[3] ?? 1) * Number(style.opacity);
+      const foreground = blend(color, background);
+      const luminance = rgb => {
+        const [r, g, b] = rgb.map(value => value / 255).map(value =>
+          value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4
+        );
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+      };
+      const values = [luminance(foreground), luminance(background)];
+      return (Math.max(...values) + 0.05) / (Math.min(...values) + 0.05);
+    }, pseudo);
+    expect(ratio).toBeGreaterThanOrEqual(4.5);
+  };
+  for (const selector of ['.small-tag', '.inspector-placeholder p', '.action-key', '.search-wrap kbd', '.graph-help', '.keyboard-help summary', 'footer', 'footer a']) {
+    for (const locator of await page.locator(selector).all()) await check(locator);
+  }
+  for (const id of ['project-search', 'min-stars', 'max-stars']) {
+    await check(page.locator(`#${id}`), '::placeholder');
+  }
+  const row = page.getByRole('button', { name: /acme\/alpha/ });
+  for (const state of ['normal', 'hover', 'focus', 'pinned']) {
+    if (state === 'hover') await row.hover();
+    if (state === 'focus') await row.focus();
+    if (state === 'pinned') await row.click();
+    await check(row.locator('.repo-stars'));
+    for (const locator of await row.locator('.repo-action').all()) await check(locator);
+  }
+  for (const selector of ['#inspector-mode', '.project-meta > span', '.usage-heading', '.workflow-details']) {
+    for (const locator of await page.locator(selector).all()) await check(locator);
+  }
+});
+
+test('keeps dense short-map repository bodies outside every action hit area', async ({ page, context }) => {
+  const projects = {};
+  for (let index = 0; index < 1000; index++) {
+    const name = `project-${index}`;
+    projects[name] = project(25, [usage(name, 'get-cmake', 'v3')]);
+  }
+  await page.setViewportSize({ width: 386, height: 568 });
+  await mockDatabase(context, { acme: projects });
+  await trackCanvas(context);
+  await open(page);
+  await page.addStyleTag({ content: '.graph-stage { height: 264px !important; }' });
+  await expect(page.locator('#graph-stage')).toHaveCSS('height', '264px');
+  await settleMapLayout(page);
+  const circles = await repositoryCircles(page);
+  expect(circles).toHaveLength(1000);
+  const hubs = [];
+  for (const action of actions) {
+    const hub = await hubPosition(page, action);
+    hubs.push(hub);
+    for (const circle of circles) {
+      expect(Math.hypot(circle.x - hub.x, circle.y - hub.y) - circle.radius)
+        .toBeGreaterThanOrEqual(hub.radius + 8);
+    }
+  }
+  const bottom = hubs[1];
+  const nearest = circles.reduce((current, circle) =>
+    Math.hypot(circle.x - bottom.x, circle.y - bottom.y) <
+      Math.hypot(current.x - bottom.x, current.y - bottom.y) ? circle : current
+  );
+  await page.locator('#graph-stage').scrollIntoViewIfNeeded();
+  const canvas = await page.locator('#graph-overlay').boundingBox();
+  await page.mouse.click(canvas.x + nearest.x, canvas.y + nearest.y);
+  await expect(page.locator('#inspector-mode')).toHaveText('PINNED');
+  await expect(page.getByLabel('Filter run-cmake', { exact: true })).not.toBeChecked();
+  await results(page, 1000);
 });
 
 test('loads the real database without external requests or runtime errors', async ({ page }) => {

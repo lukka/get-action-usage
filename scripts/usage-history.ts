@@ -67,7 +67,14 @@ export function mergeSnapshots(
   const byDate = new Map(
     history.snapshots.map(snapshot => [snapshot.date, snapshot])
   );
-  for (const snapshot of snapshots) byDate.set(snapshot.date, snapshot);
+  for (const snapshot of snapshots) {
+    if (snapshot.commit) {
+      for (const [date, previous] of byDate) {
+        if (previous.commit === snapshot.commit) byDate.delete(date);
+      }
+    }
+    byDate.set(snapshot.date, snapshot);
+  }
   return normalizeUsageHistory({
     version: 1,
     snapshots: Array.from(byDate.values()),
@@ -108,14 +115,47 @@ export function updateUsageHistory(
         return { commit, date };
       })
     );
+    const committedHistory = (commit: string): UsageHistory =>
+      git('ls-tree', '--name-only', commit, '--', HISTORY)
+        ? normalizeUsageHistory(JSON.parse(git('show', `${commit}:${HISTORY}`)))
+        : { version: 1, snapshots: [] };
     for (const revision of revisions) {
-      snapshots.push(
-        usageSnapshot(
-          JSON.parse(git('show', `${revision.commit}:${DATABASE}`)),
-          new Date(revision.date),
-          revision.commit
-        )
+      const snapshot = usageSnapshot(
+        JSON.parse(git('show', `${revision.commit}:${DATABASE}`)),
+        new Date(revision.date),
+        revision.commit
       );
+      const parent = git(
+        'rev-list',
+        '--parents',
+        '-n',
+        '1',
+        revision.commit
+      ).split(' ')[1];
+      const previousDates = new Set(
+        parent
+          ? committedHistory(parent).snapshots.map(entry => entry.date)
+          : []
+      );
+      // Reuse only an observation added with this saved database revision.
+      const recorded = committedHistory(revision.commit)
+        .snapshots.filter(
+          entry => entry.commit === null && !previousDates.has(entry.date)
+        )
+        .pop();
+      if (
+        recorded &&
+        recorded.skippedRepositories === snapshot.skippedRepositories &&
+        recorded.skippedUsages === snapshot.skippedUsages &&
+        recorded.actions.every(
+          (count, index) =>
+            count.projects === snapshot.actions[index].projects &&
+            count.occurrences === snapshot.actions[index].occurrences
+        )
+      ) {
+        snapshot.date = recorded.date;
+      }
+      snapshots.push(snapshot);
     }
   } else {
     snapshots.push(
