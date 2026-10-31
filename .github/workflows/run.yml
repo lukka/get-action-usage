@@ -46,6 +46,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.PAT_WORKSPACES }}
 
     - name: Record usage trend snapshot
+      id: record-history
       if: steps.scan-usage.outputs.collection-ran == 'true'
       working-directory: getactionusage
       run: |
@@ -98,3 +99,9 @@ jobs:
         git remote set-url origin https://x-access-token:${{ secrets.PAT_WORKSPACES }}@github.com/lukka/lukka.github.io
         git commit -m "Automated commit for publishing updated action explorer"
         git push
+
+    - name: Report usage snapshot failure
+      if: always() && steps.record-history.outcome == 'failure'
+      run: |
+        echo "::error::Usage trend snapshot recording failed. Review the recording step; database persistence is handled independently."
+        exit 1

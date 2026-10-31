@@ -1,9 +1,11 @@
 import {
   ActionCount,
+  actionHubRadius,
   ActionName,
   Circle,
   circleDetail,
   Hub,
+  HUB_HIT_PADDING,
   Layout,
   MAP_INSETS,
   Point,
@@ -485,7 +487,7 @@ export class CanvasGraph {
       const position = this.hubPosition(hub);
       if (
         Math.hypot(position.x - point.x, position.y - point.y) <
-        this.hubRadius() + 8
+        this.hubRadius() + HUB_HIT_PADDING
       ) {
         return { kind: 'action', hub };
       }
@@ -1271,7 +1273,7 @@ export class CanvasGraph {
       circles: this.layout.hubs.map(hub => ({
         ...this.hubPosition(hub),
         id: hub.action,
-        radius: this.hubRadius() + 8,
+        radius: this.hubRadius() + HUB_HIT_PADDING,
       })),
       labels: this.layout.hubs.map(hub => ({
         ...this.hubLabelPosition(hub),
@@ -1772,7 +1774,7 @@ export class CanvasGraph {
   }
 
   private hubRadius(): number {
-    return Math.min(32, this.width / 10);
+    return actionHubRadius(this.width);
   }
 
   private hubPosition(hub: Hub): Point {

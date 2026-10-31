@@ -24,7 +24,15 @@ jobs:
         npm ci
         npm run pack
         npm run test -- --runInBand
-        git diff --exit-code -- 'graph/*.js'
+    - name: Verify generated explorer assets
+      shell: bash
+      run: |
+        git diff --exit-code HEAD -- 'graph/*.js'
+        untracked=$(git ls-files --others -- 'graph/*.js')
+        if [ -n "$untracked" ]; then
+          printf '%s\n' "::error::Generated explorer JavaScript must be committed:" "$untracked"
+          exit 1
+        fi
     - name: Install browser
       run: npx playwright install --with-deps chromium
     - name: Test explorer interactions and scale

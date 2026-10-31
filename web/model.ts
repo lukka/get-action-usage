@@ -150,6 +150,11 @@ export interface Viewport {
 }
 
 export const MAP_INSETS = { top: 44, right: 16, bottom: 52, left: 16 };
+export const HUB_HIT_PADDING = 8;
+
+export function actionHubRadius(width: number): number {
+  return Math.min(32, width / 10);
+}
 
 export interface Layout extends Viewport {
   hubs: Hub[];
@@ -497,7 +502,7 @@ export function layoutRepositories(
   ) {
     throw new Error('The map viewport is too small to lay out projects.');
   }
-  const hubRadius = Math.min(32, viewport.width / 10);
+  const hubRadius = actionHubRadius(viewport.width);
   const side = hubRadius + Math.max(16, viewport.width * 0.035);
   const top = MAP_INSETS.top + hubRadius + 12;
   const bottom = viewport.height - MAP_INSETS.bottom - hubRadius - 8;
@@ -516,6 +521,17 @@ export function layoutRepositories(
       y: index === 1 ? bottom : top,
     })),
   };
+  // Cap the inellipse axes to reserve the hubs' full pointer hit areas.
+  const hubClearance = hubRadius + HUB_HIT_PADDING;
+  const radiusX = Math.min(halfWidth / Math.sqrt(3), halfWidth - hubClearance);
+  const radiusY = Math.min(
+    (bottom - top) / 3,
+    bottom - center.y - hubClearance
+  );
+  const minimum = Math.min(radiusX, radiusY);
+  if (minimum <= 0) {
+    throw new Error('The map viewport is too small to lay out projects.');
+  }
   if (!repositories.length) return layout;
   const ordered = repositories
     .slice()
@@ -615,9 +631,6 @@ export function layoutRepositories(
     circle.y -= gravity.y;
   }
   // The centroid-centered inellipse keeps the entire cloud inside the triangle.
-  const radiusX = halfWidth / Math.sqrt(3);
-  const radiusY = (bottom - top) / 3;
-  const minimum = Math.min(radiusX, radiusY);
   const extent = circles.reduce(
     (maximum, circle) =>
       Math.max(maximum, Math.hypot(circle.x, circle.y) + circle.radius),
@@ -822,9 +835,7 @@ export function writeView(
   if (filters.version) parameters.set('version', filters.version);
   if (filters.sort !== 'stars') parameters.set('sort', filters.sort);
   if (selected) parameters.set('repo', selected);
-  if (view === 'trends') {
-    parameters.set('view', view);
-    if (metric !== 'projects') parameters.set('metric', metric);
-  }
+  if (view === 'trends') parameters.set('view', view);
+  if (metric !== 'projects') parameters.set('metric', metric);
   return parameters.toString();
 }

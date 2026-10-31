@@ -58,6 +58,10 @@ export function circleDetail(radius) {
     return radius >= 26 ? 'names' : radius >= 20 ? 'stars' : 'none';
 }
 export const MAP_INSETS = { top: 44, right: 16, bottom: 52, left: 16 };
+export const HUB_HIT_PADDING = 8;
+export function actionHubRadius(width) {
+    return Math.min(32, width / 10);
+}
 function isRecord(value) {
     return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
@@ -310,7 +314,7 @@ export function layoutRepositories(repositories, viewport) {
         viewport.height <= MAP_INSETS.top + MAP_INSETS.bottom) {
         throw new Error('The map viewport is too small to lay out projects.');
     }
-    const hubRadius = Math.min(32, viewport.width / 10);
+    const hubRadius = actionHubRadius(viewport.width);
     const side = hubRadius + Math.max(16, viewport.width * 0.035);
     const top = MAP_INSETS.top + hubRadius + 12;
     const bottom = viewport.height - MAP_INSETS.bottom - hubRadius - 8;
@@ -329,6 +333,13 @@ export function layoutRepositories(repositories, viewport) {
             y: index === 1 ? bottom : top,
         })),
     };
+    const hubClearance = hubRadius + HUB_HIT_PADDING;
+    const radiusX = Math.min(halfWidth / Math.sqrt(3), halfWidth - hubClearance);
+    const radiusY = Math.min((bottom - top) / 3, bottom - center.y - hubClearance);
+    const minimum = Math.min(radiusX, radiusY);
+    if (minimum <= 0) {
+        throw new Error('The map viewport is too small to lay out projects.');
+    }
     if (!repositories.length)
         return layout;
     const ordered = repositories
@@ -413,9 +424,6 @@ export function layoutRepositories(repositories, viewport) {
         circle.x -= gravity.x;
         circle.y -= gravity.y;
     }
-    const radiusX = halfWidth / Math.sqrt(3);
-    const radiusY = (bottom - top) / 3;
-    const minimum = Math.min(radiusX, radiusY);
     const extent = circles.reduce((maximum, circle) => Math.max(maximum, Math.hypot(circle.x, circle.y) + circle.radius), 0);
     const unit = (minimum * 0.985) / extent;
     circles.forEach((circle, position) => {
@@ -578,10 +586,9 @@ export function writeView(filters, selected, view = 'map', metric = 'projects') 
         parameters.set('sort', filters.sort);
     if (selected)
         parameters.set('repo', selected);
-    if (view === 'trends') {
+    if (view === 'trends')
         parameters.set('view', view);
-        if (metric !== 'projects')
-            parameters.set('metric', metric);
-    }
+    if (metric !== 'projects')
+        parameters.set('metric', metric);
     return parameters.toString();
 }

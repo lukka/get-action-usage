@@ -1,4 +1,4 @@
-import { circleDetail, MAP_INSETS, repositorySearch, SpatialIndex, STAR_TIERS, starTier, } from './model.js';
+import { actionHubRadius, circleDetail, HUB_HIT_PADDING, MAP_INSETS, repositorySearch, SpatialIndex, STAR_TIERS, starTier, } from './model.js';
 const PREVIEW_DURATION = 240;
 const NEXT_PULSE_DURATION = 700;
 const NEXT_TARGET_DELAY = 180;
@@ -324,7 +324,7 @@ export class CanvasGraph {
         for (const hub of this.layout.hubs) {
             const position = this.hubPosition(hub);
             if (Math.hypot(position.x - point.x, position.y - point.y) <
-                this.hubRadius() + 8) {
+                this.hubRadius() + HUB_HIT_PADDING) {
                 return { kind: 'action', hub };
             }
         }
@@ -990,7 +990,7 @@ export class CanvasGraph {
             circles: this.layout.hubs.map(hub => ({
                 ...this.hubPosition(hub),
                 id: hub.action,
-                radius: this.hubRadius() + 8,
+                radius: this.hubRadius() + HUB_HIT_PADDING,
             })),
             labels: this.layout.hubs.map(hub => ({
                 ...this.hubLabelPosition(hub),
@@ -1421,7 +1421,7 @@ export class CanvasGraph {
         context.stroke();
     }
     hubRadius() {
-        return Math.min(32, this.width / 10);
+        return actionHubRadius(this.width);
     }
     hubPosition(hub) {
         return {
